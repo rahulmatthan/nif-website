@@ -4,7 +4,7 @@
 {{- $bp := partial "appstatus.html" $s.bookPrize -}}
 <div class="ribbon">
   <div class="wrap">
-    <a href="{{ "/apply/" | relLangURL }}">
+    <a href="{{ "apply/" | relLangURL }}">
       <i class="dot q"></i>
       {{- $d := $bf.data -}}
       {{ $d.name }} {{ $d.cycle }} —
@@ -13,7 +13,7 @@
       {{- else }} applications open {{ $bf.nextOpensDate }}
       {{- end -}}
     </a>
-    <a href="{{ "/prize/" | relLangURL }}">
+    <a href="{{ "prize/" | relLangURL }}">
       <i class="dot"></i>
       {{- $d := $bp.data -}}
       {{ $d.name }} {{ $d.cycle }} —

@@ -34,16 +34,14 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
       - name: Build with Hugo
+        # baseURL comes from hugo.toml (https, with the /nif-website/ subpath). We deliberately do NOT
+        # override it with steps.pages.outputs.base_url, which resolves to an http:// apex-only URL and
+        # drops the project subpath, breaking internal links.
         env:
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -26,9 +26,9 @@
         <div class="yr">{{ .prize_year }}</div>
         <div>
           <div class="au">{{ .author }}</div>
-          <h3><a href="{{ printf "/books/%s/" .slug | relLangURL }}" style="text-decoration:none">{{ .title }}</a></h3>
+          <h3><a href="{{ printf "books/%s/" .slug | relLangURL }}" style="text-decoration:none">{{ .title }}</a></h3>
           <p style="margin:0">{{ .short_description }}</p>
-          <p style="margin:14px 0 0"><a class="lnk" href="{{ printf "/books/%s/" .slug | relLangURL }}">Read about the book</a></p>
+          <p style="margin:14px 0 0"><a class="lnk" href="{{ printf "books/%s/" .slug | relLangURL }}">Read about the book</a></p>
         </div>
       </div>
       {{- end }}
@@ -44,7 +44,7 @@
         <h2>The jury</h2>
         <p>The prize is judged by the Foundation's Governing Board — {{ $jury.chair }}, who chairs the Book Prize, together with {{ delimit (after 1 $jury.members) ", " ", " }}{{ with $jury.emeritus }}, with {{ delimit . ", " }} as Emeritus Board Member{{ end }}.</p>
         <p>The jury reads towards a longlist announced in September, a shortlist in October, and a winner in November. {{ $jury.note | safeHTML }}</p>
-        <p><a class="lnk" href="{{ "/about/" | relLangURL }}">Read the Board's biographies</a></p>
+        <p><a class="lnk" href="{{ "about/" | relLangURL }}">Read the Board's biographies</a></p>
       </div>
       <div>
         <p class="eyebrow">Eligibility</p>

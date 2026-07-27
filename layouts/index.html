@@ -27,7 +27,7 @@
           {{- $sur := index (last 1 (split (index (split $w.author ",") 0) " ")) 0 -}}
           {{- $short := index (split $w.title ":") 0 -}}
           <a class="spine {{ if $cur }}cur{{ else }}{{ index $skins (mod $i 9) }}{{ end }}"
-             href="{{ printf "/books/%s/" $w.slug | relLangURL }}" title="{{ $w.title }}">
+             href="{{ printf "books/%s/" $w.slug | relLangURL }}" title="{{ $w.title }}">
             <span class="txt">{{ $sur }} · {{ $short }}</span><span class="yr">{{ $w.prize_year }}</span></a>
         {{- end -}}
       </div>
@@ -46,7 +46,7 @@
         <h2>{{ index $parts 0 }}</h2>
         <p class="lede" style="margin-bottom:22px">{{ with $sub }}{{ . }}<br>{{ end }}<strong style="font-family:var(--util);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--madder)">{{ $current.author }}</strong></p>
         <p>{{ $current.short_description }}</p>
-        <p style="margin-top:26px"><a class="btn md" href="{{ "/prize/" | relLangURL }}">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="{{ "/library/" | relLangURL }}">Browse the library</a></p>
+        <p style="margin-top:26px"><a class="btn md" href="{{ "prize/" | relLangURL }}">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="{{ "library/" | relLangURL }}">Browse the library</a></p>
       </div>
     </div>
   </div>
@@ -68,7 +68,7 @@
         <div class="amt-n">Per fellow · twelve months</div>
         <p>Awarded annually to scholars and writers working on any aspect of India after 1947. ₹1 lakh a month for twelve months, with the balance of ₹6 lakh on submission of the final manuscript — plus editorial, legal and administrative guidance from proposal to publication, and introductions to publishers and agents.</p>
         {{ partial "timeline.html" (site.Data.status.bookFellowship) }}
-        <p><a class="btn" href="{{ "/fellowships/" | relLangURL }}">Fellowships</a></p>
+        <p><a class="btn" href="{{ "fellowships/" | relLangURL }}">Fellowships</a></p>
       </div>
       <div class="prog">
         <h3>NIF Book Prize</h3>
@@ -76,7 +76,7 @@
         <div class="amt-n">Annual · single winner</div>
         <p>Awarded every year since 2018 for the best non-fiction book on modern or contemporary India published in the preceding year. Open to writers of any nationality, for work written in English or translated into English from any language.</p>
         {{ partial "timeline.html" (site.Data.status.bookPrize) }}
-        <p><a class="btn" href="{{ "/prize/" | relLangURL }}">The Book Prize</a></p>
+        <p><a class="btn" href="{{ "prize/" | relLangURL }}">The Book Prize</a></p>
       </div>
     </div>
   </div>
@@ -89,13 +89,13 @@
         <p class="eyebrow pale">Also</p>
         <h3>NIF Translation Fellowships</h3>
         <p class="small" style="color:rgba(255,255,255,.75)">₹6 lakh over six months to bring a significant non-fiction work from one of ten Indian languages into English.</p>
-        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "/fellowships/" | relLangURL }}">About the Translation Fellowships</a></p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "fellowships/" | relLangURL }}">About the Translation Fellowships</a></p>
       </div>
       <div>
         <p class="eyebrow pale">Also</p>
         <h3>Girish Karnad Memorial NIF Lecture</h3>
         <p class="small" style="color:rgba(255,255,255,.75)">A public lecture by a leading intellectual on themes around modern India, in memory of the playwright and Jnanpith laureate.</p>
-        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "/about/" | relLangURL }}">About the Lecture</a></p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "about/" | relLangURL }}">About the Lecture</a></p>
       </div>
       <div>
         <p class="eyebrow pale">Also</p>
@@ -118,7 +118,7 @@
       {{- range first 6 $winnersDesc }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
       {{- range first 6 $fellowship }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
     </div>
-    <p style="margin-top:44px"><a class="btn gh" href="{{ "/library/" | relLangURL }}">Browse all {{ len site.Data.books }} books</a></p>
+    <p style="margin-top:44px"><a class="btn gh" href="{{ "library/" | relLangURL }}">Browse all {{ len site.Data.books }} books</a></p>
   </div>
 </section>
 {{ end }}

@@ -1,7 +1,7 @@
 {{- $cur := . -}}
 <header class="site">
   <div class="bar">
-    <a class="logo" href="{{ "/" | relLangURL }}">
+    <a class="logo" href="{{ site.Home.RelPermalink }}">
       {{- /* Drop a clean NIF logo at assets/logo.svg (or logo.png) and it renders here, white on indigo.
              The prototype's only asset was an unusable near-blank GIF, so we lead with the wordmark. */ -}}
       {{- $logo := or (resources.Get "logo.svg") (resources.Get "logo.png") -}}
@@ -15,7 +15,7 @@
       {{- range site.Menus.main -}}
         {{- $active := or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) -}}
         {{- $onBook := and (eq $cur.Type "books") (eq .PageRef "/library") -}}
-        <a href="{{ .PageRef | relLangURL }}"
+        <a href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ strings.TrimPrefix "/" .PageRef | relLangURL }}{{ end }}"
            class="{{ if .Params.cta }}navcta {{ end }}{{ if or $active $onBook }}on{{ end }}"
            {{ if or $active $onBook }}aria-current="page"{{ end }}>{{ .Name }}</a>
       {{- end -}}

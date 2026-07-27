@@ -1,4 +1,6 @@
-baseURL = "https://rahulmatthan.github.io/nif-website/"
+# Live project-page URL (served under the account's Pages custom domain).
+# For NIF's own domain, change to "https://www.newindiafoundation.org/".
+baseURL = "https://exmachina.in/nif-website/"
 languageCode = "en-in"
 title = "New India Foundation"
 enableRobotsTXT = true

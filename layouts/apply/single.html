@@ -30,7 +30,7 @@
         {{ partial "timeline.html" $d }}
         <p>
           {{ if eq $st.state "open" }}<a class="btn" href="#apply-form">Start an application</a>{{ else }}<a class="btn" aria-disabled="true" href="#apply-form">{{ if eq $st.state "soon" }}Opens {{ $st.opensDate }}{{ else }}Opens {{ $st.nextOpensDate }}{{ end }}</a>{{ end }}<br>
-          <a class="lnk" style="display:inline-block;margin-top:18px" href="{{ printf "/guidelines/%s-fellowship/" $prog.anchor | relLangURL }}">Download the guidelines (PDF)</a>
+          <a class="lnk" style="display:inline-block;margin-top:18px" href="{{ printf "guidelines/%s-fellowship/" $prog.anchor | relLangURL }}">Download the guidelines (PDF)</a>
         </p>
       </div>
       {{- end }}
@@ -43,7 +43,7 @@
       <h3>Nominate a book for the NIF Book Prize</h3>
       <p style="max-width:62ch">₹15,00,000 for the best non-fiction book on modern or contemporary India published in the preceding year. Publishers and literary agents may nominate from November; authors may submit their own books from January. There is no entry fee.</p>
       <p><a class="btn md" href="mailto:{{ site.Params.contact.submissions }}?subject=NIF%20Book%20Prize%20nomination">Nominate a book</a>
-      <a class="lnk" style="margin-left:18px" href="{{ "/prize/" | relLangURL }}">Eligibility and past winners</a></p>
+      <a class="lnk" style="margin-left:18px" href="{{ "prize/" | relLangURL }}">Eligibility and past winners</a></p>
     </div>
   </div>
 </section>

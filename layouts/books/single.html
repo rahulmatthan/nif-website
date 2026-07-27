@@ -3,7 +3,7 @@
 {{- $related := first 6 (where (where site.Data.books "theme" $b.theme) "slug" "!=" $b.slug) -}}
 <section>
   <div class="wrap">
-    <p style="margin-bottom:30px"><a class="lnk" href="{{ "/library/" | relLangURL }}">← All NIF books</a></p>
+    <p style="margin-bottom:30px"><a class="lnk" href="{{ "library/" | relLangURL }}">← All NIF books</a></p>
     <div class="bookhead">
       <div>
         <div class="ct bigcov">{{ partial "cover.html" (dict "book" $b "eager" true "sizes" "300px") }}</div>

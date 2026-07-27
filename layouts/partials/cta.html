@@ -2,7 +2,7 @@
        Params: prog (programme map), openLabel, openHref, verb ("applications"|"nominations"), class */ -}}
 {{- $s := partial "appstatus.html" .prog -}}
 {{- $openLabel := .openLabel | default "Start an application" -}}
-{{- $openHref := .openHref | default ("/apply/" | relLangURL) -}}
+{{- $openHref := .openHref | default ("apply/" | relLangURL) -}}
 {{- $verb := .verb | default "applications" -}}
 {{- $class := .class | default "" -}}
 {{- if eq $s.state "open" -}}
