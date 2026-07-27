@@ -144,6 +144,15 @@ Until then the form shows a notice and points applicants at `fellowships@newindi
 Pushing to `main` triggers `.github/workflows/hugo.yml`, which builds with Hugo Extended and publishes to
 GitHub Pages. Nothing else to do.
 
+`baseURL` is pinned in `hugo.toml` (currently `https://exmachina.in/nif-website/`). The workflow does **not**
+override it — GitHub's `configure-pages` reports an `http://`, apex-only URL that drops the `/nif-website`
+subpath and breaks internal links, so we ignore it and trust `hugo.toml`.
+
+> **Why internal links must stay relative (no leading slash).** Because the site lives under a subpath,
+> templates build links with `relLangURL`/`relURL` using **relative** inputs (`"prize/"`, not `"/prize/"`).
+> A leading slash makes Hugo anchor to the host root and drop the `/nif-website/` prefix. When you move to a
+> root domain this no longer matters, but keeping links relative is correct in both cases.
+
 **To move to NIF's own domain** (e.g. `www.newindiafoundation.org`):
 1. Set `baseURL = "https://www.newindiafoundation.org/"` in `hugo.toml`.
 2. Add the domain in the repo's Pages settings (and the DNS records GitHub asks for).

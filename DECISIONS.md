@@ -46,10 +46,13 @@ is flagged as such and built with the prototype's styled empty state or a docume
   indigo canvas). The logo is never used as a universal OG fallback, per the brief.
 - **Images**: all covers and photos are downloaded from the Squarespace CDN into `assets/` (no hotlinking)
   and processed by Hugo to WebP with a `srcset` and lazy loading below the fold.
-- **baseURL**: set in `hugo.toml` for local builds; the GitHub Actions deploy overrides it with the real
-  Pages URL. The account's Pages custom domain means the live project site is served at
-  `https://exmachina.in/nif-website/`. For NIF's own domain, set `baseURL` to `https://www.newindiafoundation.org/`
-  and the legacy-URL aliases (below) will resolve at the site root.
+- **baseURL**: pinned in `hugo.toml` to `https://exmachina.in/nif-website/` (the account's Pages custom
+  domain serves the project site under that subpath). The workflow deliberately does **not** override it —
+  GitHub's `configure-pages` returns an `http://`, apex-only URL that drops the `/nif-website` subpath and
+  breaks every internal link. All internal links use **relative** inputs to `relURL`/`relLangURL` (`"prize/"`,
+  not `"/prize/"`): under a subpath, a leading slash makes Hugo anchor to the host root and drop the prefix.
+  For NIF's own domain, set `baseURL` to `https://www.newindiafoundation.org/` and the legacy-URL aliases
+  resolve at the site root.
 
 ## Design notes (built as specified; flagged here)
 
