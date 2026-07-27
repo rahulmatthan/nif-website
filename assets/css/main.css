@@ -92,7 +92,7 @@ section.tight{padding:52px 0}
 .stat s{display:block;text-decoration:none;font-family:var(--util);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:7px}
 
 .shelf-wrap{margin-top:56px;padding-bottom:0;border-top:1px solid rgba(255,255,255,.16)}
-.shelf-lbl{font-family:var(--util);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);padding:16px 0 20px}
+.shelf-lbl{font-family:var(--util);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.66);padding:16px 0 20px}
 .shelf{display:flex;align-items:flex-end;gap:5px;overflow-x:auto;padding-bottom:0;scrollbar-width:thin}
 .spine{
   flex:0 0 auto;width:46px;height:250px;border-radius:2px 2px 0 0;
@@ -103,13 +103,13 @@ section.tight{padding:52px 0}
 }
 .spine:hover,.spine:focus-visible{transform:translateY(-13px)}
 .spine .txt{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--display);font-size:12.5px;line-height:1.25;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-height:220px}
-.spine .yr{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--util);font-size:8.5px;letter-spacing:.06em;opacity:.55}
+.spine .yr{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--util);font-size:8.5px;letter-spacing:.06em;opacity:.9}
 .spine.w1{background:#DCD4C2}
 .spine.w2{background:#C9BFA8;width:52px;height:266px}
 .spine.w3{background:#8E9BB5;color:#141821}
 .spine.w4{background:#33436E;color:#F3F0E8;width:41px;height:236px}
 .spine.cur{background:var(--madder);color:#FFF6F2;width:58px;height:288px}
-.spine.cur .yr{opacity:.75}
+.spine.cur .yr{opacity:.92}
 
 /* current winner card */
 .now{background:var(--paper);border-top:6px solid var(--madder)}
