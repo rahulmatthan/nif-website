@@ -23,7 +23,7 @@
     <div class="hd"><p class="eyebrow">The NIF Book Prize</p><h2>Every winner, most recent first</h2></div>
     <div class="winners">
       <a class="win-feat" href="{{ printf "books/%s/" $featured.slug | relLangURL }}">
-        <div class="wf-cover">{{ partial "cover.html" (dict "book" $featured "eager" true "sizes" "(max-width:900px) 70vw, 300px") }}</div>
+        <div class="wf-cover">{{ partial "cover.html" (dict "book" $featured "eager" true "sizes" "(max-width:900px) 70vw, 340px") }}</div>
         <div class="wf-cap">
           <span class="badge">Winner · Book Prize {{ $featured.prize_year }}</span>
           <h3>{{ index (split $featured.title ":") 0 }}</h3>
