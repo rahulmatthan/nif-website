@@ -1,66 +1,51 @@
 {{ define "main" }}
 {{- $winnersDesc := sort (where site.Data.books "route" "prize") "prize_year" "desc" -}}
-{{- $winnersAsc := sort (where site.Data.books "route" "prize") "prize_year" "asc" -}}
-{{- $current := index $winnersDesc 0 -}}
-{{- $maxYear := $current.prize_year -}}
+{{- $featured := index $winnersDesc 0 -}}
+{{- $rest := after 1 $winnersDesc -}}
 {{- $fellowship := where site.Data.books "route" "fellowship" -}}
 {{- $st := site.Params.stats -}}
 
 <div class="hero">
   <div class="wrap">
     <p class="eyebrow pale">The New India Foundation · Bengaluru</p>
-    <h1>We pay for the books India has not yet written about itself.</h1>
-    <p class="lede">Historians stop at 1947. Social scientists rarely look back. The New India Foundation exists to fund the research and writing that falls in the gap — and to honour the best of it.</p>
+    <h1 class="mission">New India Foundation nurtures and celebrates excellence in Modern Indian writing by sponsoring high-quality original scholarship on different aspects of independent India. Its activities include the granting of NIF Book Fellowships for highly researched original work, Translation Fellowships for bringing historical Indian language works to English, the Girish Karnad Memorial Lecture, and the NIF Book Prize.</h1>
     <div class="stats">
       <div class="stat"><b>{{ $st.years }}</b><s>Years</s></div>
       <div class="stat"><b>{{ $st.rounds }}</b><s>Fellowship rounds</s></div>
       <div class="stat"><b>{{ $st.books }}</b><s>Books published</s></div>
       <div class="stat"><b>{{ $st.prizes }}</b><s>Prizes awarded</s></div>
-      <div class="stat"><b>{{ $st.prize }}</b><s>Annual book prize</s></div>
-    </div>
-    <div class="shelf-wrap">
-      <p class="shelf-lbl">Every winner of the NIF Book Prize, {{ (index $winnersAsc 0).prize_year }}–{{ $maxYear }} — select a spine</p>
-      <div class="shelf">
-        {{- $skins := slice "w1" "w3" "w2" "w4" "w1" "w3" "w2" "w4" "w1" -}}
-        {{- range $i, $w := $winnersAsc -}}
-          {{- $cur := eq $w.prize_year $maxYear -}}
-          {{- $sur := index (last 1 (split (index (split $w.author ",") 0) " ")) 0 -}}
-          {{- $short := index (split $w.title ":") 0 -}}
-          <a class="spine {{ if $cur }}cur{{ else }}{{ index $skins (mod $i 9) }}{{ end }}"
-             href="{{ printf "books/%s/" $w.slug | relLangURL }}" title="{{ $w.title }}">
-            <span class="txt">{{ $sur }} · {{ $short }}</span><span class="yr">{{ $w.prize_year }}</span></a>
-        {{- end -}}
-      </div>
     </div>
   </div>
 </div>
 
-<section class="now">
+<section class="band-k">
   <div class="wrap">
-    <div class="grid">
-      <div>{{ partial "cover.html" (dict "book" $current "eager" true "class" "cov" "sizes" "230px") }}</div>
-      <div>
-        {{- $parts := split $current.title ":" -}}
-        {{- $sub := "" -}}{{- if gt (len $parts) 1 }}{{ $sub = strings.TrimSpace (index $parts 1) }}{{ end -}}
-        <span class="badge">Winner · Book Prize {{ $current.prize_year }}</span>
-        <h2>{{ index $parts 0 }}</h2>
-        <p class="lede" style="margin-bottom:22px">{{ with $sub }}{{ . }}<br>{{ end }}<strong style="font-family:var(--util);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--madder)">{{ $current.author }}</strong></p>
-        <p>{{ $current.short_description }}</p>
-        <p style="margin-top:26px"><a class="btn md" href="{{ "prize/" | relLangURL }}">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="{{ "library/" | relLangURL }}">Browse the library</a></p>
+    <div class="hd"><p class="eyebrow">The NIF Book Prize</p><h2>Every winner, most recent first</h2></div>
+    <div class="winners">
+      <a class="win-feat" href="{{ printf "books/%s/" $featured.slug | relLangURL }}">
+        <div class="wf-cover">{{ partial "cover.html" (dict "book" $featured "eager" true "sizes" "(max-width:900px) 70vw, 300px") }}</div>
+        <div class="wf-cap">
+          <span class="badge">Winner · Book Prize {{ $featured.prize_year }}</span>
+          <h3>{{ index (split $featured.title ":") 0 }}</h3>
+          <div class="au">{{ $featured.author }}</div>
+        </div>
+      </a>
+      <div class="win-rest">
+        {{- range $rest }}
+        <a class="tile" href="{{ printf "books/%s/" .slug | relLangURL }}" title="{{ .title }} — {{ .author }} · Book Prize {{ .prize_year }}">
+          {{ partial "cover.html" (dict "book" . "sizes" "(max-width:900px) 30vw, 150px") }}
+          <span class="tile-yr">{{ .prize_year }}</span>
+        </a>
+        {{- end }}
       </div>
     </div>
+    <p style="margin-top:36px"><a class="lnk" href="{{ "prize/" | relLangURL }}">About the prize and how to nominate →</a></p>
   </div>
 </section>
 
-<hr class="rule">
-
 <section>
   <div class="wrap">
-    <div class="hd">
-      <p class="eyebrow">What we do</p>
-      <h2>Two programmes, one purpose</h2>
-      <p class="lede">One pays for books before they exist. The other honours them once they do.</p>
-    </div>
+    <div class="hd" style="margin-bottom:34px"><p class="eyebrow">What we do</p></div>
     <div class="progs">
       <div class="prog">
         <h3>NIF Book Fellowships</h3>
@@ -109,16 +94,15 @@
 
 <section>
   <div class="wrap">
-    <div class="hd">
-      <p class="eyebrow">The corpus</p>
-      <h2>Twenty-two years of books</h2>
-      <p class="lede">Thirty-seven books written under fellowship, and nine prize winners. Together, a working library of independent India.</p>
+    <div class="hd"><p class="eyebrow">The Fellowship</p><h2 style="max-width:22ch">The NIF Book Fellowship has produced remarkable works of non-fiction about modern India</h2></div>
+    <div class="tilegrid">
+      {{- range $fellowship }}
+      <a class="tile" href="{{ printf "books/%s/" .slug | relLangURL }}" title="{{ .title }} — {{ .author }}">
+        {{ partial "cover.html" (dict "book" . "sizes" "(max-width:900px) 30vw, 160px") }}
+      </a>
+      {{- end }}
     </div>
-    <div class="books">
-      {{- range first 6 $winnersDesc }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
-      {{- range first 6 $fellowship }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
-    </div>
-    <p style="margin-top:44px"><a class="btn gh" href="{{ "library/" | relLangURL }}">Browse all {{ len site.Data.books }} books</a></p>
+    <p style="margin-top:36px"><a class="btn gh" href="{{ "library/" | relLangURL }}">Browse the full library</a></p>
   </div>
 </section>
 {{ end }}

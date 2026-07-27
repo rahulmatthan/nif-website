@@ -1,14 +1,17 @@
-# NIF Book Prize jury. The Governing Board constitutes the jury; specialist readers are added where a
-# submission needs them. Per-year jury composition is not yet published (see CONTENT-NEEDED.md).
+# NIF Book Prize jury. The jury is constituted afresh each year — update `members` (chair first) for the
+# current cycle. It draws on the Foundation's board together with eminent external readers.
 current:
+  year: 2026
   chair: "Niraja Gopal Jayal"
   members:
     - "Niraja Gopal Jayal"
     - "Srinath Raghavan"
     - "Manish Sabharwal"
     - "Rahul Matthan"
-  emeritus:
-    - "Nandan Nilekani"
-  note: |-
+    - "N. Chandrasekaran"
+    - "Nirupama Rao"
+    - "Jahnavi Phalkey"
+  refreshedNote: "The jury is constituted afresh each year."
+  specialistNote: |-
     Where a submission requires specialist knowledge — a translated work, or a subject outside the
-    Board's own fields — external readers are brought in to advise.
+    jury's own fields — external readers are brought in to advise.

@@ -42,9 +42,9 @@
       <div>
         <p class="eyebrow">Process</p>
         <h2>The jury</h2>
-        <p>The prize is judged by the Foundation's Governing Board — {{ $jury.chair }}, who chairs the Book Prize, together with {{ delimit (after 1 $jury.members) ", " ", " }}{{ with $jury.emeritus }}, with {{ delimit . ", " }} as Emeritus Board Member{{ end }}.</p>
-        <p>The jury reads towards a longlist announced in September, a shortlist in October, and a winner in November. {{ $jury.note | safeHTML }}</p>
-        <p><a class="lnk" href="{{ "about/" | relLangURL }}">Read the Board's biographies</a></p>
+        <p>The jury for the {{ $jury.year }} NIF Book Prize is chaired by {{ $jury.chair }}, together with {{ delimit (after 1 $jury.members) ", " " and " }}. {{ $jury.refreshedNote }}</p>
+        <p>The jury reads towards a longlist announced in September, a shortlist in October, and a winner in November. {{ $jury.specialistNote | safeHTML }}</p>
+        <p><a class="lnk" href="{{ "about/" | relLangURL }}">Read the board's biographies</a></p>
       </div>
       <div>
         <p class="eyebrow">Eligibility</p>
@@ -72,7 +72,7 @@
     <details><summary>Are translated works considered?</summary><div class="ans">Yes. Books originally written in Indian languages and translated into English are eligible. Shekhar Pathak's <em>The Chipko Movement</em>, translated from the Hindi by Manisha Chaudhry, won in 2022.</div></details>
     <details><summary>Are self-published books or e-books eligible?</summary><div class="ans">Only professionally published books with national or international distribution are considered. Self-published works are not eligible.</div></details>
     <details><summary>What genres are eligible?</summary><div class="ans">There is no limitation within non-fiction. History, biography, political commentary, travelogue, memoir, reportage and academic monographs have all been longlisted or have won.</div></details>
-    <details><summary>Who judges the prize?</summary><div class="ans">The Governing Board of the New India Foundation, chaired for the prize by {{ $jury.chair }}, with external specialist readers brought in where a submission requires them.</div></details>
+    <details><summary>Who judges the prize?</summary><div class="ans">A jury chaired by {{ $jury.chair }}, drawn from the Foundation's board together with eminent external readers. It is constituted afresh each year, and specialist readers are brought in where a submission requires them.</div></details>
     <details><summary>Is there a fee to enter?</summary><div class="ans">No. There is no entry fee for nomination by a publisher, an agent or an author.</div></details>
   </div>
 </section>

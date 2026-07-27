@@ -38,9 +38,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
   [params.stats]
     years = "22"
     rounds = "12"
-    books = "37"
+    books = "40"     # fellowship books produced (catalogue currently holds 37; see CONTENT-NEEDED.md)
     prizes = "9"
-    prize = "₹15L"
 
   [params.contact]
     general = "info@newindiafoundation.org"
