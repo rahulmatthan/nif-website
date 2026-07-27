@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "tawaifnama",
+    "publisher": "Context (Westland)",
+    "year": 2019,
+    "isbn": "9789388689816",
+    "reviews": [
+      {
+        "publication": "Asian Review of Books",
+        "reviewer": "David Chaffetz",
+        "date": "2020-02-09",
+        "quote": "The result is a tour de force of cultural history, sociology and biography.",
+        "url": "https://asianreviewofbooks.com/tawaifnama-by-saba-dewan/"
+      },
+      {
+        "publication": "Himal Southasian",
+        "reviewer": "Kunal Purohit",
+        "date": "2020-02-11",
+        "quote": "Well-researched and intricately written, Tawaifnama presents a nuance account of the tawaif community's history",
+        "url": "https://www.himalmag.com/reviews/chronicling-courtesans-tawaifnama-saba-dewan-2020"
+      }
+    ],
+    "awards": [],
+    "notes": "First published 2019 by Context (imprint of Westland). Multiple editions/ISBNs exist (2019 hardcover 9789388689816; 2023 paperback 9789395073592). Amazon.in link is the Kindle edition (ASIN B07RKSSXNT, no ISBN). Both quotes verified by fetching the pages. The Himal quote contains 'nuance account' as it appeared verbatim in the fetched text (likely an original typo for 'nuanced')."
+  },
+  {
+    "slug": "growing-up-muslim-in-india",
+    "publisher": "Context (Westland)",
+    "year": 2018,
+    "isbn": "9789386850515",
+    "reviews": [
+      {
+        "publication": "The Tribune",
+        "reviewer": "Aradhika Sharma",
+        "date": "2018-04-01",
+        "quote": "In such a scenario, Farooquee's is certainly a clear and unafraid voice.",
+        "url": "https://www.tribuneindia.com/news/archive/books-reviews/living-under-suspicion-566225/"
+      },
+      {
+        "publication": "Cafe Dissensus",
+        "reviewer": "Fahad Hashmi",
+        "date": "2018-03-09",
+        "quote": "The memoir questions and challenges the maligned and constructed image of Muslim youth.",
+        "url": "https://cafedissensusblog.com/2018/03/09/book-review-neyaz-farooquees-an-ordinary-mans-guide-to-radicalism-growing-up-muslim-in-india/"
+      }
+    ],
+    "awards": [],
+    "notes": "Published 2018 by Context (imprint of Westland), ISBN 9789386850515 (hardcover). The book centres on the 2008 Batla House encounter. Both quotes verified by fetching the pages. Scroll.in and Deccan Herald reviews returned HTTP 403 to the fetch tool, so no quotes were taken from them; quotes appearing only in search snippets were excluded."
+  },
+  {
+    "slug": "mannequin",
+    "publisher": "Zubaan",
+    "year": 2018,
+    "isbn": "9789385932229",
+    "reviews": [
+      {
+        "publication": "Feminism in India",
+        "reviewer": "Ayushmita Samal",
+        "date": "2018-07-31",
+        "quote": "Mannequin beautifully expresses how women are shamed on the basis of their choice of livelihood",
+        "url": "https://feminisminindia.com/2018/07/31/mannequin-feminist-review-manjima-bhattacharjya/"
+      }
+    ],
+    "awards": [],
+    "notes": "Metadata verified via Zubaan publisher page (2018, 216pp, ISBN 9789385932229; Amazon ISBN-10 9385932225). Only one usable fetched review, from Feminism in India. No review in a major outlet (Hindu/Scroll/Mint/Express/Open/Wire) found. ThePrint item is a book excerpt, not a review; indianwomenblog returned HTTP 403."
+  },
+  {
+    "slug": "delhis-meatscapes",
+    "publisher": "Oxford University Press",
+    "year": 2018,
+    "isbn": "9780199477807",
+    "reviews": [
+      {
+        "publication": "Scroll.in",
+        "reviewer": "Jai Arjun Singh",
+        "date": "2018-08",
+        "quote": "This academic book provides a broad-based view of the Delhi Qureshis, their history, and what has changed for them over time",
+        "url": "https://jaiarjun.blogspot.com/2018/08/on-delhis-meatscapes-book-about-qureshi.html"
+      }
+    ],
+    "awards": [],
+    "notes": "Metadata: OUP, 2018, ISBN 9780199477807 (Amazon ISBN-10 0199477809). Scroll.in blocked WebFetch (HTTP 403), so the Jai Arjun Singh review quote was verified verbatim on his own blog (Jabberwock), which states it was originally published in Scroll; the URL points to that fetched blog copy. Academic reviews exist (Contributions to Indian Sociology; Tandfonline) but sit behind paywalls with no fetchable quote."
+  },
+  {
+    "slug": "rethinking-revolutions",
+    "publisher": "Oxford University Press",
+    "year": 2016,
+    "isbn": "9780199465330",
+    "reviews": [],
+    "awards": [],
+    "notes": "Metadata confirmed via OUP Global, Amazon and academic listings (OUP New Delhi, 2016, ISBN 978-0-199-46533-0). The book was reviewed in academic journals (EPW, Benjamin Siegel, 9 Sep 2017; Journal of Agrarian Change, 2019; Agriculture and Human Values, 2018) but all are paywalled and no verbatim evaluative text could be fetched, so no quote is included. No open mainstream press review found. An unverified snippet suggested an Adiseshiah-related award for the author, but it could not be confirmed as a prize for this book, so awards left empty."
+  },
+  {
+    "slug": "the-web-of-freedom",
+    "publisher": "Oxford University Press",
+    "year": 2016,
+    "isbn": "9780199460816",
+    "reviews": [
+      {
+        "publication": "Economic & Political Weekly",
+        "reviewer": "Amit Basole",
+        "date": "2017-06-10",
+        "quote": "Meticulously researched and well-written, a striking feature of the book is the inspirational quality of the writing.",
+        "url": "https://amitbasole.wordpress.com/wp-content/uploads/2017/01/basole_kumarappa_review.pdf"
+      }
+    ],
+    "awards": [],
+    "notes": "Metadata confirmed via OUP and Amazon (OUP New Delhi, 2016, pp 388, ISBN 9780199460816). EPW review by Amit Basole (10 June 2017, Vol 52 No 23) obtained as a full free PDF and quote verified verbatim by extracting the PDF text. A second review exists in International Journal of Asian Christianity (2018, by C.T. Kurien) but the Brill page returned HTTP 403, so no quote taken."
+  },
+  {
+    "slug": "growing-the-tree-of-science",
+    "publisher": "Oxford University Press",
+    "year": 2016,
+    "isbn": "9780199466900",
+    "reviews": [
+      {
+        "publication": "Bhavana (The Mathematics Magazine)",
+        "reviewer": "N. Mohan Kumar",
+        "date": "2018-04",
+        "quote": "This is a deeply researched, and a carefully written book.",
+        "url": "https://bhavana.org.in/growing-the-tree-of-science-indira-chowdhury-review/"
+      }
+    ],
+    "awards": [],
+    "notes": "Metadata confirmed via OUP Global and Amazon (hardcover ISBN 0199466904 / 9780199466900). Verified review: Bhavana by N. Mohan Kumar (Apr 2018), quote fetched verbatim. A second review exists in Pacific Affairs vol. 90 no. 3 (2017) by Dinshaw Mistry, but no clean sub-25-word evaluative sentence could be verbatim-verified, so it was omitted."
+  },
+  {
+    "slug": "ahmedabad",
+    "publisher": "Bloomsbury India",
+    "year": 2015,
+    "isbn": "9789384898014",
+    "reviews": [
+      {
+        "publication": "The Independent",
+        "reviewer": "Mihir Bose",
+        "date": "2015-07-30",
+        "quote": "Shah's book is much more than the story of a city made by Indians and told by an Indian.",
+        "url": "https://www.goodreads.com/author_blog_posts/8822077-ahmedabad-a-city-in-the-world-by-amrita-shah-book-review-riveting-acc"
+      }
+    ],
+    "awards": [
+      "Shortlisted, Raymond-Crossword Book Award, 2016",
+      "Winner, Tejeshwar Singh Memorial Award for Excellence in Writing on the Urban (SAGE), 2017"
+    ],
+    "notes": "Metadata confirmed via Amazon and Biblio (Bloomsbury India, 2015, ISBN 9384898015 / 9789384898014). Independent review by Mihir Bose (30 Jul 2015) quoted verbatim from a Goodreads-republished copy of that review (the original independent.co.uk page could not be located); publication attributed to The Independent but the URL points to the fetched Goodreads copy where the text was verified. Awards verified via the author's Wikipedia page."
+  }
+]

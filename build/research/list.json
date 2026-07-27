@@ -1,0 +1,370 @@
+[
+ {
+  "slug": "engineering-a-nation",
+  "title": "Engineering a Nation: The Life and Career of M. Visvesvaraya",
+  "author": "Aparajith Ramnath",
+  "route": "prize",
+  "py": "2025",
+  "amazon": ""
+ },
+ {
+  "slug": "a-part-apart",
+  "title": "A Part Apart: The Life and Thought of B.R. Ambedkar",
+  "author": "Ashok Gopal",
+  "route": "prize",
+  "py": "2024",
+  "amazon": "https://www.amazon.in/Part-Apart-Life-Thought-Ambedkar/dp/8195838510"
+ },
+ {
+  "slug": "writer-rebel-soldier-lover",
+  "title": "Writer, Rebel, Soldier, Lover: The Many Lives of Agyeya",
+  "author": "Akshaya Mukul",
+  "route": "prize",
+  "py": "2023",
+  "amazon": ""
+ },
+ {
+  "slug": "the-chipko-movement",
+  "title": "The Chipko Movement: A People’s History",
+  "author": "Shekhar Pathak, translated from the Hindi by Manisha Chaudhry",
+  "route": "prize",
+  "py": "2022",
+  "amazon": ""
+ },
+ {
+  "slug": "naoroji",
+  "title": "Naoroji: Pioneer of Indian Nationalism",
+  "author": "Dinyar Patel",
+  "route": "prize",
+  "py": "2021",
+  "amazon": ""
+ },
+ {
+  "slug": "mobilizing-the-marginalized",
+  "title": "Mobilizing the Marginalized: Ethnic Parties Without Ethnic Movements",
+  "author": "Amit Ahuja",
+  "route": "prize",
+  "py": "2020",
+  "amazon": ""
+ },
+ {
+  "slug": "a-chequered-brilliance",
+  "title": "A Chequered Brilliance: The Many Lives of V.K. Krishna Menon",
+  "author": "Jairam Ramesh",
+  "route": "prize",
+  "py": "2020",
+  "amazon": ""
+ },
+ {
+  "slug": "how-india-became-democratic",
+  "title": "How India Became Democratic: Citizenship and the Making of the Universal Franchise",
+  "author": "Ornit Shani",
+  "route": "prize",
+  "py": "2019",
+  "amazon": ""
+ },
+ {
+  "slug": "when-crime-pays",
+  "title": "When Crime Pays: Money and Muscle in Indian Politics",
+  "author": "Milan Vaishnav",
+  "route": "prize",
+  "py": "2018",
+  "amazon": ""
+ },
+ {
+  "slug": "the-dawn-of-life",
+  "title": "The Dawn of Life: MK Gandhi in South Africa",
+  "author": "Prabhudas Gandhi, translated by Hemang Ashwinkumar",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Dawn-Life-Gandhi-South-Africa/dp/0143475878"
+ },
+ {
+  "slug": "believers-dilemma",
+  "title": "Believer’s Dilemma: Vajpayee and the Hindu Right’s Path to Power, 1977–2018",
+  "author": "Abhishek Choudhary",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": ""
+ },
+ {
+  "slug": "rama-bhima-soma",
+  "title": "Rama Bhima Soma: Cultural Investigations into Modern Karnataka",
+  "author": "Srikar Raghavan",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/dp/936045687X"
+ },
+ {
+  "slug": "the-many-lives-of-syeda-x",
+  "title": "The Many Lives of Syeda X: The Story of an Unknown Indian",
+  "author": "Neha Dixit",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Many-Lives-Syeda-Story-Indian/dp/9353453542"
+ },
+ {
+  "slug": "the-day-i-became-a-runner",
+  "title": "The Day I Became a Runner: A Women’s History of India through the Lens of Sport",
+  "author": "Sohini Chattopadhyay",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Day-Became-Runner-History-through/dp/9356994625"
+ },
+ {
+  "slug": "the-quest-for-modern-assam",
+  "title": "The Quest for Modern Assam: A History 1942–2000",
+  "author": "Arupjyoti Saikia",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Quest-Modern-Assam-Arupjyoti-Saikia/dp/0670095702"
+ },
+ {
+  "slug": "vajpayee",
+  "title": "Vajpayee: The Ascent of the Hindu Right, 1924–1977",
+  "author": "Abhishek Choudhary",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/VAJPAYEE-Ascent-Hindu-Right-1924-1977/dp/9395624493"
+ },
+ {
+  "slug": "caste-pride",
+  "title": "Caste Pride: Battles for Equality in Hindu India",
+  "author": "Manoj Mitta",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Caste-Pride-Battles-Equality-Hindu/dp/9357762949"
+ },
+ {
+  "slug": "tagores-university",
+  "title": "Tagore’s University: A History of Visva-Bharati 1921–1961",
+  "author": "Swati Ganguly",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://orientblackswan.com/details?id=9788178246406"
+ },
+ {
+  "slug": "chromosome-woman-nomad-scientist",
+  "title": "Chromosome Woman, Nomad Scientist: E.K. Janaki Ammal, A Life 1897–1984",
+  "author": "Savithri Preetha Nair",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Savithri-Preetha-Nair/e/B00C7BJ48Y"
+ },
+ {
+  "slug": "not-just-cricket",
+  "title": "Not Just Cricket: A Reporter’s Journey through Modern India",
+  "author": "Pradeep Magazine",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Not-Just-Cricket-Reporters-Journey/dp/9354892116"
+ },
+ {
+  "slug": "the-life-and-times-of-george-fernandes",
+  "title": "The Life and Times of George Fernandes",
+  "author": "Rahul Ramagundham",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/0670092886"
+ },
+ {
+  "slug": "bibis-room",
+  "title": "Bibi’s Room: Hyderabadi Women and Twentieth-Century Urdu Prose",
+  "author": "Nazia Akhtar",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Bibis-Room-Hyderabadi-Women-Twentieth-Century/dp/9354420648"
+ },
+ {
+  "slug": "citizenship-in-a-caste-polity",
+  "title": "Citizenship in a Caste Polity: Religion, Language and Belonging in Goa",
+  "author": "Jason Keith Fernandes",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Citizenship-Caste-Polity-Religion-Belonging/dp/9352879945"
+ },
+ {
+  "slug": "the-transformative-constitution",
+  "title": "The Transformative Constitution: A Radical Biography in Nine Acts",
+  "author": "Gautam Bhatia",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/dp/9353026849"
+ },
+ {
+  "slug": "tawaifnama",
+  "title": "Tawaifnama",
+  "author": "Saba Dewan",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Tawaifnama-Saba-Dewan-ebook/dp/B07RKSSXNT"
+ },
+ {
+  "slug": "growing-up-muslim-in-india",
+  "title": "Growing Up Muslim in India: An Ordinary Man’s Guide to Radicalism",
+  "author": "Neyaz Farooquee",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Ordinary-Mans-Guide-Radicalism-Growing/dp/9386850516"
+ },
+ {
+  "slug": "mannequin",
+  "title": "Mannequin: Working Women in India’s Glamour Industry",
+  "author": "Manjima Bhattacharjya",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Mannequin-Working-Indias-Glamour-Industry/dp/9385932225"
+ },
+ {
+  "slug": "delhis-meatscapes",
+  "title": "Delhi’s Meatscapes: Muslim Butchers in a Transforming Mega-City",
+  "author": "Zarin Ahmad",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/0199477809"
+ },
+ {
+  "slug": "rethinking-revolutions",
+  "title": "Rethinking Revolutions: Soyabean, Choupals and the Changing Countryside in Central India",
+  "author": "Richa Kumar",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Rethinking-Revolutions-Soyabean-Choupals-Countryside/dp/0199465339"
+ },
+ {
+  "slug": "the-web-of-freedom",
+  "title": "The Web of Freedom: J.C. Kumarappa and Gandhi’s Struggle for Economic Justice",
+  "author": "Venu Madhav Govindu &amp; Deepak Malghan",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/0199460817"
+ },
+ {
+  "slug": "growing-the-tree-of-science",
+  "title": "Growing the Tree of Science: Homi Bhabha and the Tata Institute of Fundamental Research",
+  "author": "Indira Chowdhury",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/0199466904"
+ },
+ {
+  "slug": "ahmedabad",
+  "title": "Ahmedabad: A City in the World",
+  "author": "Amrita Shah",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Ahmedabad-City-World-Amrita-Shah/dp/9384898015"
+ },
+ {
+  "slug": "from-soup-to-superstar",
+  "title": "From Soup to Superstar: The Story of Sea Turtle Conservation Along the Indian Coast",
+  "author": "Kartik Shanker",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/9351772322"
+ },
+ {
+  "slug": "gita-press-and-the-making-of-hindu-india",
+  "title": "Gita Press and the Making of Hindu India",
+  "author": "Akshaya Mukul",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/9351772306"
+ },
+ {
+  "slug": "indias-new-capitalists",
+  "title": "India’s New Capitalists: Caste, Business and Industry in a Modern Nation",
+  "author": "Harish Damodaran",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/0230205070"
+ },
+ {
+  "slug": "christianity-and-politics-in-tribal-india",
+  "title": "Christianity and Politics in Tribal India: Baptist Missionaries and Naga Nationalism",
+  "author": "G. Kanato Chophy",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Christianity-Politics-Tribal-India-Missionaries/dp/1438485816"
+ },
+ {
+  "slug": "competing-nationalisms",
+  "title": "Competing Nationalisms: The Sacred and Political Life of Jagat Narain Lal",
+  "author": "Rajshree Chandra",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Competing-Nationalisms-Sacred-Political-Narain/dp/0670095494"
+ },
+ {
+  "slug": "our-moon-has-blood-clots",
+  "title": "Our Moon Has Blood Clots: The Exodus of the Kashmiri Pandits",
+  "author": "Rahul Pandita",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Our-Moon-Has-Blood-Clots/dp/818400513X"
+ },
+ {
+  "slug": "politics-as-performance",
+  "title": "Politics as Performance: A Social History of the Telugu Cinema",
+  "author": "S.V. Srinivas",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/8178243725"
+ },
+ {
+  "slug": "debating-patriarchy",
+  "title": "Debating Patriarchy: The Hindu Code Bill Controversy in India, 1941–1956",
+  "author": "Chitra Sinha",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Debating-Patriarchy-Hindu-Controversy-1941-1956/dp/0198078943"
+ },
+ {
+  "slug": "a-rogue-and-peasant-slave",
+  "title": "A Rogue and Peasant Slave: Adivasi Resistance 1800–2000",
+  "author": "Shashank Kela",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Rogue-Peasant-Slave-Resistance-1800-2000/dp/818905936X"
+ },
+ {
+  "slug": "in-freedoms-shade",
+  "title": "In Freedom’s Shade",
+  "author": "Anis Kidwai, translated by Ayesha Kidwai",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/014341609X"
+ },
+ {
+  "slug": "conservation-at-the-crossroads",
+  "title": "Conservation at the Crossroads: Science, Society and the Future of India’s Wildlife",
+  "author": "Ghazala Shahabuddin",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/8178242648"
+ },
+ {
+  "slug": "stateless-in-south-asia",
+  "title": "Stateless in South Asia: The Chakmas between Bangladesh and India",
+  "author": "Deepak Singh",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Stateless-South-Asia-Chakmas-Bangladesh/dp/8132102363"
+ },
+ {
+  "slug": "gandhis-conscience-keeper",
+  "title": "Gandhi’s Conscience Keeper: C. Rajagopalachari and Indian Politics",
+  "author": "Vasanthi Srinivasan",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/Gandhis-Conscience-Keeper-Rajagopalachari-Politics/dp/B0072GH2AG"
+ },
+ {
+  "slug": "the-long-revolution",
+  "title": "The Long Revolution: The Birth and Growth of India’s IT Industry",
+  "author": "Dinesh C. Sharma",
+  "route": "fellowship",
+  "py": "null",
+  "amazon": "https://www.amazon.in/gp/product/8172237685"
+ }
+]

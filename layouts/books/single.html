@@ -7,11 +7,11 @@
     <div class="bookhead">
       <div>
         <div class="ct bigcov">{{ partial "cover.html" (dict "book" $b "eager" true "sizes" "300px") }}</div>
-        {{- if $b.buyAmazon }}<p style="margin-top:20px"><a class="btn" href="{{ $b.buyAmazon }}" target="_blank" rel="noopener">Buy on Amazon</a></p>{{ end -}}
-        {{- if $b.buyPublisher }}<p style="margin-top:{{ if $b.buyAmazon }}12{{ else }}20{{ end }}px"><a class="lnk" href="{{ $b.buyPublisher }}" target="_blank" rel="noopener">Publisher's page</a></p>{{ end -}}
+        {{- if $b.buy_amazon }}<p style="margin-top:20px"><a class="btn" href="{{ $b.buy_amazon }}" target="_blank" rel="noopener">Buy on Amazon</a></p>{{ end -}}
+        {{- if $b.buy_publisher }}<p style="margin-top:{{ if $b.buy_amazon }}12{{ else }}20{{ end }}px"><a class="lnk" href="{{ $b.buy_publisher }}" target="_blank" rel="noopener">Publisher's page</a></p>{{ end -}}
       </div>
       <div>
-        <span class="tag {{ if eq $b.route "prize" }}p{{ else }}f{{ end }}">{{ if eq $b.route "prize" }}NIF Book Prize {{ $b.prizeYear }}{{ if $b.joint }} · Joint winner{{ end }}{{ else }}Written under an NIF Book Fellowship{{ if $b.round }} · Round {{ $b.round }}{{ end }}{{ end }}</span>
+        <span class="tag {{ if eq $b.route "prize" }}p{{ else }}f{{ end }}">{{ if eq $b.route "prize" }}NIF Book Prize {{ $b.prize_year }}{{ if $b.joint }} · Joint winner{{ end }}{{ else }}Written under an NIF Book Fellowship{{ if $b.round }} · Round {{ $b.round }}{{ end }}{{ end }}</span>
         <h1 style="font-size:clamp(1.9rem,3.8vw,3rem);margin-top:10px">{{ $b.title }}</h1>
         <p class="byline">{{ $b.author }}</p>
 

@@ -50,7 +50,7 @@ p{margin:0 0 1.15em}
 header.site{position:sticky;top:0;z-index:60;background:var(--indigo);color:#fff}
 .bar{display:flex;align-items:center;gap:34px;padding:14px 32px;max-width:var(--wrap);margin:0 auto}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
-.logo img{height:40px;width:auto;filter:brightness(0) invert(1)}
+.logo img{height:40px;width:auto}
 .logo .lk{font-family:var(--display);font-size:1.02rem;line-height:1.1;letter-spacing:-.01em}
 .logo .lk span{display:block;font-family:var(--util);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:3px}
 nav.main{margin-left:auto;display:flex;gap:4px;align-items:center}

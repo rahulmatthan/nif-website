@@ -10,7 +10,7 @@
 {{- else -}}
   {{- $title := cond .IsHome "New India Foundation" .Title -}}
   {{- $kicker := "New India Foundation" -}}
-  {{- if $book }}{{ $kicker = cond (eq $book.route "prize") (printf "NIF Book Prize %v" $book.prizeYear) "NIF Book Fellowship" }}{{ end -}}
+  {{- if $book }}{{ $kicker = cond (eq $book.route "prize") (printf "NIF Book Prize %v" $book.prize_year) "NIF Book Fellowship" }}{{ end -}}
   {{- $card := partial "og-card.html" (dict "title" $title "kicker" $kicker) -}}
   {{- $result = dict "url" $card.Permalink "width" 1200 "height" 630 "alt" $title -}}
 {{- end -}}

@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{- $bp := site.Data.status.bookPrize -}}
-{{- $winners := sort (where site.Data.books "route" "prize") "prizeYear" "desc" -}}
+{{- $winners := sort (where site.Data.books "route" "prize") "prize_year" "desc" -}}
 {{- $jury := site.Data.juries.current -}}
 <section class="band">
   <div class="wrap">
@@ -23,11 +23,11 @@
     <div>
       {{- range $winners }}
       <div class="win">
-        <div class="yr">{{ .prizeYear }}</div>
+        <div class="yr">{{ .prize_year }}</div>
         <div>
           <div class="au">{{ .author }}</div>
           <h3><a href="{{ printf "/books/%s/" .slug | relLangURL }}" style="text-decoration:none">{{ .title }}</a></h3>
-          <p style="margin:0">{{ .shortDescription }}</p>
+          <p style="margin:0">{{ .short_description }}</p>
           <p style="margin:14px 0 0"><a class="lnk" href="{{ printf "/books/%s/" .slug | relLangURL }}">Read about the book</a></p>
         </div>
       </div>

@@ -1,0 +1,80 @@
+[
+ {
+  "slug": "a-rogue-and-peasant-slave",
+  "publisher": "Navayana",
+  "year": 2012,
+  "isbn": "9788189059361",
+  "reviews": [
+   {
+    "publication": "Seminar",
+    "reviewer": "Uday Chandra",
+    "date": "",
+    "quote": "Into this snake pit steps Shashank Kela with a monograph that seeks to bridge the discursive gap between activists and academics.",
+    "url": "https://udaychandra.com/wp-content/uploads/2023/01/Shashank-Kela-A-Rogue-and-a-Peasant-Slave.pdf"
+   }
+  ],
+  "awards": [],
+  "notes": "Publisher/year/ISBN confirmed via WorldCat, AbeBooks and Journal of Agrarian Change citation (Navayana, New Delhi, 2012). Review is by Uday Chandra; the PDF carries the Seminar magazine 'Books' masthead/logo, hosted on the author's own site (udaychandra.com) — publication attributed to Seminar with reasonable confidence but issue/date not stated on the page, so date left empty. It is a critical/mixed review; the quoted line is descriptive and verbatim. Other reviews exist but were not fetchable: Himal Southasian ('Deride and Conquer', Vol.26 No.3, 2013) and Journal of Agrarian Change (Donegan, 2014) — both behind paywalls/academia.edu logins."
+ },
+ {
+  "slug": "in-freedoms-shade",
+  "publisher": "Penguin Books India",
+  "year": 2011,
+  "isbn": "9780143416098",
+  "reviews": [],
+  "awards": [],
+  "notes": "Anis Kidwai's Urdu memoir 'Azadi ki Chhaon Mein', translated by Ayesha Kidwai under a New India Foundation fellowship. The amazon link (014341609X) is the Penguin Books India 2011 edition; a Zubaan hardback (9788184751529) also exists for 2011. No press review could be fetched with a verbatim quote: candidate pages (Biblio July-Aug 2011 PDF on hcommons.org, and the aniskidwai.hcommons.org endorsements page) returned HTTP 403. Endorsements by figures such as Urvashi Butalia circulate but only as promotional blurbs, not fetched reviews, so none included. Empty rather than uncertain."
+ },
+ {
+  "slug": "conservation-at-the-crossroads",
+  "publisher": "Permanent Black",
+  "year": 2010,
+  "isbn": "9788178242644",
+  "reviews": [
+   {
+    "publication": "Down To Earth",
+    "reviewer": "Chaitanya Krishna",
+    "date": "",
+    "quote": "Well researched, succinct and peppered with personal observations",
+    "url": "https://www.downtoearth.org.in/environment/middle-path-of-conservation-1675"
+   }
+  ],
+  "awards": [],
+  "notes": "Publisher Permanent Black, 2010; ISBN-10 8178242648 = ISBN-13 9788178242644 (amazon link). Down To Earth review 'Middle path of conservation' by Chaitanya Krishna (Centre for Ecological Sciences, IISc); the fetched page shows day-and-month '29 November' but no year, so date left empty rather than guessed. Quote is an exact verbatim substring of the fetched review."
+ },
+ {
+  "slug": "stateless-in-south-asia",
+  "publisher": "SAGE Publications India",
+  "year": 2010,
+  "isbn": "9788132102366",
+  "reviews": [],
+  "awards": [],
+  "notes": "SAGE Studies on India's North East; publisher SAGE Publications India, 2010. ISBN-10 8132102363 = ISBN-13 9788132102366 (amazon link); a 2020 reprint exists (9789353881443). Reviews located only in academic venues (e.g. a journal review indexed on ResearchGate/Gale Academic OneFile) that were paywalled or not fetchable, so no verifiable verbatim quote could be extracted. Empty rather than uncertain."
+ },
+ {
+  "slug": "gandhis-conscience-keeper",
+  "publisher": "Permanent Black",
+  "year": 2009,
+  "isbn": "9788178242460",
+  "reviews": [],
+  "awards": [],
+  "notes": "Publisher Permanent Black (Ranikhet), 2009, 278 pp; ISBN 9788178242460. A scholarly review by Antony Copley (University of Kent) appeared in The Indian Economic & Social History Review, Vol.47(3), July 2010, pp.414-416, but the page states 'No abstract is available' and the full text is paywalled, so no verbatim quote could be extracted. Empty rather than uncertain."
+ },
+ {
+  "slug": "the-long-revolution",
+  "publisher": "HarperCollins Publishers India",
+  "year": 2009,
+  "isbn": "9788172237684",
+  "reviews": [
+   {
+    "publication": "The Tribune",
+    "reviewer": "D. S. Cheema",
+    "date": "2010-07-04",
+    "quote": "Sharma's style of telling the Indian IT story is both elegant and lucid which makes the book highly readable.",
+    "url": "http://www.tribuneindia.com/2010/20100704/spectrum/book3.htm"
+   }
+  ],
+  "awards": [],
+  "notes": "Written on a New India Foundation fellowship; publisher HarperCollins India, 2009. ISBN-10 8172237685 = ISBN-13 9788172237684 (amazon link). The Tribune (Sunday Tribune, Spectrum/Books) review by D. S. Cheema was fetched successfully; date from the article URL (2010-07-04). Quote is an exact verbatim substring. Other reviews exist — Frontline (Anand Parthasarathy, Sep 26-Oct 9 2009), SPAN (Laurinda Keys Long), Technology Review (Narayanan Suresh) — but their original pages are dead (frontlineonnet.com no longer resolves) or on the blocked thehindu.com domain, so only the verifiable Tribune review is included."
+ }
+]

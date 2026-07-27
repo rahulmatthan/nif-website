@@ -1,8 +1,8 @@
 {{ define "main" }}
-{{- $winnersDesc := sort (where site.Data.books "route" "prize") "prizeYear" "desc" -}}
-{{- $winnersAsc := sort (where site.Data.books "route" "prize") "prizeYear" "asc" -}}
+{{- $winnersDesc := sort (where site.Data.books "route" "prize") "prize_year" "desc" -}}
+{{- $winnersAsc := sort (where site.Data.books "route" "prize") "prize_year" "asc" -}}
 {{- $current := index $winnersDesc 0 -}}
-{{- $maxYear := $current.prizeYear -}}
+{{- $maxYear := $current.prize_year -}}
 {{- $fellowship := where site.Data.books "route" "fellowship" -}}
 {{- $st := site.Params.stats -}}
 
@@ -19,16 +19,16 @@
       <div class="stat"><b>{{ $st.prize }}</b><s>Annual book prize</s></div>
     </div>
     <div class="shelf-wrap">
-      <p class="shelf-lbl">Every winner of the NIF Book Prize, {{ (index $winnersAsc 0).prizeYear }}–{{ $maxYear }} — select a spine</p>
+      <p class="shelf-lbl">Every winner of the NIF Book Prize, {{ (index $winnersAsc 0).prize_year }}–{{ $maxYear }} — select a spine</p>
       <div class="shelf">
         {{- $skins := slice "w1" "w3" "w2" "w4" "w1" "w3" "w2" "w4" "w1" -}}
         {{- range $i, $w := $winnersAsc -}}
-          {{- $cur := eq $w.prizeYear $maxYear -}}
+          {{- $cur := eq $w.prize_year $maxYear -}}
           {{- $sur := index (last 1 (split (index (split $w.author ",") 0) " ")) 0 -}}
           {{- $short := index (split $w.title ":") 0 -}}
           <a class="spine {{ if $cur }}cur{{ else }}{{ index $skins (mod $i 9) }}{{ end }}"
              href="{{ printf "/books/%s/" $w.slug | relLangURL }}" title="{{ $w.title }}">
-            <span class="txt">{{ $sur }} · {{ $short }}</span><span class="yr">{{ $w.prizeYear }}</span></a>
+            <span class="txt">{{ $sur }} · {{ $short }}</span><span class="yr">{{ $w.prize_year }}</span></a>
         {{- end -}}
       </div>
     </div>
@@ -42,10 +42,10 @@
       <div>
         {{- $parts := split $current.title ":" -}}
         {{- $sub := "" -}}{{- if gt (len $parts) 1 }}{{ $sub = strings.TrimSpace (index $parts 1) }}{{ end -}}
-        <span class="badge">Winner · Book Prize {{ $current.prizeYear }}</span>
+        <span class="badge">Winner · Book Prize {{ $current.prize_year }}</span>
         <h2>{{ index $parts 0 }}</h2>
         <p class="lede" style="margin-bottom:22px">{{ with $sub }}{{ . }}<br>{{ end }}<strong style="font-family:var(--util);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--madder)">{{ $current.author }}</strong></p>
-        <p>{{ $current.shortDescription }}</p>
+        <p>{{ $current.short_description }}</p>
         <p style="margin-top:26px"><a class="btn md" href="{{ "/prize/" | relLangURL }}">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="{{ "/library/" | relLangURL }}">Browse the library</a></p>
       </div>
     </div>

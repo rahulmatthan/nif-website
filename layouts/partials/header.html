@@ -2,10 +2,11 @@
 <header class="site">
   <div class="bar">
     <a class="logo" href="{{ "/" | relLangURL }}">
-      {{- $logo := resources.Get "logo.png" -}}
-      {{- if $logo -}}
-        {{- $l := $logo.Process "resize 120x png" -}}
-        <img src="{{ $l.RelPermalink }}" alt="New India Foundation" width="{{ $l.Width }}" height="{{ $l.Height }}">
+      {{- /* Drop a clean NIF logo at assets/logo.svg (or logo.png) and it renders here, white on indigo.
+             The prototype's only asset was an unusable near-blank GIF, so we lead with the wordmark. */ -}}
+      {{- $logo := or (resources.Get "logo.svg") (resources.Get "logo.png") -}}
+      {{- with $logo -}}
+        <img src="{{ .RelPermalink }}" alt="New India Foundation" height="40">
       {{- end -}}
       <span class="lk">New India Foundation<span>Bengaluru · since 2004</span></span>
     </a>

@@ -3,7 +3,7 @@
 <a class="bk" href="{{ printf "/books/%s/" $b.slug | relLangURL }}"
    data-route="{{ $b.route }}" data-theme="{{ $b.theme }}" data-trans="{{ $b.translation }}">
   <div class="ct">{{ partial "cover.html" (dict "book" $b) }}</div>
-  <span class="tag {{ if eq $b.route "prize" }}p{{ else }}f{{ end }}">{{ if eq $b.route "prize" }}Prize {{ $b.prizeYear }}{{ else }}Fellowship{{ end }}</span>
+  <span class="tag {{ if eq $b.route "prize" }}p{{ else }}f{{ end }}">{{ if eq $b.route "prize" }}Prize {{ $b.prize_year }}{{ else }}Fellowship{{ end }}</span>
   <h4>{{ $b.title }}</h4>
   <div class="au">{{ $b.author }}</div>
 </a>
