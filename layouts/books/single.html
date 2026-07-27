@@ -1,0 +1,69 @@
+{{ define "main" }}
+{{- $b := .Params.book -}}
+{{- $related := first 6 (where (where site.Data.books "theme" $b.theme) "slug" "!=" $b.slug) -}}
+<section>
+  <div class="wrap">
+    <p style="margin-bottom:30px"><a class="lnk" href="{{ "/library/" | relLangURL }}">← All NIF books</a></p>
+    <div class="bookhead">
+      <div>
+        <div class="ct bigcov">{{ partial "cover.html" (dict "book" $b "eager" true "sizes" "300px") }}</div>
+        {{- if $b.buyAmazon }}<p style="margin-top:20px"><a class="btn" href="{{ $b.buyAmazon }}" target="_blank" rel="noopener">Buy on Amazon</a></p>{{ end -}}
+        {{- if $b.buyPublisher }}<p style="margin-top:{{ if $b.buyAmazon }}12{{ else }}20{{ end }}px"><a class="lnk" href="{{ $b.buyPublisher }}" target="_blank" rel="noopener">Publisher's page</a></p>{{ end -}}
+      </div>
+      <div>
+        <span class="tag {{ if eq $b.route "prize" }}p{{ else }}f{{ end }}">{{ if eq $b.route "prize" }}NIF Book Prize {{ $b.prizeYear }}{{ if $b.joint }} · Joint winner{{ end }}{{ else }}Written under an NIF Book Fellowship{{ if $b.round }} · Round {{ $b.round }}{{ end }}{{ end }}</span>
+        <h1 style="font-size:clamp(1.9rem,3.8vw,3rem);margin-top:10px">{{ $b.title }}</h1>
+        <p class="byline">{{ $b.author }}</p>
+
+        {{- if $b.description }}
+        <div class="bookabout">{{ $b.description | safeHTML }}</div>
+        {{- else }}
+        <div class="empty"><b>About this book</b>A description is being prepared. In the meantime the publisher's page carries the full synopsis.</div>
+        {{- end }}
+
+        {{- /* Publication metadata */ -}}
+        {{- if or $b.publisher $b.year $b.isbn }}
+        <ul class="meta">
+          {{- with $b.publisher }}<li><b>Publisher</b><span>{{ . }}</span></li>{{ end }}
+          {{- with $b.year }}<li><b>Year</b><span>{{ . }}</span></li>{{ end }}
+          {{- with $b.isbn }}<li><b>ISBN</b><span>{{ . }}</span></li>{{ end }}
+        </ul>
+        {{- end }}
+
+        {{- /* Prizes & shortlistings — verified only */ -}}
+        {{- with $b.awards }}
+        <div class="awards">
+          {{- range . }}<span class="aw">{{ . }}</span>{{ end }}
+        </div>
+        {{- end }}
+
+        <h3 style="margin-top:44px">In the press</h3>
+        {{- if $b.reviews }}
+        <ul class="reviews">
+          {{- range $b.reviews }}
+          <li class="review">
+            <blockquote>“{{ .quote }}”</blockquote>
+            <div class="src">— {{ with .reviewer }}{{ . }}, {{ end }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .publication }}</a>{{ with .date }} · {{ . }}{{ end }}</div>
+          </li>
+          {{- end }}
+        </ul>
+        {{- else }}
+        <div class="empty"><b>Reviews</b>Reviews and coverage of this book will be collected here. If you have written about it and would like it listed, write to <a class="lnk" href="mailto:{{ site.Params.contact.press }}">{{ site.Params.contact.press }}</a>.</div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- if $related }}
+<section class="band-k">
+  <div class="wrap">
+    <p class="eyebrow">Related</p>
+    <h2 style="margin-bottom:34px">More on this subject</h2>
+    <div class="books">
+      {{- range $related }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
+    </div>
+  </div>
+</section>
+{{- end }}
+{{ end }}

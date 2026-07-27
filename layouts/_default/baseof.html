@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {{ partial "header.html" . }}
+  {{ partial "ribbon.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "newsletter.html" . }}
+  {{ partial "footer.html" . }}
+  <script>
+    (function(){
+      var b=document.getElementById('burger'), n=document.getElementById('nav');
+      if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});}
+    })();
+  </script>
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

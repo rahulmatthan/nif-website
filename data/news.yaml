@@ -1,0 +1,52 @@
+# News, announcements and press releases. To add: prepend an entry to `items` (newest first).
+# `url` may be an external NIF/Squarespace link or an internal path. `date` is display text.
+items:
+  - date: "November 2025"
+    title: "Winner — NIF Book Prize 2025"
+    blurb: "Aparajith Ramnath wins for <em>Engineering a Nation: The Life and Career of M. Visvesvaraya</em>."
+    url: "https://www.newindiafoundation.org/winner-nif-book-prize-2025"
+  - date: "October 2025"
+    title: "NIF Newsletter"
+    blurb: "The Foundation's quarterly round-up of fellows, books and events."
+    url: "https://www.newindiafoundation.org/s/NIF-Newsletter-_October.pdf"
+  - date: "October 2025"
+    title: "Shortlist — Book Prize 2025"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/shortlist2025-1"
+  - date: "September 2025"
+    title: "Longlist — Book Prize 2025"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/longlist2025"
+  - date: "July 2025"
+    title: "Round 12 Book Fellows announced"
+    blurb: "Amrita Sharma, Amandeep Singh Sandhu, P. Anima, Urvashi Butalia and Bakhtiar K. Dadabhoy receive the ₹18 lakh fellowship."
+    url: "https://www.newindiafoundation.org/nif-book-fellowships-1"
+  - date: "2025"
+    title: "Ten years of <em>Gita Press and the Making of Hindu India</em>"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/press-release-gita-press"
+  - date: "November 2024"
+    title: "Winner — Book Prize 2024"
+    blurb: "Ashok Gopal, <em>A Part Apart: The Life and Thought of B.R. Ambedkar</em>."
+    url: "https://www.newindiafoundation.org/press-release-winner-nif-book-prize-2024"
+  - date: "October 2024"
+    title: "Shortlist — Book Prize 2024"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/press-release-shortlist-nif-book-prize-2024"
+  - date: "September 2024"
+    title: "Longlist — Book Prize 2024"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/press-release-longlist-nif-book-prize-2024"
+  - date: "2024"
+    title: "Translation Fellowships announced"
+    blurb: ""
+    url: "https://www.newindiafoundation.org/press-release-translation-fellowships-1"
+
+# Video series (shown on the News page). Videos live on the pages they support, not in a silo.
+videos:
+  - { title: "Book Prize 2025 shortlist", note: "The shortlisted authors on their books.", url: "https://www.newindiafoundation.org/shortlistvideos2025" }
+  - { title: "Book Prize 2024 shortlist", note: "", url: "https://www.newindiafoundation.org/shortlistvideos2024" }
+  - { title: "Fellows Speak", note: "Fellows on the books they wrote under the fellowship.", url: "https://www.newindiafoundation.org/fellows-speak" }
+  - { title: "NIF Conversations", note: "", url: "https://www.newindiafoundation.org/nif-conversations" }
+  - { title: "Language and Literature", note: "", url: "https://www.newindiafoundation.org/language-and-literature" }
+  - { title: "The Dawn of Life", note: "", url: "https://www.newindiafoundation.org/the-dawn-of-life" }

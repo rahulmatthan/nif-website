@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{- $bf := site.Data.status.bookFellowship -}}
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">Fellowships</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:20ch">Money, time and editorial help to write one good book.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:58ch">The Foundation is ecumenical as regards genre, theme and ideology. The only requirement is that the proposed work be non-fiction, and that it contribute to a fuller understanding of contemporary India.</p>
+    <p style="margin-top:32px">
+      {{ partial "cta.html" (dict "prog" $bf "openLabel" "Apply now" "verb" "applications" "class" "lt") }}
+      <a class="btn lt" style="margin-left:10px" href="mailto:{{ site.Params.contact.fellowships }}?subject=NIF%20Book%20Fellowship%20enquiry">Ask a question</a>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Book Fellowships · since 2004</p>
+        <h2>NIF Book Fellowships</h2>
+        <p>The core activity of the New India Foundation, awarded annually to scholars and writers working on different aspects of the history of independent India. Fellows may write a memoir, a work of reportage, or a thickly footnoted academic study; the books may be oriented towards economics, politics or culture.</p>
+        <p>From several hundred applications, roughly fifteen to twenty proposals are shortlisted. Shortlisted candidates are interviewed by a jury drawn from the Foundation's trustees alongside eminent figures from scholarship, business and public life.</p>
+        <p>The books that result convey original research in an accessible manner, and each is published by an established house. Beyond the stipend, the Fellowship provides editorial, legal and administrative guidance from proposal to publication, introductions to publishers and agents, and both online and offline community support.</p>
+        <div class="note" style="margin:26px 0">
+          <b>What the fellowship is worth</b>
+          ₹18,00,000 in total — ₹1,00,000 a month for twelve months, with the balance of ₹6,00,000 payable on submission of the final manuscript. Open to Indian nationals, including those currently living abroad.
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Translation Fellowships</p>
+        <h2>NIF Translation Fellowships</h2>
+        <p>Instituted to bring significant non-fiction written in Indian languages into English. Some of the most important books about India have been written in Indian languages, and many of them remain inaccessible to readers outside their linguistic region.</p>
+        <p>The Fellowship awards a six-month grant of ₹6,00,000 to translate a non-fiction work originally written in one of ten Indian languages: <strong>Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil and Urdu</strong>.</p>
+        <p>Applicants should be fluent in the source language and in English, and should have prior experience of translation. Selection turns on the significance of the proposed text and the translator's ability to render it for a contemporary readership. The Fellowship is open equally to established translators and to debutants. The jury comprises the NIF Trustees alongside a Language Expert Committee covering all ten languages, made up of bilingual scholars, professors and literary translators.</p>
+        <p>Recipients are expected to commit full time to the translation for its duration. The fellowship is non-renewable.</p>
+      </div>
+    </div>
+    <p style="margin-top:12px"><a class="lnk" href="{{ "/apply/" | relLangURL }}">See how to apply, and download the guidelines →</a></p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd"><p class="eyebrow">Applying</p><h2>What makes a strong application</h2></div>
+    <div class="three">
+      <div><h4>An original question</h4><p class="small">The Foundation looks for topics that have not already been worked over, and for a question the applicant is genuinely trying to answer rather than a subject they intend to survey.</p></div>
+      <div><h4>Evidence of depth</h4><p class="small">Show the archive, the fieldwork or the interview access the book will rest on, and show that you have already begun. Deep reporting distinguishes almost every book the Fellowship has produced.</p></div>
+      <div><h4>A realistic year</h4><p class="small">The Fellowship runs for twelve months and expects a completed manuscript at the end of it. Applications that account honestly for scope and time carry more weight than ambitious ones that do not.</p></div>
+    </div>
+    <p class="small" style="margin-top:26px">Applicants may be debut writers or much-published authors; the Foundation looks for a distinctive voice, an original idea, and a serious commitment to finishing.</p>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">The Fellows</p>
+      <h2>Twelve rounds</h2>
+      <p class="lede">Since 2004 the Fellowship has supported academics, journalists, translators and independent writers. Thirty-seven of their books are in print.</p>
+    </div>
+    <div class="rounds">
+      {{- range site.Data.fellows.book }}
+      <div class="round">
+        <div class="rh">Round {{ .round }} · {{ .year }}<em>Announced {{ .announced }}{{ if .incomplete }} · list partial{{ end }}</em></div>
+        <ul class="flist">
+          {{- range .fellows }}
+          <li><b>{{ .name }}</b>{{ with .work }}<span>{{ . | safeHTML }}</span>{{ end }}</li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
+      <div class="round">
+        <div class="rh">Rounds 1–10 · 2004–2021<em>See The Library for the books</em></div>
+        <p class="small">The published output of the first ten rounds — from Harish Damodaran's <em>India's New Capitalists</em> in the founding 2004 cohort through to the most recent titles — is catalogued in full in the Library, with covers, publishers and links.</p>
+        <p><a class="lnk" href="{{ "/library/" | relLangURL }}">Open the Library</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-k" style="padding-top:0">
+  <div class="wrap">
+    {{- range site.Data.fellows.translation }}
+    <p class="eyebrow">Translation Fellows · {{ .year }}</p>
+    <h3 style="margin-bottom:20px">The most recent translation cohort</h3>
+    <ul class="flist" style="max-width:820px">
+      {{- range .fellows }}
+      <li><b>{{ .name }}</b>{{ with .work }} <span>{{ . | safeHTML }}</span>{{ end }}</li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">Questions</p>
+    <h2>Fellowship FAQs</h2>
+    <details><summary>What is the Book Fellowship, and what do you look for?</summary><div class="ans">The Book Fellowship allows fellows to write on any aspect of modern India. From several hundred applications the most compelling proposals are selected. The Foundation looks for original topics, deep research, and relevance to modern India. Applicants may be debut writers or much-published authors — what matters is a unique voice, an original idea, and a commitment to completing a manuscript within the term.</div></details>
+    <details><summary>What is the Translation Fellowship?</summary><div class="ans">It brings historical and significant Indian-language non-fiction into English. The Foundation looks for applicants adept in both the source language and English, with prior translation experience. Selection turns on the relevance of the proposed text and the translator's ability to render it for a contemporary readership. Like the Book Fellowship, it is open to established translators and debutants alike.</div></details>
+    <details><summary>How much is the Book Fellowship worth?</summary><div class="ans">₹18,00,000 in total: ₹1,00,000 a month for twelve months, plus ₹6,00,000 on submission of the final manuscript.</div></details>
+    <details><summary>How much is the Translation Fellowship worth?</summary><div class="ans">₹6,00,000 over six months.</div></details>
+    <details><summary>Who can apply?</summary><div class="ans">The Book Fellowship is open to Indian nationals, including those currently living abroad. The Translation Fellowship is open to translators working from Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil or Urdu into English.</div></details>
+    <details><summary>How often is the Fellowship awarded?</summary><div class="ans">The Book Fellowship is awarded annually. The next call opens on 1 August 2026, with submissions closing on 30 November 2026 and fellowships beginning in August 2027.</div></details>
+    <details><summary>What support is offered beyond the grant?</summary><div class="ans">Editorial, legal and administrative guidance from proposal through to publication; introductions to publishers and agents; mentorship; and access to the community of past and present fellows.</div></details>
+    <details><summary>Can a fellowship book be entered for the Book Prize?</summary><div class="ans">No. Books that have been supported by a Foundation fellowship are not eligible for the NIF Book Prize.</div></details>
+    <details><summary>How are applications assessed?</summary><div class="ans">The Trustees assess all proposals and draw up a shortlist. Shortlisted candidates are interviewed in person by a jury comprising the Trustees alongside eminent figures from scholarship, business and public life. For translation projects the jury also includes the Language Expert Committee for the relevant language.</div></details>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,60 @@
+# SINGLE SOURCE OF TRUTH for application status across the whole site.
+# Edit this file to flip every Apply button, ribbon item and CTA. Nothing else needs changing.
+#
+# `state` accepts:  auto | open | closed | soon
+#   auto   — computed at build time by comparing today's date to `opens` / `closes`
+#   open   — force open  (CTA links to the form)
+#   closed — force closed (CTA is disabled, shows next opening)
+#   soon   — force "opening soon" (CTA disabled, shows opening date)
+# Dates are ISO (YYYY-MM-DD). After a cycle closes, bump the year on the dates and the site rolls forward.
+#
+# formEndpoint: paste NIF's Formspree form ID (see README / DECISIONS.md). Until then the form is inert.
+
+formEndpoint: "https://formspree.io/f/REPLACE_WITH_NIF_FORM_ID"
+
+bookFellowship:
+  name: "NIF Book Fellowship"
+  cycle: "2027"
+  state: auto
+  opens: "2026-08-01"
+  closes: "2026-11-30"
+  amount: "₹18,00,000"
+  timeline:
+    - { when: "1 August", what: "Applications open" }
+    - { when: "30 November", what: "Applications close" }
+    - { when: "March", what: "Shortlist announced" }
+    - { when: "May", what: "Interviews" }
+    - { when: "July", what: "Fellows announced" }
+    - { when: "August", what: "Fellowship begins" }
+
+translationFellowship:
+  name: "NIF Translation Fellowship"
+  cycle: "2027"
+  state: auto
+  opens: "2026-08-01"
+  closes: "2026-12-31"
+  amount: "₹6,00,000"
+  timeline:
+    - { when: "1 August", what: "Applications open" }
+    - { when: "31 December", what: "Applications close" }
+    - { when: "March", what: "Longlist announced" }
+    - { when: "April", what: "Shortlist announced" }
+    - { when: "June", what: "Interviews" }
+    - { when: "July", what: "Fellows announced" }
+
+bookPrize:
+  name: "NIF Book Prize"
+  cycle: "2027"
+  state: auto
+  # nominations open to publishers/agents first, then to authors
+  opens: "2026-11-01"
+  opensAuthors: "2027-01-01"
+  closes: "2027-01-31"
+  amount: "₹15,00,000"
+  timeline:
+    - { when: "November", what: "Nominations open to publishers and agents" }
+    - { when: "January", what: "Nominations open to authors" }
+    - { when: "31 January", what: "Nominations close" }
+    - { when: "September", what: "Longlist announced" }
+    - { when: "October", what: "Shortlist announced" }
+    - { when: "November", what: "Winner announced" }

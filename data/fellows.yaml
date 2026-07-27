@@ -1,0 +1,40 @@
+# NIF Fellows, by round. To add a cohort: append to `book` or `translation`.
+# Rounds 1–10 are not yet catalogued by name (see CONTENT-NEEDED.md); their BOOKS are in books.yaml.
+# `book` names come verbatim from the prototype. Where a fellow's working title is known it is in `work`.
+book:
+  - round: 12
+    year: 2025
+    announced: "July 2025"
+    fellows:
+      - { name: "Amrita Sharma" }
+      - { name: "Amandeep Singh Sandhu" }
+      - { name: "P. Anima" }
+      - { name: "Urvashi Butalia" }
+      - { name: "Bakhtiar K. Dadabhoy" }
+  - round: 11
+    year: 2023
+    announced: "July 2023"
+    incomplete: true   # prototype lists 5 of 7; two names still to be sourced (CONTENT-NEEDED.md)
+    fellows:
+      - { name: "Pramit Bhattacharya", work: "Accounting for the Nation: The Story Behind India's Growth Numbers" }
+      - { name: "Srijan Deshpande", work: "The Life and Music of Kumar Gandharva" }
+      - { name: "Syed Jaleel Hussain", work: "Ambivalent Allegiances: Shiism and Everyday Politics in Kashmir" }
+      - { name: "Rachna Mehra", work: "Planning \"New Towns\" in the Post-Independence Era: The Making of Faridabad City, 1948–90" }
+      - { name: "Maya Mirchandani", work: "Fathers, Sons, and a Troubled Paradise: A History of the Abdullahs" }
+
+translation:
+  - round: null
+    year: 2026
+    announced: "2026"
+    fellows:
+      - name: "Jayasree Kalathil"
+        work: |-
+          Translating <em>Adimamakka</em> (Children of the Enslaved), the Malayalam autobiography of the Adivasi land-rights activist C.K. Janu — a history of the indigenous movement for land rights in Kerala, and of a political struggle largely absent from the record of the state's celebrated development model.
+      - name: "Murali Ranganathan"
+        work: |-
+          Translating <em>Tibet Mein Savva Varsh</em> by Rahul Sankrityayan, first published in 1934: an account of his travels in search of the Buddha between December 1928 and June 1930, moving incognito through India, Nepal and Tibet at a time when foreign entry was restricted.
+      - name: "Shefali Jha"
+        work: |-
+          Translating Ibrahim Hussain Jalis's <em>Do Mulk, Ek Kahani</em> — subjective journalism chronicling the making of postcolonial South Asia and the final years of the princely state of Hyderabad, seen through the eyes of a young Urdu writer.
+      - name: "Mini Chandran"
+        work: ""

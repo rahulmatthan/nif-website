@@ -1,0 +1,17 @@
+{{- /* Chooses the OG image: the book's cover for book pages, else a generated typographic card.
+       Never the logo. Returns dict {url, width, height, alt} with an absolute url. */ -}}
+{{- $book := .Params.book -}}
+{{- $res := "" -}}
+{{- if $book }}{{ $res = resources.Get (printf "covers/%s.jpg" $book.slug) }}{{ end -}}
+{{- $result := dict -}}
+{{- if $res -}}
+  {{- $c := $res.Process "resize 1200x jpg q85" -}}
+  {{- $result = dict "url" $c.Permalink "width" $c.Width "height" $c.Height "alt" (printf "Cover of %s by %s" $book.title $book.author) -}}
+{{- else -}}
+  {{- $title := cond .IsHome "New India Foundation" .Title -}}
+  {{- $kicker := "New India Foundation" -}}
+  {{- if $book }}{{ $kicker = cond (eq $book.route "prize") (printf "NIF Book Prize %v" $book.prizeYear) "NIF Book Fellowship" }}{{ end -}}
+  {{- $card := partial "og-card.html" (dict "title" $title "kicker" $kicker) -}}
+  {{- $result = dict "url" $card.Permalink "width" 1200 "height" 630 "alt" $title -}}
+{{- end -}}
+{{- return $result -}}

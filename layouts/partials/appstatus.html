@@ -1,0 +1,25 @@
+{{- /* Computes a programme's live application state from data/status.yaml.
+       Input: one programme map (e.g. site.Data.status.bookFellowship).
+       Returns: dict with .state (open|closed|soon), .opensDate, .closesDate, .nextOpensDate, .data */ -}}
+{{- $p := . -}}
+{{- $state := $p.state | default "auto" -}}
+{{- $opens := time.AsTime $p.opens -}}
+{{- $closes := time.AsTime $p.closes -}}
+{{- if eq $state "auto" -}}
+  {{- $now := now -}}
+  {{- if $now.Before $opens -}}
+    {{- $state = "soon" -}}
+  {{- else if $now.After $closes -}}
+    {{- $state = "closed" -}}
+  {{- else -}}
+    {{- $state = "open" -}}
+  {{- end -}}
+{{- end -}}
+{{- $fmt := "2 January 2006" -}}
+{{- $nextOpens := $opens.AddDate 1 0 0 -}}
+{{- return (dict
+    "state" $state
+    "opensDate" (time.Format $fmt $p.opens)
+    "closesDate" (time.Format $fmt $p.closes)
+    "nextOpensDate" (time.Format $fmt $nextOpens)
+    "data" $p) -}}

@@ -1,0 +1,970 @@
+# NIF book catalogue — the single source of truth for the Library and every /books/<slug> page.
+# Descriptions are NIF's own, carried verbatim from the prototype. Do not replace with publisher blurb.
+# To add a book: append an entry with a unique slug. route is "prize" or "fellowship".
+
+- slug: "engineering-a-nation"
+  title: "Engineering a Nation: The Life and Career of M. Visvesvaraya"
+  author: "Aparajith Ramnath"
+  route: "prize"
+  prizeYear: 2025
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "69c65939-9030-4052-a960-c7aac587610f/Aparajith_winner+creative+for+website-01.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "A biography of the engineer, administrator and Diwan of Mysore whose career maps the arrival of technical expertise as a form of Indian public authority."
+  description: |-
+    M. Visvesvaraya is remembered in the way that founding figures usually are — as a name on dams, reservoirs, colleges and a public holiday. This biography puts the man back inside his century. Trained as an engineer in the Bombay Presidency, he built irrigation works across western India, served as Diwan of Mysore, and spent his long later life arguing that India could not become a modern country without deliberately manufacturing its own technical class. Ramnath follows that argument through Visvesvaraya’s career and shows how engineering became, in his hands, a claim to public authority — and how the state he helped build absorbed the claim.
+  reviews: []
+  awards: []
+
+- slug: "a-part-apart"
+  title: "A Part Apart: The Life and Thought of B.R. Ambedkar"
+  author: "Ashok Gopal"
+  route: "prize"
+  prizeYear: 2024
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: ""
+  buyAmazon: "https://www.amazon.in/Part-Apart-Life-Thought-Ambedkar/dp/8195838510"
+  buyPublisher: ""
+  shortDescription: "A full-length intellectual biography of Ambedkar, reading his writing in Marathi alongside his English work to recover the shape of his thought."
+  description: |-
+    Most accounts of B.R. Ambedkar read only his English writing. Ashok Gopal reads the Marathi too — the journalism, the speeches, the pamphlets addressed to an audience that shared his language and his exclusion — and the Ambedkar who emerges is more restless and more difficult than the constitutional draftsman of the textbooks. Across nearly a thousand pages the book traces a mind working out, over four decades, what emancipation would actually require: not only law, but religion, economics, and a refusal of the terms on which caste society offered him inclusion.
+  reviews: []
+  awards: []
+
+- slug: "writer-rebel-soldier-lover"
+  title: "Writer, Rebel, Soldier, Lover: The Many Lives of Agyeya"
+  author: "Akshaya Mukul"
+  route: "prize"
+  prizeYear: 2023
+  round: null
+  joint: false
+  translation: false
+  theme: "culture"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "d0095802-7e68-4217-91a9-e86af81c81bf/22+Winner.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "The life of Sachchidananda Hirananda Vatsyayan — poet, novelist, revolutionary and editor — and through him a history of twentieth-century Hindi letters."
+  description: |-
+    Sachchidananda Hirananda Vatsyayan, who wrote as Agyeya, was a bomb-maker for the Hindustan Socialist Republican Association before he was a poet, and served in the British Indian Army before he became modern Hindi literature’s most formidable editor. Akshaya Mukul reconstructs all of these lives from an enormous personal archive, and in doing so writes a history of twentieth-century Hindi letters — its quarrels, its patronage, its politics — through the one figure who was present at almost every turn of it.
+  reviews: []
+  awards: []
+
+- slug: "the-chipko-movement"
+  title: "The Chipko Movement: A People’s History"
+  author: "Shekhar Pathak, translated from the Hindi by Manisha Chaudhry"
+  route: "prize"
+  prizeYear: 2022
+  round: null
+  joint: false
+  translation: true
+  theme: "environment"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "8ec3d4c9-f736-4718-8250-c596f921101d/22+Winner.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "The definitive account of the Himalayan forest movement, written by a historian who walked its villages for four decades."
+  description: |-
+    Chipko is one of the few Indian social movements the world has heard of, and one of the most thoroughly mythologised. Shekhar Pathak walked the Himalayan villages where it happened for four decades before writing this book, and the history he produces is denser and more argumentative than the parable. It restores the local politics, the labour disputes and the long prior tradition of forest resistance that made the movement possible, and it insists that the people who hugged the trees had reasons of their own.
+  reviews: []
+  awards: []
+
+- slug: "naoroji"
+  title: "Naoroji: Pioneer of Indian Nationalism"
+  author: "Dinyar Patel"
+  route: "prize"
+  prizeYear: 2021
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "18ef458c-11bb-4534-b910-e1b11d9816bb/DINYAR.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "The first full biography of Dadabhai Naoroji, drawing on an archive of thirty thousand documents to recover the making of Indian economic nationalism."
+  description: |-
+    Dadabhai Naoroji gave Indian nationalism its first economic argument — the drain of wealth — and became the first Indian elected to the British House of Commons. Dinyar Patel worked through an archive of some thirty thousand documents to produce the first full biography, and it reframes Naoroji as a political strategist rather than a venerable ancestor: a man who spent half a century learning how to make imperial institutions work against themselves.
+  reviews: []
+  awards: []
+
+- slug: "mobilizing-the-marginalized"
+  title: "Mobilizing the Marginalized: Ethnic Parties Without Ethnic Movements"
+  author: "Amit Ahuja"
+  route: "prize"
+  prizeYear: 2020
+  round: null
+  joint: true
+  translation: false
+  theme: "caste"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272153670-E027JV6Z0HGBT3GVPDS3/AMIT+AHUJA+%281%29.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "Why Dalit parties succeed where social movements have been weak, and fail where they have been strong. Joint winner."
+  description: |-
+    Why do Dalit parties do well in some Indian states and badly in others? Amit Ahuja’s answer inverts the usual expectation. Where Dalit social movements were strongest, ethnic parties have been weakest — because movements changed the terms of politics for everyone, leaving less for a party to claim. Built on fieldwork and survey data across four states, the book is a study of what social mobilisation does to electoral mobilisation, and vice versa.
+  reviews: []
+  awards: []
+
+- slug: "a-chequered-brilliance"
+  title: "A Chequered Brilliance: The Many Lives of V.K. Krishna Menon"
+  author: "Jairam Ramesh"
+  route: "prize"
+  prizeYear: 2020
+  round: null
+  joint: true
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272194605-BFST62NY8Q8M0GD52APM/JAIRAM+%281%29.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "A biography of Nehru’s most brilliant and most damaging lieutenant, built from an enormous unpublished archive. Joint winner."
+  description: |-
+    V.K. Krishna Menon was Nehru’s closest confidant, India’s most effective advocate at the United Nations, and the Defence Minister who presided over the catastrophe of 1962. Jairam Ramesh had access to an enormous unpublished archive, and uses it to produce a portrait that neither rescues Menon nor settles for the caricature — a study of brilliance, abrasiveness and political self-destruction at the centre of the Nehru years.
+  reviews: []
+  awards: []
+
+- slug: "how-india-became-democratic"
+  title: "How India Became Democratic: Citizenship and the Making of the Universal Franchise"
+  author: "Ornit Shani"
+  route: "prize"
+  prizeYear: 2019
+  round: null
+  joint: false
+  translation: false
+  theme: "politics"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272225269-T52W4RCBKDPI8FG4DDVP/ORNIT_.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "How the electoral roll was built before the Constitution was adopted, and how the bureaucratic labour of registration produced Indian democratic citizenship."
+  description: |-
+    Before India had a Constitution it had an electoral roll. Ornit Shani tells the story of the two years in which officials across a partitioned, displaced, barely governed country set about registering every adult as a voter — arguing about refugees, about women recorded only as somebody’s wife, about who counted as belonging. Her claim is that universal franchise was not conferred by the Constitution but produced by this bureaucratic labour, and that Indians learned to be citizens by insisting on being counted.
+  reviews: []
+  awards: []
+
+- slug: "when-crime-pays"
+  title: "When Crime Pays: Money and Muscle in Indian Politics"
+  author: "Milan Vaishnav"
+  route: "prize"
+  prizeYear: 2018
+  round: null
+  joint: false
+  translation: false
+  theme: "politics"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272255132-JI7DZER8MTH0N6DEFGA9/MILAN+%281%29.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: "Why parties field candidates facing criminal charges, and why voters elect them. The first winner of the prize."
+  description: |-
+    A third of India’s legislators face criminal charges, and voters know it. Milan Vaishnav’s book asks why they are elected anyway, and finds the answer in the cost of elections and the weakness of the state: parties need candidates who can self-finance, and voters in places where the state does not deliver may prefer a candidate who can get things done by other means. The first winner of the NIF Book Prize.
+  reviews: []
+  awards: []
+
+- slug: "the-dawn-of-life"
+  title: "The Dawn of Life: MK Gandhi in South Africa"
+  author: "Prabhudas Gandhi, translated by Hemang Ashwinkumar"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: true
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "8bad841a-8e73-4dab-9540-36d75b18714b/The+dawn+of+life+%282%29.jpg"
+  buyAmazon: "https://www.amazon.in/Dawn-Life-Gandhi-South-Africa/dp/0143475878"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Prabhudas Gandhi grew up in Gandhi’s South African household, and wrote this memoir of those years in Gujarati as an old man. It is the domestic view of a period usually narrated politically — Phoenix Settlement and Tolstoy Farm as places where children were raised, meals were rationed and experiments in living were conducted on the family before they were conducted on a nation. Hemang Ashwinkumar’s translation brings it into English for the first time.
+  reviews: []
+  awards: []
+
+- slug: "believers-dilemma"
+  title: "Believer’s Dilemma: Vajpayee and the Hindu Right’s Path to Power, 1977–2018"
+  author: "Abhishek Choudhary"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "politics"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "d0ce7068-2715-4dcc-a133-644c6526b0d0/Abhishek+Choudhary+%2B+Vajpayee.jpg"
+  buyAmazon: ""
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The second volume of Abhishek Choudhary’s biography covers Atal Bihari Vajpayee from the Janata experiment of 1977 to his final years, taking in the founding of the BJP, the Ayodhya movement, Pokhran, Kargil, Gujarat 2002 and six years as Prime Minister. Its subject is the tension the title names: a man who held the Hindu right’s affection while repeatedly declining to be its instrument, and the cost of that position to both him and it.
+  reviews: []
+  awards: []
+
+- slug: "rama-bhima-soma"
+  title: "Rama Bhima Soma: Cultural Investigations into Modern Karnataka"
+  author: "Srikar Raghavan"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "e5a05adb-abe2-43af-a196-85a081adb597/Rama+Bhima+Soma.jpg"
+  buyAmazon: "https://www.amazon.in/dp/936045687X"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    A young writer travels through Karnataka looking for the state’s intellectual undercurrents — Dalit and farmers’ movements, Navya and Bandaya writing, Sufi and Lingayat traditions, Kannada theatre, the long argument about language. Part reportage, part cultural history, the book makes a case for Karnataka as a place where some of modern India’s most productive arguments have been staged, and largely ignored from outside.
+  reviews: []
+  awards: []
+
+- slug: "the-many-lives-of-syeda-x"
+  title: "The Many Lives of Syeda X: The Story of an Unknown Indian"
+  author: "Neha Dixit"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "6bf96921-92d7-4f88-a8d4-0fe54136a5a2/Neha+Dixit.jpg"
+  buyAmazon: "https://www.amazon.in/Many-Lives-Syeda-Story-Indian/dp/9353453542"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Neha Dixit followed one woman for more than a decade. Syeda X fled Banaras after the riots of the early 1990s and has since done some fifty different kinds of piece-work in west Delhi — shelling almonds, stitching footballs, rolling incense, assembling toys. The book is an account of informal labour and of a Muslim working life in north India, built from the accumulated detail that only that kind of patience produces.
+  reviews: []
+  awards: []
+
+- slug: "the-day-i-became-a-runner"
+  title: "The Day I Became a Runner: A Women’s History of India through the Lens of Sport"
+  author: "Sohini Chattopadhyay"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "638ba914-1591-4253-86fb-ac9093061c94/Sohini+Chattopadhyay.jpg"
+  buyAmazon: "https://www.amazon.in/Day-Became-Runner-History-through/dp/9356994625"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Sohini Chattopadhyay tells the history of independent India through nine women athletes, from the sprinters of the 1950s to the present. Running is the frame, but the subject is the female body in public — what it has been permitted to do, who objected, what a woman had to trade for the right to be seen exerting herself in a stadium. Sport here is a way of writing women back into the national record.
+  reviews: []
+  awards: []
+
+- slug: "the-quest-for-modern-assam"
+  title: "The Quest for Modern Assam: A History 1942–2000"
+  author: "Arupjyoti Saikia"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "3ad7ea7e-7d35-4962-8bf8-1447b9b72858/Book_Modern+Assam.jpg"
+  buyAmazon: "https://www.amazon.in/Quest-Modern-Assam-Arupjyoti-Saikia/dp/0670095702"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Arupjyoti Saikia’s history covers Assam from the Second World War to the end of the twentieth century — Partition and its refugees, the oil economy, the language movements, the Assam Agitation, insurgency. It is a scholarly attempt to give a region usually treated as a problem in national security a history of its own politics, economy and self-understanding.
+  reviews: []
+  awards: []
+
+- slug: "vajpayee"
+  title: "Vajpayee: The Ascent of the Hindu Right, 1924–1977"
+  author: "Abhishek Choudhary"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "politics"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "c203c235-06d0-409a-ac85-46545305175e/1.jpg"
+  buyAmazon: "https://www.amazon.in/VAJPAYEE-Ascent-Hindu-Right-1924-1977/dp/9395624493"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The first volume of Abhishek Choudhary’s biography takes Atal Bihari Vajpayee from his birth in Gwalior to the Emergency and the Janata moment. Drawn from Hindi sources, RSS material and Vajpayee’s own poetry and journalism, it is also a history of the Hindu right in its long years of marginality, and of how a movement without power prepared for it.
+  reviews: []
+  awards: []
+
+- slug: "caste-pride"
+  title: "Caste Pride: Battles for Equality in Hindu India"
+  author: "Manoj Mitta"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "caste"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "447612ad-b257-4ea3-91a7-d3344d989500/2.jpg"
+  buyAmazon: "https://www.amazon.in/Caste-Pride-Battles-Equality-Hindu/dp/9357762949"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Manoj Mitta reads the legal record — statutes, judgments, commissions of inquiry, colonial and post-colonial — to show how Indian law has handled caste over two centuries. The result is a history of the gap between formal equality and the operation of the courts, told through the specific cases in which the gap became visible.
+  reviews: []
+  awards: []
+
+- slug: "tagores-university"
+  title: "Tagore’s University: A History of Visva-Bharati 1921–1961"
+  author: "Swati Ganguly"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "culture"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "c31d57ab-93bf-478f-9bdf-3358ac6e1d96/Tagore%27s%2Buniversity.jpeg"
+  buyAmazon: "https://orientblackswan.com/details?id=9788178246406"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Visva-Bharati was Rabindranath Tagore’s attempt to build an institution around a theory of education: no walls, no examinations as ends in themselves, learning through art and craft and the natural year. Swati Ganguly traces the first four decades — the funding crises, the personalities, the compromises with the state after Tagore’s death — and asks what happened to the idea once it had to be administered.
+  reviews: []
+  awards: []
+
+- slug: "chromosome-woman-nomad-scientist"
+  title: "Chromosome Woman, Nomad Scientist: E.K. Janaki Ammal, A Life 1897–1984"
+  author: "Savithri Preetha Nair"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "02529d73-efc7-4114-ac27-742053133da7/Untitled+design+%284%29.jpg"
+  buyAmazon: "https://www.amazon.in/Savithri-Preetha-Nair/e/B00C7BJ48Y"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    E.K. Janaki Ammal was a cytogeneticist who worked on sugarcane and on the chromosome atlas of cultivated plants, held posts in India and Britain, and late in life joined the campaign to save the Silent Valley. Savithri Preetha Nair’s biography recovers a scientific career conducted almost entirely outside the institutional advantages her male contemporaries took for granted.
+  reviews: []
+  awards: []
+
+- slug: "not-just-cricket"
+  title: "Not Just Cricket: A Reporter’s Journey through Modern India"
+  author: "Pradeep Magazine"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "culture"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1658949599987-U4YUEH5L0Z2JCDYUFIDF/Not+just+cricket.jpg"
+  buyAmazon: "https://www.amazon.in/Not-Just-Cricket-Reporters-Journey/dp/9354892116"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Pradeep Magazine covered Indian cricket through the years in which it changed from a game into an industry, and was among the first journalists to report on match-fixing. This is a reporter’s memoir, but its subject is larger than sport: money, television, celebrity and the arrival of a new commercial India, watched from the press box.
+  reviews: []
+  awards: []
+
+- slug: "the-life-and-times-of-george-fernandes"
+  title: "The Life and Times of George Fernandes"
+  author: "Rahul Ramagundham"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1658949148915-FWTCVMYEVHEN4ULZGN4A/The+Life+and+Times+of+George+Fernandes.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/0670092886"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Trade unionist, socialist, underground fugitive during the Emergency, and eventually Defence Minister in a government led by the party he had spent his life opposing. Rahul Ramagundam’s biography follows George Fernandes across that arc and uses it to tell the history of the Indian socialist tradition — its energy, its splits, and its long decline into accommodation.
+  reviews: []
+  awards: []
+
+- slug: "bibis-room"
+  title: "Bibi’s Room: Hyderabadi Women and Twentieth-Century Urdu Prose"
+  author: "Nazia Akhtar"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1658949254251-TGDXFT7PJ83GDID90G35/Bibi%E2%80%99s+Room.jpg"
+  buyAmazon: "https://www.amazon.in/Bibis-Room-Hyderabadi-Women-Twentieth-Century/dp/9354420648"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Three Hyderabadi women — Zeenath Sajida, Najma Nikhat and Jeelani Bano — wrote Urdu prose across the twentieth century, through the end of the Nizam’s rule, the Police Action and its aftermath. Nazia Akhtar reads and translates their work to recover a literary world that has largely dropped out of both Urdu and Indian literary history.
+  reviews: []
+  awards: []
+
+- slug: "citizenship-in-a-caste-polity"
+  title: "Citizenship in a Caste Polity: Religion, Language and Belonging in Goa"
+  author: "Jason Keith Fernandes"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "caste"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272447632-F6ZRNNVO3KHZQBMT9AFX/Citizenship+in+a+Caste+Polity.jpg"
+  buyAmazon: "https://www.amazon.in/Citizenship-Caste-Polity-Religion-Belonging/dp/9352879945"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Goa’s Catholics are internally divided by caste, and those divisions shape how the community argues about language, religion and belonging within the Indian union. Jason Keith Fernandes’s ethnography examines the politics of Konkani and Marathi, the place of the Church, and what citizenship has come to mean in a state that joined India late and on its own terms.
+  reviews: []
+  awards: []
+
+- slug: "the-transformative-constitution"
+  title: "The Transformative Constitution: A Radical Biography in Nine Acts"
+  author: "Gautam Bhatia"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "politics"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272464787-QDNPWFQCQ2FUQ5MUET2Z/The+Transformative+Constitution+A+Radical+Biography+in+Nine+Acts.jpg"
+  buyAmazon: "https://www.amazon.in/dp/9353026849"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Gautam Bhatia argues that the Indian Constitution should be read not as a continuation of colonial law but as a break with it — a document intended to transform relationships of subordination between citizens as well as between citizen and state. He makes the case through nine provisions and the cases decided under them, reconstructing arguments the courts declined to make.
+  reviews: []
+  awards: []
+
+- slug: "tawaifnama"
+  title: "Tawaifnama"
+  author: "Saba Dewan"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272487669-E6BI6GARY379DAXFECUT/tawaifnama.jpg"
+  buyAmazon: "https://www.amazon.in/Tawaifnama-Saba-Dewan-ebook/dp/B07RKSSXNT"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Saba Dewan spent years with the descendants of a courtesan family from the Bhabua region and Banaras, and writes their history across four generations. The book recovers the tawaif as an artist and a property-holder before reform movements and respectability politics reduced her to a figure of disrepute, and it lets the family tell the story in its own idiom.
+  reviews: []
+  awards: []
+
+- slug: "growing-up-muslim-in-india"
+  title: "Growing Up Muslim in India: An Ordinary Man’s Guide to Radicalism"
+  author: "Neyaz Farooquee"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "caste"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272572613-C8CFRCMP6JZR4HRQFJJH/An+Ordinary+Man%27s+Guide+To+Radicalism.jpg"
+  buyAmazon: "https://www.amazon.in/Ordinary-Mans-Guide-Radicalism-Growing/dp/9386850516"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Neyaz Farooquee grew up in Jamia Nagar in Delhi, and was a student there when the Batla House encounter took place in 2008. His memoir describes what it is to be a young Muslim in a city that has decided in advance what you might be — the small administrative humiliations, the neighbourhood’s own arguments, and the long adjustment of expectations that follows.
+  reviews: []
+  awards: []
+
+- slug: "mannequin"
+  title: "Mannequin: Working Women in India’s Glamour Industry"
+  author: "Manjima Bhattacharjya"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272596609-MVMVWKGC64KVRYT0XUDD/Working+Women+in+India%27s+Glamour+Industry.jpg"
+  buyAmazon: "https://www.amazon.in/Mannequin-Working-Indias-Glamour-Industry/dp/9385932225"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Manjima Bhattacharjya interviews the women who worked as models in India’s fashion industry from the 1990s onward, and uses their accounts to think about glamour as labour. The book asks what feminism has to say about work that is well paid, physically demanding, sexualised and chosen — and finds the existing answers inadequate.
+  reviews: []
+  awards: []
+
+- slug: "delhis-meatscapes"
+  title: "Delhi’s Meatscapes: Muslim Butchers in a Transforming Mega-City"
+  author: "Zarin Ahmad"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272621940-JBH1JHL7QMLQ1E6ZZ2TF/Delhi%E2%80%99s+Meatscapes.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/0199477809"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The Qureshi butchers of Delhi are a Muslim occupational community working in a trade that is politically charged and commercially significant. Zarin Ahmad’s ethnography follows them through the relocation of the city’s abattoirs and the changing regulation of meat, and reads the trade as a way into questions of urban space, community and stigma.
+  reviews: []
+  awards: []
+
+- slug: "rethinking-revolutions"
+  title: "Rethinking Revolutions: Soyabean, Choupals and the Changing Countryside in Central India"
+  author: "Richa Kumar"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272652030-EIFXI8L4UO4UK24L1297/Rethinking+Revolutions.jpg"
+  buyAmazon: "https://www.amazon.in/Rethinking-Revolutions-Soyabean-Choupals-Countryside/dp/0199465339"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Soyabean transformed the agriculture of the Malwa plateau, and the transformation is usually told as a success. Richa Kumar looks at what actually happened in the villages — the credit, the markets, the information kiosks, the risk — and produces a sceptical account of how agricultural revolutions are narrated and who bears their costs.
+  reviews: []
+  awards: []
+
+- slug: "the-web-of-freedom"
+  title: "The Web of Freedom: J.C. Kumarappa and Gandhi’s Struggle for Economic Justice"
+  author: "Venu Madhav Govindu &amp; Deepak Malghan"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272684822-CGS3HI9BMBY7JHGLTPYR/The+Web+of+Freedom.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/0199460817"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    J.C. Kumarappa was Gandhi’s economist, an accountant trained in New York who became the theorist of decentralised, village-scale production. Venu Madhav Govindu and Deepak Malghan reconstruct his life and thought and argue that his economics of permanence — written decades before the phrase existed — anticipated much of what is now called ecological economics.
+  reviews: []
+  awards: []
+
+- slug: "growing-the-tree-of-science"
+  title: "Growing the Tree of Science: Homi Bhabha and the Tata Institute of Fundamental Research"
+  author: "Indira Chowdhury"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272718082-AC8VNIUYFCBLSIC32TA4/Growing+the+Tree+of+Science.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/0199466904"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The Tata Institute of Fundamental Research was built by Homi Bhabha as a scientific institution and as an aesthetic and administrative project. Indira Chowdhury draws on the institute’s archives and on oral histories with its early scientists to describe how a research culture is actually made, and what was lost when Bhabha died.
+  reviews: []
+  awards: []
+
+- slug: "ahmedabad"
+  title: "Ahmedabad: A City in the World"
+  author: "Amrita Shah"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272768163-WCR065R44VR1PJOIGHEY/Ahmedabad+A+City+in+the+World.jpg"
+  buyAmazon: "https://www.amazon.in/Ahmedabad-City-World-Amrita-Shah/dp/9384898015"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Amrita Shah moves through Ahmedabad — its mill history, its Gandhian inheritance, its segregated neighbourhoods after 2002, its new highways and river-front — to ask what has happened to an Indian city that has been held up in turn as a model of nationalism, of industry and of development.
+  reviews: []
+  awards: []
+
+- slug: "from-soup-to-superstar"
+  title: "From Soup to Superstar: The Story of Sea Turtle Conservation Along the Indian Coast"
+  author: "Kartik Shanker"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "environment"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272788608-Q3XMCTKWGF3VFQCY8T9Q/From+Soup+to+Superstar.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/9351772322"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Sea turtles went from being eaten to being emblematic within a few decades. Kartik Shanker, a biologist who worked on Indian coasts for much of that period, writes the history of turtle conservation as a history of conservation itself — its science, its NGOs, its conflicts with fishing communities, and its habit of mistaking charismatic animals for ecosystems.
+  reviews: []
+  awards: []
+
+- slug: "gita-press-and-the-making-of-hindu-india"
+  title: "Gita Press and the Making of Hindu India"
+  author: "Akshaya Mukul"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "culture"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629272812539-RCCRXF11E8DKFR3MH3I6/Gita+Press+and+the+Making+of+Hindu+India.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/9351772306"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The Gita Press of Gorakhpur has printed hundreds of millions of copies of Hindu religious texts, and its magazine <em>Kalyan</em> reached households across north India for decades. Akshaya Mukul’s history of the press and of its guiding figure, Hanuman Prasad Poddar, shows how a publishing house helped assemble a modern Hindu sensibility — on caste, on women, on cow protection, on the nation — long before that sensibility became electoral.
+  reviews: []
+  awards: []
+
+- slug: "indias-new-capitalists"
+  title: "India’s New Capitalists: Caste, Business and Industry in a Modern Nation"
+  author: "Harish Damodaran"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274195225-YON0U98GUDYZ7HGU7NGI/india-s-new-capitalists-1.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/0230205070"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Indian business was long the preserve of a handful of trading castes. Harish Damodaran, an agricultural journalist by training, documents the arrival of entrepreneurs from farming and artisanal backgrounds across the south and west, and shows how caste networks were reused rather than discarded as new business communities formed. One of the first books written under the Fellowship.
+  reviews: []
+  awards: []
+
+- slug: "christianity-and-politics-in-tribal-india"
+  title: "Christianity and Politics in Tribal India: Baptist Missionaries and Naga Nationalism"
+  author: "G. Kanato Chophy"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1633681146457-6TGBVLCUREKBDW33WK5L/Christianity+and+politics+in+tribal+india.jpg"
+  buyAmazon: "https://www.amazon.in/Christianity-Politics-Tribal-India-Missionaries/dp/1438485816"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    G. Kanato Chophy examines the relationship between Baptist missionary Christianity and Naga nationalism — how a religion introduced from outside became the vehicle for an assertion of distinct nationhood, and what that has meant for Naga society, its churches and its politics.
+  reviews: []
+  awards: []
+
+- slug: "competing-nationalisms"
+  title: "Competing Nationalisms: The Sacred and Political Life of Jagat Narain Lal"
+  author: "Rajshree Chandra"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1634722291275-N4F3NLNQX9D473WG2JJ1/competing+nationalism.jpg"
+  buyAmazon: "https://www.amazon.in/Competing-Nationalisms-Sacred-Political-Narain/dp/0670095494"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Jagat Narain Lal was a Congress politician, a Hindu Mahasabha member and a constituent assembly delegate, and held those commitments together in ways that later became impossible. Rajshree Chandra uses his papers and diaries to examine how religious and secular nationalism coexisted inside a single life during the decades in which India was deciding what it would be.
+  reviews: []
+  awards: []
+
+- slug: "our-moon-has-blood-clots"
+  title: "Our Moon Has Blood Clots: The Exodus of the Kashmiri Pandits"
+  author: "Rahul Pandita"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629273941466-H2JVMEUFDGCOHAESAVZO/Our+Moon+has+Blood+Clots.jpg"
+  buyAmazon: "https://www.amazon.in/Our-Moon-Has-Blood-Clots/dp/818400513X"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Rahul Pandita was fourteen when his family left Srinagar in 1990, among the Kashmiri Pandits who fled the valley. His memoir is an account of that departure and of the decades of displacement that followed — a book about a house you cannot return to, written in deliberately unconsoling prose.
+  reviews: []
+  awards: []
+
+- slug: "politics-as-performance"
+  title: "Politics as Performance: A Social History of the Telugu Cinema"
+  author: "S.V. Srinivas"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "culture"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629273961783-4ZQ05BZA7PZWFLWOACCL/Politics+as+Performance.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/8178243725"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Telugu cinema and Telugu politics have been continuous with one another for most of the region’s modern history. S.V. Srinivas traces the traffic between them — the fan associations, the mythological film, the star as political entrepreneur — and argues that the cinema hall was a genuine site of political formation rather than a distraction from it.
+  reviews: []
+  awards: []
+
+- slug: "debating-patriarchy"
+  title: "Debating Patriarchy: The Hindu Code Bill Controversy in India, 1941–1956"
+  author: "Chitra Sinha"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629273989972-68WWOH423V5JED0MHP0H/Debating+Patriarchy+-+The+Hindu+Code+Bill+Controversy+in+India+%281941-1956%29.jpg"
+  buyAmazon: "https://www.amazon.in/Debating-Patriarchy-Hindu-Controversy-1941-1956/dp/0198078943"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The Hindu Code Bill was the most divisive legislative project of India’s first decade, proposing to reform marriage, divorce, inheritance and adoption. Chitra Sinha reconstructs the public argument it provoked — in the Constituent Assembly, in the press, in women’s organisations — and shows how much of the settlement was determined outside Parliament.
+  reviews: []
+  awards: []
+
+- slug: "a-rogue-and-peasant-slave"
+  title: "A Rogue and Peasant Slave: Adivasi Resistance 1800–2000"
+  author: "Shashank Kela"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "caste"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274037453-IR30RLB71R7W1PMF1TH0/A+Rogue+and+Peasant+Slave+Adivasi+Resistance+1800%E2%80%932000.jpg"
+  buyAmazon: "https://www.amazon.in/Rogue-Peasant-Slave-Resistance-1800-2000/dp/818905936X"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Shashank Kela writes two centuries of Adivasi resistance in central India, moving between the long historical record and the specific case of the Bhil country of western Madhya Pradesh, where he worked for many years. The book connects colonial-era revolts to contemporary struggles over forest land and displacement.
+  reviews: []
+  awards: []
+
+- slug: "in-freedoms-shade"
+  title: "In Freedom’s Shade"
+  author: "Anis Kidwai, translated by Ayesha Kidwai"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: true
+  theme: "gender"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274056339-KSOJKWBZDHKEGXHFDXOK/In+Freedom%27s+Shade.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/014341609X"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Anis Kidwai’s husband was killed in the violence of 1947. She went to Delhi and worked in the refugee camps and recovery operations for the next several years, and wrote this account in Urdu. Translated by her daughter Ayesha Kidwai, it is one of the most direct records of Partition’s aftermath in the capital, written by someone doing the work rather than observing it.
+  reviews: []
+  awards: []
+
+- slug: "conservation-at-the-crossroads"
+  title: "Conservation at the Crossroads: Science, Society and the Future of India’s Wildlife"
+  author: "Ghazala Shahabuddin"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "environment"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274071500-DR6000S54F8R1146EG5L/Conservation+at+the+Crossroads.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/8178242648"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Ghazala Shahabuddin examines Indian wildlife conservation as a set of choices — about which species matter, about whether people can remain inside protected areas, about what counts as evidence. Drawing on ecological research and on the history of Indian conservation policy, she argues for approaches that treat forests as inhabited landscapes.
+  reviews: []
+  awards: []
+
+- slug: "stateless-in-south-asia"
+  title: "Stateless in South Asia: The Chakmas between Bangladesh and India"
+  author: "Deepak Singh"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "region"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274126698-TKE5QPVY998MCJUC4B9E/Stateless+in+South+Asia.jpg"
+  buyAmazon: "https://www.amazon.in/Stateless-South-Asia-Chakmas-Bangladesh/dp/8132102363"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    The Chakmas left the Chittagong Hill Tracts and settled in Arunachal Pradesh, where they have spent decades in a legal limbo between two states. Deepak Singh follows the case and its people, and uses it to examine how citizenship is actually decided at the edges of the Indian union.
+  reviews: []
+  awards: []
+
+- slug: "gandhis-conscience-keeper"
+  title: "Gandhi’s Conscience Keeper: C. Rajagopalachari and Indian Politics"
+  author: "Vasanthi Srinivasan"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "biography"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274140983-6FYPBW0UQL1X4R52O5KJ/Gandhi%27s+Conscience+Keep.jpg"
+  buyAmazon: "https://www.amazon.in/Gandhis-Conscience-Keeper-Rajagopalachari-Politics/dp/B0072GH2AG"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    C. Rajagopalachari was Gandhi’s ally and interlocutor, independent India’s last Governor-General, a Congress Chief Minister and finally the founder of a party of the free-market right. Vasanthi Srinivasan reads his political thought seriously — its conservatism, its constitutionalism, its scepticism about the planning state — as a coherent position rather than a series of defections.
+  reviews: []
+  awards: []
+
+- slug: "the-long-revolution"
+  title: "The Long Revolution: The Birth and Growth of India’s IT Industry"
+  author: "Dinesh C. Sharma"
+  route: "fellowship"
+  prizeYear: null
+  round: null
+  joint: false
+  translation: false
+  theme: "economy"
+  publisher: ""
+  year: null
+  isbn: ""
+  cover: "1629274162719-QQLS30SOTE2QJUNREJAU/The+Long+Revolution.jpg"
+  buyAmazon: "https://www.amazon.in/gp/product/8172237685"
+  buyPublisher: ""
+  shortDescription: ""
+  description: |-
+    Dinesh C. Sharma traces the Indian software industry back before liberalisation, to the state-funded computing efforts of the 1960s and 1970s, the engineers trained in them, and the policy decisions that shaped what came after. The book argues that the 1990s boom had a long and largely public prehistory.
+  reviews: []
+  awards: []
+

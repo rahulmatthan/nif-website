@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{- $books := site.Data.books -}}
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The Library</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">Every book the Foundation has made or honoured.</h1>
+    <p class="lede narrow">Thirty-seven books written under NIF fellowships and nine winners of the NIF Book Prize — a working library of independent India, assembled over twenty-two years.</p>
+
+    <div style="margin-top:44px">
+      <div class="fgroup">
+        <div class="flabel">Route</div>
+        <div class="filters" data-f="route">
+          <button class="chip on" data-v="all">All</button>
+          <button class="chip" data-v="prize">Prize winners</button>
+          <button class="chip" data-v="fellowship">Fellowship books</button>
+          <button class="chip" data-v="translation">Translations</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <div class="flabel">Subject</div>
+        <div class="filters" data-f="theme">
+          <button class="chip on" data-v="all">All</button>
+          <button class="chip" data-v="politics">Politics</button>
+          <button class="chip" data-v="biography">Biography</button>
+          <button class="chip" data-v="caste">Caste &amp; society</button>
+          <button class="chip" data-v="environment">Environment</button>
+          <button class="chip" data-v="gender">Gender</button>
+          <button class="chip" data-v="culture">Arts &amp; culture</button>
+          <button class="chip" data-v="economy">Economy &amp; science</button>
+          <button class="chip" data-v="region">Region &amp; city</button>
+        </div>
+      </div>
+      <div class="count" id="count">Showing {{ len $books }} of {{ len $books }} books</div>
+      <div class="books" id="lib">
+        {{- range $books }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+(function(){
+  var state={route:'all',theme:'all'};
+  var cards=[].slice.call(document.querySelectorAll('#lib .bk'));
+  var count=document.getElementById('count');
+  function render(){
+    var shown=0;
+    cards.forEach(function(c){
+      var r=state.route==='all'||(state.route==='translation'?c.dataset.trans==='true':c.dataset.route===state.route);
+      var t=state.theme==='all'||c.dataset.theme===state.theme;
+      var ok=r&&t; c.hidden=!ok; if(ok)shown++;
+    });
+    count.textContent='Showing '+shown+' of '+cards.length+' books';
+  }
+  document.querySelectorAll('.filters').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('.chip'); if(!b)return;
+      g.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});
+      b.classList.add('on'); state[g.dataset.f]=b.dataset.v; render();
+    });
+  });
+})();
+</script>
+{{ end }}

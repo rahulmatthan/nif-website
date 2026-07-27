@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{- $bp := site.Data.status.bookPrize -}}
+{{- $winners := sort (where site.Data.books "route" "prize") "prizeYear" "desc" -}}
+{{- $jury := site.Data.juries.current -}}
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">NIF Book Prize</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:19ch">₹15 lakh, every year, for the best book written about India.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:58ch">Established in 2018 to spotlight and support outstanding research and writing about the world's largest democracy. Awarded for non-fiction on modern or contemporary India published in the preceding year.</p>
+    <p style="margin-top:32px">
+      {{ partial "cta.html" (dict "prog" $bp "openLabel" "Nominate a book" "verb" "nominations" "class" "lt") }}
+      <a class="btn lt" style="margin-left:10px;background:transparent;color:#fff;border-color:rgba(255,255,255,.4)" href="#prizefaq">How nomination works</a>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">Winners</p>
+      <h2>{{ len $winners }} books, since 2018</h2>
+    </div>
+    <div>
+      {{- range $winners }}
+      <div class="win">
+        <div class="yr">{{ .prizeYear }}</div>
+        <div>
+          <div class="au">{{ .author }}</div>
+          <h3><a href="{{ printf "/books/%s/" .slug | relLangURL }}" style="text-decoration:none">{{ .title }}</a></h3>
+          <p style="margin:0">{{ .shortDescription }}</p>
+          <p style="margin:14px 0 0"><a class="lnk" href="{{ printf "/books/%s/" .slug | relLangURL }}">Read about the book</a></p>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Process</p>
+        <h2>The jury</h2>
+        <p>The prize is judged by the Foundation's Governing Board — {{ $jury.chair }}, who chairs the Book Prize, together with {{ delimit (after 1 $jury.members) ", " ", " }}{{ with $jury.emeritus }}, with {{ delimit . ", " }} as Emeritus Board Member{{ end }}.</p>
+        <p>The jury reads towards a longlist announced in September, a shortlist in October, and a winner in November. {{ $jury.note | safeHTML }}</p>
+        <p><a class="lnk" href="{{ "/about/" | relLangURL }}">Read the Board's biographies</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">Eligibility</p>
+        <h2>What can be entered</h2>
+        <ul class="flist" style="border-top:1px solid var(--rule)">
+          <li><b>Any nationality.</b><span>There is no restriction on where the writer is from or lives.</span></li>
+          <li><b>Non-fiction only, any genre.</b><span>History, biography, political commentary, travel, memoir, reportage — anything that offers insight into the making of modern India.</span></li>
+          <li><b>English or translated into English.</b><span>Books originally written in an Indian language and translated into English are eligible, and have won.</span></li>
+          <li><b>Professionally published.</b><span>Books must have national or international distribution. Self-published works are not eligible.</span></li>
+          <li><b>Published in the preceding year.</b><span>The 2027 prize considers books published in 2026.</span></li>
+          <li><b>Not an NIF fellowship book.</b><span>Books supported by a Foundation fellowship are not eligible for the prize.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-k" id="prizefaq">
+  <div class="wrap narrow">
+    <p class="eyebrow">Questions</p>
+    <h2>Book Prize FAQs</h2>
+    <details open><summary>How is a book nominated?</summary><div class="ans"><strong>Publishers and literary agents may nominate titles from November.</strong> From January, authors may also submit their own books. The Foundation's team and jury additionally consider eligible books on their own initiative, so a book need not be formally nominated to be read. Write to <a href="mailto:{{ site.Params.contact.submissions }}">{{ site.Params.contact.submissions }}</a>.</div></details>
+    <details><summary>What is the prize money?</summary><div class="ans">The winner receives ₹15,00,000. Where the winning book is a translation, the award is shared between author and translator.</div></details>
+    <details><summary>When was the prize established?</summary><div class="ans">In 2018. The first prize was awarded that year to Milan Vaishnav for <em>When Crime Pays</em>.</div></details>
+    <details><summary>Are translated works considered?</summary><div class="ans">Yes. Books originally written in Indian languages and translated into English are eligible. Shekhar Pathak's <em>The Chipko Movement</em>, translated from the Hindi by Manisha Chaudhry, won in 2022.</div></details>
+    <details><summary>Are self-published books or e-books eligible?</summary><div class="ans">Only professionally published books with national or international distribution are considered. Self-published works are not eligible.</div></details>
+    <details><summary>What genres are eligible?</summary><div class="ans">There is no limitation within non-fiction. History, biography, political commentary, travelogue, memoir, reportage and academic monographs have all been longlisted or have won.</div></details>
+    <details><summary>Who judges the prize?</summary><div class="ans">The Governing Board of the New India Foundation, chaired for the prize by {{ $jury.chair }}, with external specialist readers brought in where a submission requires them.</div></details>
+    <details><summary>Is there a fee to enter?</summary><div class="ans">No. There is no entry fee for nomination by a publisher, an agent or an author.</div></details>
+  </div>
+</section>
+{{ end }}

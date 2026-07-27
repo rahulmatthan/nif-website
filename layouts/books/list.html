@@ -1,0 +1,11 @@
+{{- /* /books/ has no page of its own — the Library at /library is the index. Redirect there. */ -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Library | New India Foundation</title>
+<link rel="canonical" href="{{ "/library/" | absURL }}">
+<meta http-equiv="refresh" content="0; url={{ "/library/" | relURL }}">
+</head>
+<body><p>Redirecting to <a href="{{ "/library/" | relURL }}">The Library</a>.</p></body>
+</html>

@@ -1,0 +1,33 @@
+# Governing Board of the New India Foundation. Also constitutes the Book Prize / Fellowship jury.
+# To add a member: append an entry. `image` is a Squarespace CDN path suffix (downloaded at build) or a local file.
+- name: "Niraja Gopal Jayal"
+  role: "Avantha Chair, King's India Institute"
+  chairsPrize: true
+  image: "1628321348659-9VHNI645H12QNBW1ZAXL/Niraja+Gopal+Jayal+1.jpg"
+  bio: |-
+    Avantha Chair at King's India Institute, King's College London; Centennial Professor in the Department of Gender Studies at the London School of Economics; formerly Professor at the Centre for the Study of Law and Governance, JNU. Her most recent edited book is <em>Re-Forming India: The Nation Today</em> (Penguin Random House, 2019). <em>Citizenship and Its Discontents</em> (Permanent Black &amp; Harvard University Press, 2013) won the Ananda Kentish Coomaraswamy Prize of the Association of Asian Studies in 2015. She is also the author of <em>Representing India</em> (Palgrave Macmillan, 2006) and <em>Democracy and the State</em> (OUP, 1999), and co-editor of <em>The Oxford Companion to Politics in India</em>. She delivered the Radhakrishnan Memorial Lectures at All Souls College, Oxford in 2009 and was Vice-President of the American Political Science Association, 2011–12.
+- name: "Srinath Raghavan"
+  role: "Historian; Professor, Ashoka University"
+  chairsPrize: false
+  image: "1628321392692-AHWJS4ZQMRKQ7TE3CWBD/Srinath+Raghavan+1.jpg"
+  bio: |-
+    Professor of History and International Relations at Ashoka University and Senior Fellow at Carnegie India. He took his PhD in War Studies at King's College London, where he taught for many years, and before entering academia spent six years as an infantry officer in the Indian Army. His books include <em>War and Peace in Modern India</em> (2010), <em>1971: A Global History of the Creation of Bangladesh</em> (2013), <em>India's War</em> (2016) and <em>Fierce Enigmas</em> (2018). He has served on the National Security Advisory Board and as Chief Editor of the Kargil War History for the Ministry of Defence. Recipient of the K. Subrahmanyam Award (2011) and the Infosys Prize for Social Sciences (2015).
+- name: "Manish Sabharwal"
+  role: "Managing Trustee; Vice Chairman, TeamLease Services"
+  chairsPrize: false
+  image: "1629183645562-UJHRL1QVOQO6H4QG1GJI/Manish+Sabharwal+1+copy.jpg"
+  bio: |-
+    Co-founder and Vice Chairman of TeamLease Services, India's largest staffing and human capital firm, which also operates India's first vocational university and a national PPP apprenticeship programme. He is a member of the National Skill Mission and the Central Advisory Board of Education, and has served as an Independent Director on the Board of the Reserve Bank of India. MBA from the Wharton School; alumnus of Shri Ram College of Commerce and Mayo College, Ajmer. He co-authored <em>Kashmir Under 370</em> (Juggernaut, 2024).
+- name: "Rahul Matthan"
+  role: "Partner, Trilegal"
+  chairsPrize: false
+  image: "ea563752-a698-4a55-a00b-88a318e30fd4/Rahul+Matthan+full+jpeg.jpg"
+  bio: |-
+    A Partner in Trilegal's Bengaluru office, where he heads the firm's technology, media and telecommunications practice. He advises on data protection, digital finance, e-commerce, telecom, platform technologies and biotech, and writes the weekly Ex Machina column. His books include <em>Privacy 3.0: Unlocking Our Data-Driven Future</em> (HarperCollins, 2018) and <em>The Third Way: India's Revolutionary Approach to Data Governance</em> (Juggernaut, 2023).
+- name: "Nandan Nilekani"
+  role: "Emeritus Board Member; Co-founder, Infosys"
+  chairsPrize: false
+  emeritus: true
+  image: "1628321621970-YY6BVHN92PCDQC7DCU47/Nandan+Nilekani+1.jpg"
+  bio: |-
+    Co-founder and Non-Executive Chairman of Infosys, and Co-founder and Chairman of EkStep. He was Chairman of the Unique Identification Authority of India in the rank of a Cabinet Minister. Born in Bengaluru, he holds a Bachelor's degree from IIT Bombay. He received the Padma Bhushan in 2006 and the Joseph Schumpeter Prize in 2005, and was listed by <em>Time</em> among the hundred most influential people in the world in 2006 and 2009. He is the author of <em>Imagining India</em> (Penguin, 2010) and co-author of <em>Rebooting India</em> (2015) and <em>The Art of Bitfulness</em> (2022).

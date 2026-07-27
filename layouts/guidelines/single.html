@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{- $key := .Params.programme -}}
+{{- $d := index site.Data.status $key -}}
+{{- $isBook := eq $key "bookFellowship" -}}
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">Guidelines</p>
+    <h1 style="font-size:clamp(2rem,4vw,3rem)">{{ $d.name }}</h1>
+    <p class="lede">Annual, cycle {{ $d.cycle }}. Worth <strong>{{ $d.amount }}</strong>{{ if $isBook }} over twelve months{{ else }} over six months{{ end }}.</p>
+    <p class="no-print"><button class="btn" onclick="window.print()">Download as PDF</button></p>
+
+    <h2 style="margin-top:40px">What it is</h2>
+    {{- if $isBook }}
+    <p>The NIF Book Fellowship is awarded annually to scholars and writers working on any aspect of the history of independent India. ₹1,00,000 a month for twelve months, with the balance of ₹6,00,000 on submission of the final manuscript. Beyond the stipend, the Fellowship provides editorial, legal and administrative guidance from proposal to publication, introductions to publishers and agents, and community support. Open to Indian nationals, including those living abroad.</p>
+    {{- else }}
+    <p>The NIF Translation Fellowship awards ₹6,00,000 over six months to translate a significant non-fiction work into English from one of ten Indian languages: Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil and Urdu. Applicants should be fluent in the source language and English and have prior translation experience. Open equally to established translators and debutants. Recipients commit full time for the duration; the fellowship is non-renewable.</p>
+    {{- end }}
+
+    <h2 style="margin-top:36px">Timeline</h2>
+    <ul class="dates">
+      {{- range $d.timeline }}<li><b>{{ .when }}</b><span>{{ .what }}</span></li>{{ end }}
+    </ul>
+
+    <h2 style="margin-top:36px">What to submit</h2>
+    <ul class="flist" style="border-top:1px solid var(--rule)">
+      <li><b>A proposal</b><span>Two to three thousand words: the question the {{ if $isBook }}book{{ else }}translation{{ end }} answers, the sources it rests on, and why it matters now.</span></li>
+      <li><b>{{ if $isBook }}A sample chapter{{ else }}A sample translation{{ end }}</b><span>{{ if $isBook }}A representative chapter of the proposed book.{{ else }}Ten pages of the translated text alongside the corresponding source pages.{{ end }}</span></li>
+      <li><b>A working schedule</b><span>A month-by-month plan showing how the manuscript will be finished inside the term.</span></li>
+    </ul>
+
+    <h2 style="margin-top:36px">How to apply</h2>
+    <p>Applications are made through the form at <strong>newindiafoundation.org/apply</strong> when the call is open. Questions: <a href="mailto:{{ site.Params.contact.fellowships }}">{{ site.Params.contact.fellowships }}</a>.</p>
+    <p class="small">Generated from the New India Foundation website. This document reflects the current cycle and cannot drift from the site.</p>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<style>@media print{header.site,.ribbon,.sub,footer.site,.no-print{display:none!important}section{padding:0}body{font-size:12pt}}</style>
+{{ end }}

@@ -1,0 +1,124 @@
+{{ define "main" }}
+{{- $winnersDesc := sort (where site.Data.books "route" "prize") "prizeYear" "desc" -}}
+{{- $winnersAsc := sort (where site.Data.books "route" "prize") "prizeYear" "asc" -}}
+{{- $current := index $winnersDesc 0 -}}
+{{- $maxYear := $current.prizeYear -}}
+{{- $fellowship := where site.Data.books "route" "fellowship" -}}
+{{- $st := site.Params.stats -}}
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow pale">The New India Foundation · Bengaluru</p>
+    <h1>We pay for the books India has not yet written about itself.</h1>
+    <p class="lede">Historians stop at 1947. Social scientists rarely look back. The New India Foundation exists to fund the research and writing that falls in the gap — and to honour the best of it.</p>
+    <div class="stats">
+      <div class="stat"><b>{{ $st.years }}</b><s>Years</s></div>
+      <div class="stat"><b>{{ $st.rounds }}</b><s>Fellowship rounds</s></div>
+      <div class="stat"><b>{{ $st.books }}</b><s>Books published</s></div>
+      <div class="stat"><b>{{ $st.prizes }}</b><s>Prizes awarded</s></div>
+      <div class="stat"><b>{{ $st.prize }}</b><s>Annual book prize</s></div>
+    </div>
+    <div class="shelf-wrap">
+      <p class="shelf-lbl">Every winner of the NIF Book Prize, {{ (index $winnersAsc 0).prizeYear }}–{{ $maxYear }} — select a spine</p>
+      <div class="shelf">
+        {{- $skins := slice "w1" "w3" "w2" "w4" "w1" "w3" "w2" "w4" "w1" -}}
+        {{- range $i, $w := $winnersAsc -}}
+          {{- $cur := eq $w.prizeYear $maxYear -}}
+          {{- $sur := index (last 1 (split (index (split $w.author ",") 0) " ")) 0 -}}
+          {{- $short := index (split $w.title ":") 0 -}}
+          <a class="spine {{ if $cur }}cur{{ else }}{{ index $skins (mod $i 9) }}{{ end }}"
+             href="{{ printf "/books/%s/" $w.slug | relLangURL }}" title="{{ $w.title }}">
+            <span class="txt">{{ $sur }} · {{ $short }}</span><span class="yr">{{ $w.prizeYear }}</span></a>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="now">
+  <div class="wrap">
+    <div class="grid">
+      <div>{{ partial "cover.html" (dict "book" $current "eager" true "class" "cov" "sizes" "230px") }}</div>
+      <div>
+        {{- $parts := split $current.title ":" -}}
+        {{- $sub := "" -}}{{- if gt (len $parts) 1 }}{{ $sub = strings.TrimSpace (index $parts 1) }}{{ end -}}
+        <span class="badge">Winner · Book Prize {{ $current.prizeYear }}</span>
+        <h2>{{ index $parts 0 }}</h2>
+        <p class="lede" style="margin-bottom:22px">{{ with $sub }}{{ . }}<br>{{ end }}<strong style="font-family:var(--util);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--madder)">{{ $current.author }}</strong></p>
+        <p>{{ $current.shortDescription }}</p>
+        <p style="margin-top:26px"><a class="btn md" href="{{ "/prize/" | relLangURL }}">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="{{ "/library/" | relLangURL }}">Browse the library</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">What we do</p>
+      <h2>Two programmes, one purpose</h2>
+      <p class="lede">One pays for books before they exist. The other honours them once they do.</p>
+    </div>
+    <div class="progs">
+      <div class="prog">
+        <h3>NIF Book Fellowships</h3>
+        <div class="amt">{{ site.Data.status.bookFellowship.amount }}</div>
+        <div class="amt-n">Per fellow · twelve months</div>
+        <p>Awarded annually to scholars and writers working on any aspect of India after 1947. ₹1 lakh a month for twelve months, with the balance of ₹6 lakh on submission of the final manuscript — plus editorial, legal and administrative guidance from proposal to publication, and introductions to publishers and agents.</p>
+        {{ partial "timeline.html" (site.Data.status.bookFellowship) }}
+        <p><a class="btn" href="{{ "/fellowships/" | relLangURL }}">Fellowships</a></p>
+      </div>
+      <div class="prog">
+        <h3>NIF Book Prize</h3>
+        <div class="amt">{{ site.Data.status.bookPrize.amount }}</div>
+        <div class="amt-n">Annual · single winner</div>
+        <p>Awarded every year since 2018 for the best non-fiction book on modern or contemporary India published in the preceding year. Open to writers of any nationality, for work written in English or translated into English from any language.</p>
+        {{ partial "timeline.html" (site.Data.status.bookPrize) }}
+        <p><a class="btn" href="{{ "/prize/" | relLangURL }}">The Book Prize</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap">
+    <div class="three">
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>NIF Translation Fellowships</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">₹6 lakh over six months to bring a significant non-fiction work from one of ten Indian languages into English.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "/fellowships/" | relLangURL }}">Read more</a></p>
+      </div>
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>Girish Karnad Memorial NIF Lecture</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">A public lecture by a leading intellectual on themes around modern India, in memory of the playwright and Jnanpith laureate.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ "/about/" | relLangURL }}">Read more</a></p>
+      </div>
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>Bhashavaad</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">An annual translation conference with the Ashoka Centre for Translation, and a searchable database of Indian translations with 30,000+ entries.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="{{ site.Params.social.bhashavaad }}" target="_blank" rel="noopener">bhashavaad.in</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">The corpus</p>
+      <h2>Twenty-two years of books</h2>
+      <p class="lede">Thirty-seven books written under fellowship, and nine prize winners. Together, a working library of independent India.</p>
+    </div>
+    <div class="books">
+      {{- range first 6 $winnersDesc }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
+      {{- range first 6 $fellowship }}{{ partial "book-card.html" (dict "book" .) }}{{ end -}}
+    </div>
+    <p style="margin-top:44px"><a class="btn gh" href="{{ "/library/" | relLangURL }}">Browse all {{ len site.Data.books }} books</a></p>
+  </div>
+</section>
+{{ end }}

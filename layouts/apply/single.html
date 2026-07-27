@@ -1,0 +1,114 @@
+{{ define "main" }}
+{{- $s := site.Data.status -}}
+{{- $bf := partial "appstatus.html" $s.bookFellowship -}}
+{{- $tf := partial "appstatus.html" $s.translationFellowship -}}
+{{- $bp := partial "appstatus.html" $s.bookPrize -}}
+{{- $endpoint := $s.formEndpoint -}}
+{{- $formLive := not (strings.Contains $endpoint "REPLACE_WITH") -}}
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">Apply</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:18ch">Everything you need to apply, in one place.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:56ch">Three ways to be part of the Foundation's work: write a book under fellowship, translate one, or put a published book forward for the NIF Book Prize.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="progs">
+      {{- range $prog := slice (dict "s" $bf "d" $s.bookFellowship "anchor" "book") (dict "s" $tf "d" $s.translationFellowship "anchor" "translation") }}
+      {{- $st := $prog.s -}}{{- $d := $prog.d -}}
+      <div class="prog">
+        <span class="badge" style="background:{{ if eq $st.state "open" }}var(--madder){{ else }}var(--indigo){{ end }}">
+          {{- if eq $st.state "open" }}Open now · closes {{ $st.closesDate }}{{ else if eq $st.state "soon" }}Opens {{ $st.opensDate }}{{ else }}Closed · opens {{ $st.nextOpensDate }}{{ end -}}
+        </span>
+        <h3>{{ $d.name }}</h3>
+        <div class="amt">{{ $d.amount }}</div>
+        <div class="amt-n">{{ if eq $prog.anchor "book" }}Twelve months · awarded annually{{ else }}Six months · awarded annually{{ end }}</div>
+        <p>{{ if eq $prog.anchor "book" }}For scholars and writers producing a non-fiction book on any aspect of India after 1947. Open to Indian nationals, including those living abroad.{{ else }}To translate a significant non-fiction work into English from Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil or Urdu.{{ end }}</p>
+        {{ partial "timeline.html" $d }}
+        <p>
+          {{ if eq $st.state "open" }}<a class="btn" href="#apply-form">Start an application</a>{{ else }}<a class="btn" aria-disabled="true" href="#apply-form">{{ if eq $st.state "soon" }}Opens {{ $st.opensDate }}{{ else }}Opens {{ $st.nextOpensDate }}{{ end }}</a>{{ end }}<br>
+          <a class="lnk" style="display:inline-block;margin-top:18px" href="{{ printf "/guidelines/%s-fellowship/" $prog.anchor | relLangURL }}">Download the guidelines (PDF)</a>
+        </p>
+      </div>
+      {{- end }}
+    </div>
+
+    <div style="margin-top:44px;border:1px solid var(--rule);padding:44px">
+      <span class="badge" style="background:{{ if eq $bp.state "open" }}var(--madder){{ else }}var(--indigo){{ end }}">
+        {{- if eq $bp.state "open" }}Now open · closes {{ $bp.closesDate }}{{ else if eq $bp.state "soon" }}Opens {{ $bp.opensDate }}{{ else }}Opens {{ $bp.nextOpensDate }}{{ end -}}
+      </span>
+      <h3>Nominate a book for the NIF Book Prize</h3>
+      <p style="max-width:62ch">₹15,00,000 for the best non-fiction book on modern or contemporary India published in the preceding year. Publishers and literary agents may nominate from November; authors may submit their own books from January. There is no entry fee.</p>
+      <p><a class="btn md" href="mailto:{{ site.Params.contact.submissions }}?subject=NIF%20Book%20Prize%20nomination">Nominate a book</a>
+      <a class="lnk" style="margin-left:18px" href="{{ "/prize/" | relLangURL }}">Eligibility and past winners</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="hd"><p class="eyebrow">Before you apply</p><h2>What we ask for</h2></div>
+    <div class="three">
+      <div><h4>A proposal</h4><p class="small">Two to three thousand words setting out the question the book answers, the sources it will rest on, and why it matters now.</p></div>
+      <div><h4>A sample chapter</h4><p class="small">Or, for translations, ten pages of the translated text alongside the corresponding source pages.</p></div>
+      <div><h4>A working schedule</h4><p class="small">A month-by-month plan showing how the manuscript will be finished inside the term of the fellowship.</p></div>
+    </div>
+    <p class="small" style="margin-top:26px">Questions about eligibility or the process: <a class="lnk" href="mailto:{{ site.Params.contact.fellowships }}">{{ site.Params.contact.fellowships }}</a></p>
+  </div>
+</section>
+
+<section id="apply-form">
+  <div class="wrap narrow">
+    <p class="eyebrow">The application</p>
+    <h2>Apply for a fellowship</h2>
+    {{- if not $formLive }}
+    <div class="notice"><strong>This form is not yet connected.</strong> NIF: create a Formspree form (with file uploads enabled) and paste its ID into <code>data/status.yaml → formEndpoint</code>. Until then, applications can be sent to <a href="mailto:{{ site.Params.contact.fellowships }}">{{ site.Params.contact.fellowships }}</a>. See the README.</div>
+    {{- end }}
+    {{- if or (eq $bf.state "open") (eq $tf.state "open") }}
+    <form class="appform" action="{{ $endpoint }}" method="POST" enctype="multipart/form-data"{{ if not $formLive }} onsubmit="event.preventDefault();alert('The application form is not yet connected. Please email fellowships@newindiafoundation.org.');"{{ end }}>
+      <div>
+        <label for="fellowship">Which fellowship</label>
+        <select id="fellowship" name="fellowship" required>
+          {{ if eq $bf.state "open" }}<option value="Book Fellowship">NIF Book Fellowship</option>{{ end }}
+          {{ if eq $tf.state "open" }}<option value="Translation Fellowship">NIF Translation Fellowship</option>{{ end }}
+        </select>
+      </div>
+      <div><label for="name">Full name</label><input id="name" name="name" type="text" required></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
+      <div>
+        <label for="title">Working title</label><input id="title" name="working_title" type="text" required>
+      </div>
+      <div>
+        <label for="summary">One-paragraph summary</label>
+        <textarea id="summary" name="summary" required></textarea>
+        <p class="hint">A few sentences on the question the book answers.</p>
+      </div>
+      <div>
+        <label for="proposal">Proposal (PDF)</label>
+        <input id="proposal" name="proposal" type="file" accept=".pdf,.doc,.docx" required>
+        <p class="hint">2,000–3,000 words. PDF or Word.</p>
+      </div>
+      <div>
+        <label for="sample">Sample chapter / translated pages (PDF)</label>
+        <input id="sample" name="sample_chapter" type="file" accept=".pdf,.doc,.docx" required>
+        <p class="hint">For translations: ten translated pages alongside the source pages.</p>
+      </div>
+      <div>
+        <label for="schedule">Working schedule (PDF)</label>
+        <input id="schedule" name="schedule" type="file" accept=".pdf,.doc,.docx" required>
+        <p class="hint">A month-by-month plan for finishing within the term.</p>
+      </div>
+      <input type="hidden" name="_subject" value="NIF Fellowship application">
+      <div><button class="btn md" type="submit">Submit application</button></div>
+      <p class="hint">By submitting you agree that NIF may store and review your materials for the purpose of assessing the application.</p>
+    </form>
+    {{- else }}
+    <div class="notice">Applications are not open at the moment. The Book Fellowship opens <strong>{{ $bf.opensDate }}</strong>{{ if eq $bf.state "closed" }} ({{ $bf.nextOpensDate }} for the next cycle){{ end }} and the Translation Fellowship on the same date. Join the <a href="{{ site.Params.social.newsletter }}" target="_blank" rel="noopener">mailing list</a> to be told when the call opens.</div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

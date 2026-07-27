@@ -1,0 +1,12 @@
+{{/* Content adapter: generates one page per entry in data/books.yaml at /books/<slug>.
+     Editors never touch HTML — adding a book to books.yaml creates its page. */}}
+{{ range $book := site.Data.books }}
+  {{ $page := dict
+    "path" $book.slug
+    "title" $book.title
+    "kind" "page"
+    "params" (dict "book" $book "description" $book.shortDescription)
+    "content" (dict "mediaType" "text/markdown" "value" "")
+  }}
+  {{ $.AddPage $page }}
+{{ end }}

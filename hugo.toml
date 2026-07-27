@@ -1,0 +1,84 @@
+baseURL = "https://rahulmatthan.github.io/nif-website/"
+languageCode = "en-in"
+title = "New India Foundation"
+enableRobotsTXT = true
+enableInlineShortcodes = true
+timeZone = "Asia/Kolkata"
+
+# Trailing-slash-free legacy aliases (e.g. /governing-board) are emitted as directories with index.html.
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[pagination]
+  pagerSize = 100
+
+[markup.goldmark.renderer]
+  unsafe = true   # allow the <em> tags carried verbatim in NIF's own copy
+
+[markup.highlight]
+  noClasses = false
+
+[imaging]
+  resampleFilter = "Lanczos"
+[imaging.jpeg]
+  quality = 84
+[imaging.webp]
+  quality = 82
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  description = "The New India Foundation funds and celebrates non-fiction writing on India after 1947, through the NIF Book Fellowships, the NIF Translation Fellowships and the NIF Book Prize."
+  tagline = "Twenty years of funding books about independent India. Fellowships, translation grants, and the ₹15 lakh NIF Book Prize."
+  established = 2004
+  ogDefaultAlt = "New India Foundation"
+
+  [params.stats]
+    years = "22"
+    rounds = "12"
+    books = "37"
+    prizes = "9"
+    prize = "₹15L"
+
+  [params.contact]
+    general = "info@newindiafoundation.org"
+    submissions = "submissions@newindiafoundation.org"
+    fellowships = "fellowships@newindiafoundation.org"
+    press = "press@newindiafoundation.org"
+    address = "The Managing Trustee\nNew India Foundation\nC/o Neev Schools\nYemalur–Kempapura Main Road\nYemalur, Bengaluru 560037"
+
+  [params.social]
+    x = "https://twitter.com/newindiafndtion"
+    instagram = "https://www.instagram.com/newindiafoundation/"
+    facebook = "https://www.facebook.com/NewIndiaFoundation/"
+    youtube = "https://www.youtube.com/c/newindiafoundation"
+    linkedin = "https://www.linkedin.com/company/53100343"
+    newsletter = "https://newindiafoundation.scrollstack.com"
+    bhashavaad = "https://bhashavaad.in/"
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 10
+[[menu.main]]
+  name = "Fellowships"
+  pageRef = "/fellowships"
+  weight = 20
+[[menu.main]]
+  name = "Book Prize"
+  pageRef = "/prize"
+  weight = 30
+[[menu.main]]
+  name = "The Library"
+  pageRef = "/library"
+  weight = 40
+[[menu.main]]
+  name = "News"
+  pageRef = "/news"
+  weight = 50
+[[menu.main]]
+  name = "Apply"
+  pageRef = "/apply"
+  weight = 60
+  [menu.main.params]
+    cta = true

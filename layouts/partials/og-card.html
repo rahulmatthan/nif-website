@@ -1,0 +1,25 @@
+{{- /* Generates a 1200x630 typographic Open Graph card from the design tokens.
+       Params: title (string), kicker (string). Returns an image resource. */ -}}
+{{- $title := index (split .title ":") 0 | chomp -}}
+{{- $kicker := .kicker | default "New India Foundation" -}}
+{{- $base := resources.Get "og/base.png" -}}
+{{- $disp := resources.Get "fonts/og-display.ttf" -}}
+{{- $util := resources.Get "fonts/og-util.ttf" -}}
+{{- /* naive word-wrap: ~20 chars per line */ -}}
+{{- $lines := slice -}}
+{{- $line := "" -}}
+{{- range $w := split $title " " -}}
+  {{- $try := cond (eq $line "") $w (printf "%s %s" $line $w) -}}
+  {{- if gt (len $try) 20 -}}
+    {{- if ne $line "" }}{{ $lines = $lines | append $line }}{{ end -}}
+    {{- $line = $w -}}
+  {{- else -}}
+    {{- $line = $try -}}
+  {{- end -}}
+{{- end -}}
+{{- if ne $line "" }}{{ $lines = $lines | append $line }}{{ end -}}
+{{- $wrapped := delimit $lines "\n" -}}
+{{- $img := $base.Filter (images.Text $kicker (dict "color" "#D98A7C" "size" 28 "font" $util "x" 90 "y" 84)) -}}
+{{- $img = $img.Filter (images.Text $wrapped (dict "color" "#FBFAF7" "size" 82 "font" $disp "x" 88 "y" 168 "linespacing" 22)) -}}
+{{- $img = $img.Filter (images.Text "newindiafoundation.org" (dict "color" "#8E9BB5" "size" 24 "font" $util "x" 90 "y" 548)) -}}
+{{- return ($img.Resize "1200x630 png") -}}

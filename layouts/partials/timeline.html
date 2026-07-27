@@ -1,0 +1,6 @@
+{{- /* Renders a programme's annual timeline as the .dates list. Input: a programme map from status.yaml. */ -}}
+<ul class="dates">
+  {{- range .timeline }}
+  <li><b>{{ .when }}</b><span>{{ .what }}</span></li>
+  {{- end }}
+</ul>

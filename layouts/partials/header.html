@@ -1,0 +1,23 @@
+{{- $cur := . -}}
+<header class="site">
+  <div class="bar">
+    <a class="logo" href="{{ "/" | relLangURL }}">
+      {{- $logo := resources.Get "logo.png" -}}
+      {{- if $logo -}}
+        {{- $l := $logo.Process "resize 120x png" -}}
+        <img src="{{ $l.RelPermalink }}" alt="New India Foundation" width="{{ $l.Width }}" height="{{ $l.Height }}">
+      {{- end -}}
+      <span class="lk">New India Foundation<span>Bengaluru · since 2004</span></span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      {{- range site.Menus.main -}}
+        {{- $active := or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) -}}
+        {{- $onBook := and (eq $cur.Type "books") (eq .PageRef "/library") -}}
+        <a href="{{ .PageRef | relLangURL }}"
+           class="{{ if .Params.cta }}navcta {{ end }}{{ if or $active $onBook }}on{{ end }}"
+           {{ if or $active $onBook }}aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{- end -}}
+    </nav>
+  </div>
+</header>

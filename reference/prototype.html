@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New India Foundation — Fellowships and the NIF Book Prize</title>
+<meta name="description" content="The New India Foundation funds and celebrates non-fiction writing on India after 1947, through the NIF Book Fellowships, the NIF Translation Fellowships and the NIF Book Prize.">
+<meta property="og:title" content="New India Foundation">
+<meta property="og:description" content="Twenty years of funding books about independent India. Fellowships, translation grants, and the ₹15 lakh NIF Book Prize.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.newindiafoundation.org">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1B1E;
+  --paper:#FBFAF7;
+  --indigo:#26355C;
+  --indigo-deep:#1A2542;
+  --madder:#A63A2E;
+  --khadi:#E8E2D5;
+  --rule:#C9C4B8;
+  --muted:#5F6169;
+  --display:'Fraunces',Georgia,serif;
+  --body:'Source Serif 4',Georgia,serif;
+  --util:'Archivo',-apple-system,BlinkMacSystemFont,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17.5px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.narrow{max-width:760px}
+
+/* ---------- utility type ---------- */
+.eyebrow{
+  font-family:var(--util);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--madder);
+  margin:0 0 14px;
+}
+.eyebrow.q{color:var(--indigo)}
+.eyebrow.pale{color:rgba(255,255,255,.62)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.14;margin:0 0 .5em;letter-spacing:-.011em}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:400}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+h3{font-size:1.35rem}
+h4{font-size:1.06rem}
+p{margin:0 0 1.15em}
+.lede{font-size:1.28rem;line-height:1.52;color:#33353B}
+.small{font-size:.94rem;color:var(--muted)}
+.rule{height:1px;background:var(--rule);border:0;margin:0}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:60;background:var(--indigo);color:#fff}
+.bar{display:flex;align-items:center;gap:34px;padding:14px 32px;max-width:var(--wrap);margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.logo img{height:40px;width:auto;filter:brightness(0) invert(1)}
+.logo .lk{font-family:var(--display);font-size:1.02rem;line-height:1.1;letter-spacing:-.01em}
+.logo .lk span{display:block;font-family:var(--util);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:3px}
+nav.main{margin-left:auto;display:flex;gap:4px;align-items:center}
+nav.main a{
+  font-family:var(--util);font-size:13px;font-weight:500;letter-spacing:.03em;
+  color:rgba(255,255,255,.82);text-decoration:none;padding:9px 14px;border-radius:2px;
+  transition:background .15s,color .15s;
+}
+nav.main a:hover{background:rgba(255,255,255,.1);color:#fff}
+nav.main a.on{color:#fff;background:rgba(255,255,255,.14)}
+nav.main a.navcta{background:var(--madder);color:#fff;margin-left:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+nav.main a.navcta:hover{background:#8E3126;color:#fff}
+nav.main a.navcta.on{background:#8E3126;color:#fff}
+.burger{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;font-family:var(--util);font-size:12px;letter-spacing:.1em;padding:9px 14px;border-radius:2px;cursor:pointer}
+
+/* status ribbon */
+.ribbon{background:var(--khadi);border-bottom:1px solid var(--rule)}
+.ribbon .wrap{display:flex;flex-wrap:wrap;gap:0 34px;align-items:center;padding-top:0;padding-bottom:0}
+.ribbon a{font-family:var(--util);font-size:12.5px;letter-spacing:.02em;color:#3A3C42;display:flex;align-items:center;gap:9px;text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
+.ribbon a:hover{color:var(--indigo);border-bottom-color:var(--madder)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--madder);flex-shrink:0}
+.dot.q{background:var(--indigo)}
+
+/* ---------- sections ---------- */
+.page{display:none}
+.page.on{display:block;animation:fade .32s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+section{padding:78px 0}
+section.tight{padding:52px 0}
+.band{background:var(--indigo);color:#fff}
+.band h2,.band h3{color:#fff}
+.band p{color:rgba(255,255,255,.8)}
+.band-k{background:var(--khadi)}
+.hd{max-width:720px;margin-bottom:44px}
+
+/* ---------- hero / shelf ---------- */
+.hero{background:var(--indigo);color:#fff;padding:74px 0 0;overflow:hidden}
+.hero h1{color:#fff;max-width:16ch}
+.hero .lede{color:rgba(255,255,255,.78);max-width:52ch}
+.stats{display:flex;flex-wrap:wrap;gap:38px;margin:38px 0 8px}
+.stat b{display:block;font-family:var(--display);font-size:2.5rem;font-weight:400;line-height:1}
+.stat s{display:block;text-decoration:none;font-family:var(--util);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:7px}
+
+.shelf-wrap{margin-top:56px;padding-bottom:0;border-top:1px solid rgba(255,255,255,.16)}
+.shelf-lbl{font-family:var(--util);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);padding:16px 0 20px}
+.shelf{display:flex;align-items:flex-end;gap:5px;overflow-x:auto;padding-bottom:0;scrollbar-width:thin}
+.spine{
+  flex:0 0 auto;width:46px;height:250px;border-radius:2px 2px 0 0;
+  background:var(--khadi);color:var(--ink);cursor:pointer;position:relative;
+  display:flex;align-items:center;justify-content:center;padding:14px 0;
+  transition:transform .22s cubic-bezier(.2,.8,.3,1),height .22s;
+  border:0;font-family:inherit;text-align:left;
+}
+.spine:hover,.spine:focus-visible{transform:translateY(-13px)}
+.spine .txt{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--display);font-size:12.5px;line-height:1.25;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-height:220px}
+.spine .yr{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--util);font-size:8.5px;letter-spacing:.06em;opacity:.55}
+.spine.w1{background:#DCD4C2}
+.spine.w2{background:#C9BFA8;width:52px;height:266px}
+.spine.w3{background:#8E9BB5;color:#141821}
+.spine.w4{background:#33436E;color:#F3F0E8;width:41px;height:236px}
+.spine.cur{background:var(--madder);color:#FFF6F2;width:58px;height:288px}
+.spine.cur .yr{opacity:.75}
+
+/* current winner card */
+.now{background:var(--paper);border-top:6px solid var(--madder)}
+.now .grid{display:grid;grid-template-columns:230px 1fr;gap:52px;align-items:start}
+.now .cov{border:1px solid var(--rule);box-shadow:0 14px 34px rgba(26,27,30,.13)}
+.badge{display:inline-block;font-family:var(--util);font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;background:var(--madder);color:#fff;padding:6px 11px;border-radius:2px;margin-bottom:16px}
+
+/* ---------- programme blocks ---------- */
+.progs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule)}
+.prog{padding:44px;border-right:1px solid var(--rule);display:flex;flex-direction:column}
+.prog:last-child{border-right:0}
+.prog .amt{font-family:var(--display);font-size:2.3rem;font-weight:400;margin:6px 0 2px;color:var(--indigo)}
+.prog .amt-n{font-family:var(--util);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.prog p{flex:1}
+.dates{list-style:none;padding:0;margin:22px 0;border-top:1px solid var(--rule)}
+.dates li{display:flex;gap:18px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:.93rem}
+.dates b{font-family:var(--util);font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--indigo);flex:0 0 150px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-block;font-family:var(--util);font-size:12.5px;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;text-decoration:none;
+  padding:14px 26px;border-radius:2px;border:1px solid var(--indigo);
+  background:var(--indigo);color:#fff;cursor:pointer;transition:.16s;
+}
+.btn:hover{background:var(--indigo-deep);border-color:var(--indigo-deep)}
+.btn.gh{background:transparent;color:var(--indigo)}
+.btn.gh:hover{background:var(--indigo);color:#fff}
+.btn.md{background:var(--madder);border-color:var(--madder)}
+.btn.md:hover{background:#8E3126;border-color:#8E3126}
+.btn.lt{background:#fff;color:var(--indigo);border-color:#fff}
+.btn.lt:hover{background:var(--khadi);border-color:var(--khadi)}
+.btn[aria-disabled="true"]{background:transparent;color:var(--muted);border-color:var(--rule);cursor:default}
+.btn[aria-disabled="true"]:hover{background:transparent;color:var(--muted)}
+.lnk{font-family:var(--util);font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo);text-decoration:none;border-bottom:1.5px solid var(--madder);padding-bottom:2px}
+.lnk:hover{color:var(--madder)}
+
+/* ---------- winners ---------- */
+.win{display:grid;grid-template-columns:110px 1fr;gap:34px;padding:32px 0;border-bottom:1px solid var(--rule);align-items:start}
+.win .yr{font-family:var(--display);font-size:2.1rem;color:var(--indigo);line-height:1;padding-top:2px}
+.win h3{margin-bottom:4px}
+.win .au{font-family:var(--util);font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--madder);margin-bottom:9px}
+.cite{border-left:2px solid var(--khadi);padding-left:18px;margin-top:14px;font-size:.97rem;color:#3E4046}
+
+/* ---------- library ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:14px}
+.chip{
+  font-family:var(--util);font-size:12px;font-weight:500;letter-spacing:.04em;
+  padding:8px 15px;border:1px solid var(--rule);background:transparent;border-radius:2px;
+  cursor:pointer;transition:.15s;color:#40424A;
+}
+.chip:hover{border-color:var(--indigo);color:var(--indigo)}
+.chip.on{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.fgroup{margin-bottom:22px}
+.flabel{font-family:var(--util);font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.count{font-family:var(--util);font-size:12.5px;color:var(--muted);margin:26px 0 22px;padding-top:16px;border-top:1px solid var(--rule)}
+.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(184px,1fr));gap:38px 26px}
+.bk{display:flex;flex-direction:column;text-decoration:none}
+.bk .ct{aspect-ratio:2/3;background:var(--khadi);border:1px solid var(--rule);overflow:hidden;margin-bottom:13px;position:relative;transition:.2s}
+.bk:hover .ct{box-shadow:0 12px 26px rgba(26,27,30,.15);transform:translateY(-3px)}
+.bk .ct img{width:100%;height:100%;object-fit:cover}
+.bk .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;font-family:var(--display);font-size:.9rem;text-align:center;color:#5A5344}
+.bk h4{font-size:.98rem;line-height:1.3;margin-bottom:5px;font-weight:500}
+.bk .au{font-family:var(--util);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tag{display:inline-block;font-family:var(--util);font-size:9.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:3px 7px;border-radius:2px;margin-bottom:9px;align-self:flex-start}
+.tag.p{background:var(--madder);color:#fff}
+.tag.f{background:var(--khadi);color:#4A4335}
+.tag.t{background:var(--indigo);color:#fff}
+
+/* ---------- people ---------- */
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:46px 44px}
+.person img{width:88px;height:88px;border-radius:50%;object-fit:cover;margin-bottom:16px;border:1px solid var(--rule)}
+.person h3{font-size:1.2rem;margin-bottom:2px}
+.person .role{font-family:var(--util);font-size:11px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--madder);margin-bottom:12px}
+.person p{font-size:.93rem;line-height:1.55;color:#3E4046}
+
+/* ---------- fellows ---------- */
+.rounds{border-top:1px solid var(--rule)}
+.round{padding:30px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:190px 1fr;gap:34px}
+.round .rh{font-family:var(--util);font-size:12px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--indigo)}
+.round .rh em{display:block;font-style:normal;font-family:var(--body);font-size:.9rem;color:var(--muted);letter-spacing:0;text-transform:none;margin-top:5px}
+.flist{list-style:none;margin:0;padding:0}
+.flist li{padding:9px 0;border-bottom:1px dotted var(--rule)}
+.flist li:last-child{border-bottom:0}
+.flist b{font-weight:600}
+.flist span{display:block;font-size:.94rem;color:#4A4C53}
+
+/* ---------- faq ---------- */
+details{border-bottom:1px solid var(--rule)}
+summary{
+  padding:19px 0;cursor:pointer;font-family:var(--display);font-size:1.1rem;font-weight:500;
+  list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:baseline;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-family:var(--util);font-weight:400;font-size:1.3rem;color:var(--madder);flex-shrink:0}
+details[open] summary::after{content:'–'}
+details .ans{padding:0 0 21px;font-size:1rem;color:#3E4046;max-width:66ch}
+
+/* ---------- news ---------- */
+.news{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.news li{border-bottom:1px solid var(--rule)}
+.news a{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:22px 0;text-decoration:none;transition:.15s}
+.news a:hover{background:rgba(38,53,92,.035);padding-left:12px;padding-right:12px}
+.news .d{font-family:var(--util);font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--madder);padding-top:4px}
+.news h4{margin:0}
+
+/* ---------- misc blocks ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.three>div{background:var(--paper);padding:32px}
+.band .three{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.18)}
+.band .three>div{background:var(--indigo)}
+.kd{display:grid;grid-template-columns:270px 1fr;gap:52px;align-items:start}
+.kd img{border:1px solid var(--rule)}
+.note{background:var(--khadi);border-left:3px solid var(--indigo);padding:22px 26px;font-size:.96rem}
+.note b{font-family:var(--util);font-size:11px;letter-spacing:.13em;text-transform:uppercase;display:block;margin-bottom:7px;color:var(--indigo)}
+
+/* ---------- book detail ---------- */
+.bookhead{display:grid;grid-template-columns:300px 1fr;gap:60px;align-items:start}
+.bigcov{aspect-ratio:2/3;background:var(--khadi);border:1px solid var(--rule);overflow:hidden;box-shadow:0 16px 38px rgba(26,27,30,.14);position:relative}
+.bigcov img{width:100%;height:100%;object-fit:cover}
+.byline{font-family:var(--util);font-size:12.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--madder);margin-bottom:28px}
+.bookabout{font-size:1.1rem;line-height:1.66;color:#2E3036;max-width:64ch}
+.empty{background:var(--khadi);border-left:3px solid var(--rule);padding:20px 24px;font-size:.95rem;color:#4A4C53;max-width:64ch}
+.empty b{font-family:var(--util);font-size:11px;letter-spacing:.13em;text-transform:uppercase;display:block;margin-bottom:6px;color:var(--indigo)}
+
+/* ---------- newsletter + footer ---------- */
+.sub{background:var(--khadi);padding:62px 0}
+.sub form{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.sub input{
+  flex:1;min-width:190px;padding:14px 16px;border:1px solid var(--rule);background:#fff;
+  font-family:var(--body);font-size:1rem;border-radius:2px;color:var(--ink);
+}
+.sub input:focus{outline:2px solid var(--indigo);outline-offset:1px}
+footer.site{background:var(--indigo-deep);color:rgba(255,255,255,.72);padding:62px 0 34px;font-size:.94rem}
+footer.site h4{color:#fff;font-family:var(--util);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:15px}
+footer.site a{color:rgba(255,255,255,.72);text-decoration:none;border-bottom:1px solid transparent}
+footer.site a:hover{color:#fff;border-bottom-color:rgba(255,255,255,.4)}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:44px}
+.fgrid ul{list-style:none;padding:0;margin:0}
+.fgrid li{margin-bottom:8px}
+.colophon{margin-top:52px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.85rem;color:rgba(255,255,255,.5)}
+
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--madder);outline-offset:3px}
+
+@media (max-width:900px){
+  .bar{gap:16px}
+  nav.main{position:absolute;top:100%;left:0;right:0;background:var(--indigo-deep);flex-direction:column;gap:0;padding:8px 0;display:none}
+  nav.main.open{display:flex}
+  nav.main a{width:100%;padding:14px 32px;border-radius:0}
+  .burger{display:block}
+  .progs,.two,.three,.now .grid,.kd,.round,.news a,.fgrid,.bookhead{grid-template-columns:1fr}
+  .bigcov{max-width:230px}
+  .prog{border-right:0;border-bottom:1px solid var(--rule)}
+  .three>div{border-bottom:1px solid var(--rule)}
+  .win{grid-template-columns:70px 1fr;gap:20px}
+  .win .yr{font-size:1.5rem}
+  .now .cov{max-width:190px}
+  .kd img{max-width:230px}
+  section{padding:54px 0}
+  .wrap{padding:0 22px}
+  .books{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:28px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+  .spine:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="logo" href="#home" data-go="home">
+      <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/36399f21-6776-4e72-a531-2e3de2ea04bf/Logo.gif?format=1500w" alt="New India Foundation">
+      <span class="lk">New India Foundation<span>Bengaluru · since 2004</span></span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      <a href="#about" data-go="about">About</a>
+      <a href="#fellowships" data-go="fellowships">Fellowships</a>
+      <a href="#prize" data-go="prize">Book Prize</a>
+      <a href="#library" data-go="library">The Library</a>
+      <a href="#news" data-go="news">News</a>
+      <a href="#apply" data-go="apply" class="navcta">Apply</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ribbon">
+  <div class="wrap">
+    <a href="#apply" data-go="apply"><i class="dot q"></i>Book Fellowship 2027 — applications open 1 August 2026</a>
+    <a href="#prize" data-go="prize"><i class="dot"></i>NIF Book Prize 2026 — nominations close 31 January 2026</a>
+  </div>
+</div>
+
+<!-- ================= HOME ================= -->
+<main id="home" class="page on">
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow pale">The New India Foundation · Bengaluru</p>
+    <h1>We pay for the books India has not yet written about itself.</h1>
+    <p class="lede">Historians stop at 1947. Social scientists rarely look back. The New India Foundation exists to fund the research and writing that falls in the gap — and to honour the best of it.</p>
+    <div class="stats">
+      <div class="stat"><b>22</b><s>Years</s></div>
+      <div class="stat"><b>12</b><s>Fellowship rounds</s></div>
+      <div class="stat"><b>37</b><s>Books published</s></div>
+      <div class="stat"><b>9</b><s>Prizes awarded</s></div>
+      <div class="stat"><b>₹15L</b><s>Annual book prize</s></div>
+    </div>
+    <div class="shelf-wrap">
+      <p class="shelf-lbl">Every winner of the NIF Book Prize, 2018–2025 — select a spine</p>
+      <div class="shelf" id="shelf"></div>
+    </div>
+  </div>
+</div>
+
+<section class="now">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <img class="cov" src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/69c65939-9030-4052-a960-c7aac587610f/Aparajith_winner+creative+for+website-01.jpg" alt="Engineering a Nation by Aparajith Ramnath, winner of the NIF Book Prize 2025">
+      </div>
+      <div>
+        <span class="badge">Winner · Book Prize 2025</span>
+        <h2>Engineering a Nation</h2>
+        <p class="lede" style="margin-bottom:22px">The Life and Career of M. Visvesvaraya<br><strong style="font-family:var(--util);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--madder)">Aparajith Ramnath</strong></p>
+        <p>A biography of the engineer, administrator and Diwan of Mysore whose name remains attached to dams, reservoirs and institutes across the country, and whose career maps the arrival of technical expertise as a form of Indian public authority.</p>
+        <p style="margin-top:26px"><a class="btn md" href="#prize" data-go="prize">The prize and its winners</a> <a class="lnk" style="margin-left:16px" href="#library" data-go="library">Browse the library</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">What we do</p>
+      <h2>Two programmes, one purpose</h2>
+      <p class="lede">One pays for books before they exist. The other honours them once they do.</p>
+    </div>
+    <div class="progs">
+      <div class="prog">
+        <h3>NIF Book Fellowships</h3>
+        <div class="amt">₹18,00,000</div>
+        <div class="amt-n">Per fellow · twelve months</div>
+        <p>Awarded annually to scholars and writers working on any aspect of India after 1947. ₹1 lakh a month for twelve months, with the balance of ₹6 lakh on submission of the final manuscript — plus editorial, legal and administrative guidance from proposal to publication, and introductions to publishers and agents.</p>
+        <ul class="dates">
+          <li><b>August 2026</b><span>Open call for applications</span></li>
+          <li><b>November 2026</b><span>Deadline for submissions</span></li>
+          <li><b>April 2027</b><span>Shortlist announced</span></li>
+          <li><b>June 2027</b><span>In-person interviews</span></li>
+          <li><b>July 2027</b><span>Fellows announced</span></li>
+          <li><b>August 2027</b><span>Fellowship begins</span></li>
+        </ul>
+        <p><a class="btn" href="#fellowships" data-go="fellowships">Fellowships</a></p>
+      </div>
+      <div class="prog">
+        <h3>NIF Book Prize</h3>
+        <div class="amt">₹15,00,000</div>
+        <div class="amt-n">Annual · single winner</div>
+        <p>Awarded every year since 2018 for the best non-fiction book on modern or contemporary India published in the preceding year. Open to writers of any nationality, for work written in English or translated into English from any language.</p>
+        <ul class="dates">
+          <li><b>November 2025</b><span>Nominations open to publishers</span></li>
+          <li><b>January 2026</b><span>Nominations open to authors</span></li>
+          <li><b>31 January 2026</b><span>Nominations close</span></li>
+          <li><b>September 2026</b><span>Longlist announced</span></li>
+          <li><b>October 2026</b><span>Shortlist announced</span></li>
+          <li><b>November 2026</b><span>Winner announced</span></li>
+        </ul>
+        <p><a class="btn" href="#prize" data-go="prize">The Book Prize</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap">
+    <div class="three">
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>NIF Translation Fellowships</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">₹6 lakh over six months to bring a significant non-fiction work from one of ten Indian languages into English.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="#fellowships" data-go="fellowships">Read more</a></p>
+      </div>
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>Girish Karnad Memorial NIF Lecture</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">A public lecture by a leading intellectual on themes around modern India, in memory of the playwright and Jnanpith laureate.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="#about" data-go="about">Read more</a></p>
+      </div>
+      <div>
+        <p class="eyebrow pale">Also</p>
+        <h3>Bhashavaad</h3>
+        <p class="small" style="color:rgba(255,255,255,.75)">An annual translation conference with the Ashoka Centre for Translation, and a searchable database of Indian translations with 30,000+ entries.</p>
+        <p><a class="lnk" style="color:#fff;border-color:rgba(255,255,255,.5)" href="https://bhashavaad.in/" target="_blank" rel="noopener">bhashavaad.in</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">The corpus</p>
+      <h2>Twenty-two years of books</h2>
+      <p class="lede">Thirty-seven books written under fellowship, and nine prize winners. Together, a working library of independent India.</p>
+    </div>
+    <div class="books" id="homeBooks"></div>
+    <p style="margin-top:44px"><a class="btn gh" href="#library" data-go="library">Browse all 46 books</a></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= ABOUT ================= -->
+<main id="about" class="page">
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">About</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">The New India Foundation</h1>
+    <p class="lede">The New India Foundation, based in Bengaluru, matches public-spirited philanthropy with relevant scholarship.</p>
+    <p>In the seven-and-a-half decades since Independence, there has been a large body of work produced by Indian historians and social scientists. Taken singly, many of these studies are impressive; viewed cumulatively, they add up to much less than what one might expect.</p>
+    <p>The chief reason for this is the determining influence on scholarly practice of one single date: 15 August 1947. Historians do not look beyond the attainment of Independence, whereas other social scientists do not tend to look back at all.</p>
+    <p>Given India's size, its importance, and its interest, and given that this is our country, the lack of good research on its modern history is unfortunate.</p>
+    <p><strong>It is this lack that the New India Foundation seeks to address, by sponsoring high-quality original scholarship on different aspects of independent India.</strong> Its activities include the granting of NIF Book Fellowships for highly researched original work, Translation Fellowships for bringing historical Indian-language works into English, the NIF Book Prize, and the Girish Karnad Memorial Lecture.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">Governance</p>
+      <h2>Governing Board</h2>
+      <p class="small">The Board also constitutes the jury for the Book Prize and the Fellowships, sitting alongside external experts where a project requires specialist knowledge.</p>
+    </div>
+    <div class="people">
+      <div class="person">
+        <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/1628321348659-9VHNI645H12QNBW1ZAXL/Niraja+Gopal+Jayal+1.jpg" alt="Niraja Gopal Jayal">
+        <h3>Niraja Gopal Jayal</h3>
+        <div class="role">Avantha Chair, King's India Institute</div>
+        <p>Avantha Chair at King's India Institute, King's College London; Centennial Professor in the Department of Gender Studies at the London School of Economics; formerly Professor at the Centre for the Study of Law and Governance, JNU. Her most recent edited book is <em>Re-Forming India: The Nation Today</em> (Penguin Random House, 2019). <em>Citizenship and Its Discontents</em> (Permanent Black &amp; Harvard University Press, 2013) won the Ananda Kentish Coomaraswamy Prize of the Association of Asian Studies in 2015. She is also the author of <em>Representing India</em> (Palgrave Macmillan, 2006) and <em>Democracy and the State</em> (OUP, 1999), and co-editor of <em>The Oxford Companion to Politics in India</em>. She delivered the Radhakrishnan Memorial Lectures at All Souls College, Oxford in 2009 and was Vice-President of the American Political Science Association, 2011–12.</p>
+      </div>
+      <div class="person">
+        <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/1628321392692-AHWJS4ZQMRKQ7TE3CWBD/Srinath+Raghavan+1.jpg" alt="Srinath Raghavan">
+        <h3>Srinath Raghavan</h3>
+        <div class="role">Historian; Professor, Ashoka University</div>
+        <p>Professor of History and International Relations at Ashoka University and Senior Fellow at Carnegie India. He took his PhD in War Studies at King's College London, where he taught for many years, and before entering academia spent six years as an infantry officer in the Indian Army. His books include <em>War and Peace in Modern India</em> (2010), <em>1971: A Global History of the Creation of Bangladesh</em> (2013), <em>India's War</em> (2016) and <em>Fierce Enigmas</em> (2018). He has served on the National Security Advisory Board and as Chief Editor of the Kargil War History for the Ministry of Defence. Recipient of the K. Subrahmanyam Award (2011) and the Infosys Prize for Social Sciences (2015).</p>
+      </div>
+      <div class="person">
+        <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/1629183645562-UJHRL1QVOQO6H4QG1GJI/Manish+Sabharwal+1+copy.jpg" alt="Manish Sabharwal">
+        <h3>Manish Sabharwal</h3>
+        <div class="role">Managing Trustee; Vice Chairman, TeamLease Services</div>
+        <p>Co-founder and Vice Chairman of TeamLease Services, India's largest staffing and human capital firm, which also operates India's first vocational university and a national PPP apprenticeship programme. He is a member of the National Skill Mission and the Central Advisory Board of Education, and has served as an Independent Director on the Board of the Reserve Bank of India. MBA from the Wharton School; alumnus of Shri Ram College of Commerce and Mayo College, Ajmer. He co-authored <em>Kashmir Under 370</em> (Juggernaut, 2024).</p>
+      </div>
+      <div class="person">
+        <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/ea563752-a698-4a55-a00b-88a318e30fd4/Rahul+Matthan+full+jpeg.jpg" alt="Rahul Matthan">
+        <h3>Rahul Matthan</h3>
+        <div class="role">Partner, Trilegal</div>
+        <p>A Partner in Trilegal's Bengaluru office, where he heads the firm's technology, media and telecommunications practice. He advises on data protection, digital finance, e-commerce, telecom, platform technologies and biotech, and writes the weekly Ex Machina column. His books include <em>Privacy 3.0: Unlocking Our Data-Driven Future</em> (HarperCollins, 2018) and <em>The Third Way: India's Revolutionary Approach to Data Governance</em> (Juggernaut, 2023).</p>
+      </div>
+      <div class="person">
+        <img src="https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/1628321621970-YY6BVHN92PCDQC7DCU47/Nandan+Nilekani+1.jpg" alt="Nandan Nilekani">
+        <h3>Nandan Nilekani</h3>
+        <div class="role">Emeritus Board Member; Co-founder, Infosys</div>
+        <p>Co-founder and Non-Executive Chairman of Infosys, and Co-founder and Chairman of EkStep. He was Chairman of the Unique Identification Authority of India in the rank of a Cabinet Minister. Born in Bengaluru, he holds a Bachelor's degree from IIT Bombay. He received the Padma Bhushan in 2006 and the Joseph Schumpeter Prize in 2005, and was listed by <em>Time</em> among the hundred most influential people in the world in 2006 and 2009. He is the author of <em>Imagining India</em> (Penguin, 2010) and co-author of <em>Rebooting India</em> (2015) and <em>The Art of Bitfulness</em> (2022).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">In memoriam</p>
+        <h2>The Girish Karnad Memorial NIF Lecture</h2>
+        <p>An annual public lecture delivered by a leading intellectual on themes around modern India, instituted in memory of Girish Karnad (1938–2019) — playwright, actor, film-maker and Jnanpith laureate, whose plays <em>Tughlaq</em>, <em>Hayavadana</em> and <em>Nagamandala</em> reshaped the Indian stage, and who lived and worked in Bengaluru for much of his life.</p>
+        <p class="small">Details of the next lecture will be announced here and to subscribers.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Partnership</p>
+        <h2>Bhashavaad</h2>
+        <p>NIF collaborates with the Ashoka Centre for Translation on Bhashavaad, an annual conference on translation in India. The conference has also produced a searchable database of translations into and between Indian languages, now running to more than thirty thousand entries.</p>
+        <p><a class="lnk" href="https://bhashavaad.in/" target="_blank" rel="noopener">Visit bhashavaad.in</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FELLOWSHIPS ================= -->
+<main id="fellowships" class="page">
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">Fellowships</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:20ch">Money, time and editorial help to write one good book.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:58ch">The Foundation is ecumenical as regards genre, theme and ideology. The only requirement is that the proposed work be non-fiction, and that it contribute to a fuller understanding of contemporary India.</p>
+    <p style="margin-top:32px">
+      <a class="btn lt" href="#fellowships" aria-disabled="true" style="background:rgba(255,255,255,.14);color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.3)">Applications open August 2026</a>
+      <a class="btn lt" style="margin-left:10px" href="mailto:info@newindiafoundation.org?subject=NIF%20Book%20Fellowship%20enquiry">Ask a question</a>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Book Fellowships · since 2004</p>
+        <h2>NIF Book Fellowships</h2>
+        <p>The core activity of the New India Foundation, awarded annually to scholars and writers working on different aspects of the history of independent India. Fellows may write a memoir, a work of reportage, or a thickly footnoted academic study; the books may be oriented towards economics, politics or culture.</p>
+        <p>From several hundred applications, roughly fifteen to twenty proposals are shortlisted. Shortlisted candidates are interviewed by a jury drawn from the Foundation's trustees alongside eminent figures from scholarship, business and public life.</p>
+        <p>The books that result convey original research in an accessible manner, and each is published by an established house. Beyond the stipend, the Fellowship provides editorial, legal and administrative guidance from proposal to publication, introductions to publishers and agents, and both online and offline community support.</p>
+        <div class="note" style="margin:26px 0">
+          <b>What the fellowship is worth</b>
+          ₹18,00,000 in total — ₹1,00,000 a month for twelve months, with the balance of ₹6,00,000 payable on submission of the final manuscript. Open to Indian nationals, including those currently living abroad.
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Translation Fellowships</p>
+        <h2>NIF Translation Fellowships</h2>
+        <p>Instituted to bring significant non-fiction written in Indian languages into English. Some of the most important books about India have been written in Indian languages, and many of them remain inaccessible to readers outside their linguistic region.</p>
+        <p>The Fellowship awards a six-month grant of ₹6,00,000 to translate a non-fiction work originally written in one of ten Indian languages: <strong>Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil and Urdu</strong>.</p>
+        <p>Applicants should be fluent in the source language and in English, and should have prior experience of translation. Selection turns on the significance of the proposed text and the translator's ability to render it for a contemporary readership. The Fellowship is open equally to established translators and to debutants. The jury comprises the NIF Trustees alongside a Language Expert Committee covering all ten languages, made up of bilingual scholars, professors and literary translators.</p>
+        <p>Recipients are expected to commit full time to the translation for its duration. The fellowship is non-renewable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">Applying</p>
+      <h2>What makes a strong application</h2>
+    </div>
+    <div class="three">
+      <div>
+        <h4>An original question</h4>
+        <p class="small">The Foundation looks for topics that have not already been worked over, and for a question the applicant is genuinely trying to answer rather than a subject they intend to survey.</p>
+      </div>
+      <div>
+        <h4>Evidence of depth</h4>
+        <p class="small">Show the archive, the fieldwork or the interview access the book will rest on, and show that you have already begun. Deep reporting distinguishes almost every book the Fellowship has produced.</p>
+      </div>
+      <div>
+        <h4>A realistic year</h4>
+        <p class="small">The Fellowship runs for twelve months and expects a completed manuscript at the end of it. Applications that account honestly for scope and time carry more weight than ambitious ones that do not.</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:26px">Applicants may be debut writers or much-published authors; the Foundation looks for a distinctive voice, an original idea, and a serious commitment to finishing.</p>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">The Fellows</p>
+      <h2>Twelve rounds</h2>
+      <p class="lede">Since 2004 the Fellowship has supported academics, journalists, translators and independent writers. Thirty-seven of their books are in print.</p>
+    </div>
+    <div class="rounds">
+      <div class="round">
+        <div class="rh">Round 12 · 2025<em>Announced July 2025</em></div>
+        <ul class="flist">
+          <li><b>Amrita Sharma</b></li>
+          <li><b>Amandeep Singh Sandhu</b></li>
+          <li><b>P. Anima</b></li>
+          <li><b>Urvashi Butalia</b></li>
+          <li><b>Bakhtiar K. Dadabhoy</b></li>
+        </ul>
+      </div>
+      <div class="round">
+        <div class="rh">Round 11 · 2023<em>Announced July 2023</em></div>
+        <ul class="flist">
+          <li><b>Pramit Bhattacharya</b><span>Accounting for the Nation: The Story Behind India's Growth Numbers</span></li>
+          <li><b>Srijan Deshpande</b><span>The Life and Music of Kumar Gandharva</span></li>
+          <li><b>Syed Jaleel Hussain</b><span>Ambivalent Allegiances: Shiism and Everyday Politics in Kashmir</span></li>
+          <li><b>Rachna Mehra</b><span>Planning "New Towns" in the Post-Independence Era: The Making of Faridabad City, 1948–90</span></li>
+          <li><b>Maya Mirchandani</b><span>Fathers, Sons, and a Troubled Paradise: A History of the Abdullahs</span></li>
+        </ul>
+      </div>
+      <div class="round">
+        <div class="rh">Rounds 1–10 · 2004–2021<em>See The Library for the books</em></div>
+        <p class="small">The published output of the first ten rounds — from Harish Damodaran's <em>India's New Capitalists</em> in the founding 2004 cohort through to the most recent titles — is catalogued in full in the Library, with covers, publishers and links.</p>
+        <p><a class="lnk" href="#library" data-go="library">Open the Library</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-k" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Translation Fellows · 2026</p>
+    <h3 style="margin-bottom:20px">The most recent translation cohort</h3>
+    <ul class="flist" style="max-width:820px">
+      <li><b>Jayasree Kalathil</b> <span>Translating <em>Adimamakka</em> (Children of the Enslaved), the Malayalam autobiography of the Adivasi land-rights activist C.K. Janu — a history of the indigenous movement for land rights in Kerala, and of a political struggle largely absent from the record of the state's celebrated development model.</span></li>
+      <li><b>Murali Ranganathan</b> <span>Translating <em>Tibet Mein Savva Varsh</em> by Rahul Sankrityayan, first published in 1934: an account of his travels in search of the Buddha between December 1928 and June 1930, moving incognito through India, Nepal and Tibet at a time when foreign entry was restricted.</span></li>
+      <li><b>Shefali Jha</b> <span>Translating Ibrahim Hussain Jalis's <em>Do Mulk, Ek Kahani</em> — subjective journalism chronicling the making of postcolonial South Asia and the final years of the princely state of Hyderabad, seen through the eyes of a young Urdu writer.</span></li>
+      <li><b>Mini Chandran</b></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">Questions</p>
+    <h2>Fellowship FAQs</h2>
+    <details><summary>What is the Book Fellowship, and what do you look for?</summary><div class="ans">The Book Fellowship allows fellows to write on any aspect of modern India. From several hundred applications the most compelling proposals are selected. The Foundation looks for original topics, deep research, and relevance to modern India. Applicants may be debut writers or much-published authors — what matters is a unique voice, an original idea, and a commitment to completing a manuscript within the term.</div></details>
+    <details><summary>What is the Translation Fellowship?</summary><div class="ans">It brings historical and significant Indian-language non-fiction into English. The Foundation looks for applicants adept in both the source language and English, with prior translation experience. Selection turns on the relevance of the proposed text and the translator's ability to render it for a contemporary readership. Like the Book Fellowship, it is open to established translators and debutants alike.</div></details>
+    <details><summary>How much is the Book Fellowship worth?</summary><div class="ans">₹18,00,000 in total: ₹1,00,000 a month for twelve months, plus ₹6,00,000 on submission of the final manuscript.</div></details>
+    <details><summary>How much is the Translation Fellowship worth?</summary><div class="ans">₹6,00,000 over six months.</div></details>
+    <details><summary>Who can apply?</summary><div class="ans">The Book Fellowship is open to Indian nationals, including those currently living abroad. The Translation Fellowship is open to translators working from Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil or Urdu into English.</div></details>
+    <details><summary>How often is the Fellowship awarded?</summary><div class="ans">The Book Fellowship is awarded annually. The next call opens in August 2026, with submissions closing in November 2026 and fellowships beginning in August 2027.</div></details>
+    <details><summary>What support is offered beyond the grant?</summary><div class="ans">Editorial, legal and administrative guidance from proposal through to publication; introductions to publishers and agents; mentorship; and access to the community of past and present fellows.</div></details>
+    <details><summary>Can a fellowship book be entered for the Book Prize?</summary><div class="ans">No. Books that have been supported by a Foundation fellowship are not eligible for the NIF Book Prize.</div></details>
+    <details><summary>How are applications assessed?</summary><div class="ans">The Trustees assess all proposals and draw up a shortlist. Shortlisted candidates are interviewed in person by a jury comprising the Trustees alongside eminent figures from scholarship, business and public life. For translation projects the jury also includes the Language Expert Committee for the relevant language.</div></details>
+  </div>
+</section>
+</main>
+
+<!-- ================= BOOK PRIZE ================= -->
+<main id="prize" class="page">
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">NIF Book Prize</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:19ch">₹15 lakh, every year, for the best book written about India.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:58ch">Established in 2018 to spotlight and support outstanding research and writing about the world's largest democracy. Awarded for non-fiction on modern or contemporary India published in the preceding year.</p>
+    <p style="margin-top:32px">
+      <a class="btn lt" href="mailto:submissions@newindiafoundation.org?subject=Book%20Prize%20nomination">Nominate a book</a>
+      <a class="btn lt" style="margin-left:10px;background:transparent;color:#fff;border-color:rgba(255,255,255,.4)" href="#prizefaq">How nomination works</a>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">Winners</p>
+      <h2>Nine books, eight years</h2>
+    </div>
+    <div id="winners"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Process</p>
+        <h2>The jury</h2>
+        <p>The prize is judged by the Foundation's Governing Board — Niraja Gopal Jayal, who chairs the Book Prize, together with Srinath Raghavan, Manish Sabharwal and Rahul Matthan, with Nandan Nilekani as Emeritus Board Member.</p>
+        <p>The jury reads towards a longlist announced in September, a shortlist in October, and a winner in November. Where a submission requires specialist knowledge — a translated work, or a subject outside the Board's own fields — external readers are brought in to advise.</p>
+        <p><a class="lnk" href="#about" data-go="about">Read the Board's biographies</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">Eligibility</p>
+        <h2>What can be entered</h2>
+        <ul class="flist" style="border-top:1px solid var(--rule)">
+          <li><b>Any nationality.</b><span>There is no restriction on where the writer is from or lives.</span></li>
+          <li><b>Non-fiction only, any genre.</b><span>History, biography, political commentary, travel, memoir, reportage — anything that offers insight into the making of modern India.</span></li>
+          <li><b>English or translated into English.</b><span>Books originally written in an Indian language and translated into English are eligible, and have won.</span></li>
+          <li><b>Professionally published.</b><span>Books must have national or international distribution. Self-published works are not eligible.</span></li>
+          <li><b>Published in the preceding year.</b><span>The 2026 prize considers books published in 2025.</span></li>
+          <li><b>Not an NIF fellowship book.</b><span>Books supported by a Foundation fellowship are not eligible for the prize.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-k" id="prizefaq">
+  <div class="wrap narrow">
+    <p class="eyebrow">Questions</p>
+    <h2>Book Prize FAQs</h2>
+    <details open><summary>How is a book nominated?</summary><div class="ans"><strong>Publishers and literary agents may nominate titles from November.</strong> From January, authors may also submit their own books. The Foundation's team and jury additionally consider eligible books on their own initiative, so a book need not be formally nominated to be read. Nominations for the 2026 prize close on 31 January 2026. Write to <a href="mailto:submissions@newindiafoundation.org">submissions@newindiafoundation.org</a>.</div></details>
+    <details><summary>What is the prize money?</summary><div class="ans">The winner receives ₹15,00,000. Where the winning book is a translation, the award is shared between author and translator.</div></details>
+    <details><summary>When was the prize established?</summary><div class="ans">In 2018. The first prize was awarded that year to Milan Vaishnav for <em>When Crime Pays</em>.</div></details>
+    <details><summary>Are translated works considered?</summary><div class="ans">Yes. Books originally written in Indian languages and translated into English are eligible. Shekhar Pathak's <em>The Chipko Movement</em>, translated from the Hindi by Manisha Chaudhry, won in 2022.</div></details>
+    <details><summary>Are self-published books or e-books eligible?</summary><div class="ans">Only professionally published books with national or international distribution are considered. Self-published works are not eligible.</div></details>
+    <details><summary>What genres are eligible?</summary><div class="ans">There is no limitation within non-fiction. History, biography, political commentary, travelogue, memoir, reportage and academic monographs have all been longlisted or have won.</div></details>
+    <details><summary>Who judges the prize?</summary><div class="ans">The Governing Board of the New India Foundation, chaired for the prize by Niraja Gopal Jayal, with external specialist readers brought in where a submission requires them.</div></details>
+    <details><summary>Is there a fee to enter?</summary><div class="ans">No. There is no entry fee for nomination by a publisher, an agent or an author.</div></details>
+  </div>
+</section>
+</main>
+
+<!-- ================= LIBRARY ================= -->
+<main id="library" class="page">
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The Library</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">Every book the Foundation has made or honoured.</h1>
+    <p class="lede narrow">Thirty-seven books written under NIF fellowships and nine winners of the NIF Book Prize — a working library of independent India, assembled over twenty-two years.</p>
+
+    <div style="margin-top:44px">
+      <div class="fgroup">
+        <div class="flabel">Route</div>
+        <div class="filters" data-f="route">
+          <button class="chip on" data-v="all">All</button>
+          <button class="chip" data-v="prize">Prize winners</button>
+          <button class="chip" data-v="fellowship">Fellowship books</button>
+          <button class="chip" data-v="translation">Translations</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <div class="flabel">Subject</div>
+        <div class="filters" data-f="theme">
+          <button class="chip on" data-v="all">All</button>
+          <button class="chip" data-v="politics">Politics</button>
+          <button class="chip" data-v="biography">Biography</button>
+          <button class="chip" data-v="caste">Caste &amp; society</button>
+          <button class="chip" data-v="environment">Environment</button>
+          <button class="chip" data-v="gender">Gender</button>
+          <button class="chip" data-v="culture">Arts &amp; culture</button>
+          <button class="chip" data-v="economy">Economy &amp; science</button>
+          <button class="chip" data-v="region">Region &amp; city</button>
+        </div>
+      </div>
+      <div class="count" id="count"></div>
+      <div class="books" id="lib"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= NEWS ================= -->
+<main id="news" class="page">
+<section>
+  <div class="wrap">
+    <p class="eyebrow">News</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">Announcements</h1>
+    <ul class="news" style="margin-top:44px">
+      <li><a href="https://www.newindiafoundation.org/winner-nif-book-prize-2025" target="_blank" rel="noopener"><span class="d">November 2025</span><div><h4>Winner — NIF Book Prize 2025</h4><p class="small" style="margin:6px 0 0">Aparajith Ramnath wins for <em>Engineering a Nation: The Life and Career of M. Visvesvaraya</em>.</p></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/s/NIF-Newsletter-_October.pdf" target="_blank" rel="noopener"><span class="d">October 2025</span><div><h4>NIF Newsletter</h4><p class="small" style="margin:6px 0 0">The Foundation's quarterly round-up of fellows, books and events.</p></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/shortlist2025-1" target="_blank" rel="noopener"><span class="d">October 2025</span><div><h4>Shortlist — Book Prize 2025</h4></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/longlist2025" target="_blank" rel="noopener"><span class="d">September 2025</span><div><h4>Longlist — Book Prize 2025</h4></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/nif-book-fellowships-1" target="_blank" rel="noopener"><span class="d">July 2025</span><div><h4>Round 12 Book Fellows announced</h4><p class="small" style="margin:6px 0 0">Amrita Sharma, Amandeep Singh Sandhu, P. Anima, Urvashi Butalia and Bakhtiar K. Dadabhoy receive the ₹18 lakh fellowship.</p></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/press-release-gita-press" target="_blank" rel="noopener"><span class="d">2025</span><div><h4>Ten years of <em>Gita Press and the Making of Hindu India</em></h4></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/press-release-winner-nif-book-prize-2024" target="_blank" rel="noopener"><span class="d">November 2024</span><div><h4>Winner — Book Prize 2024</h4><p class="small" style="margin:6px 0 0">Ashok Gopal, <em>A Part Apart: The Life and Thought of B.R. Ambedkar</em>.</p></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/press-release-shortlist-nif-book-prize-2024" target="_blank" rel="noopener"><span class="d">October 2024</span><div><h4>Shortlist — Book Prize 2024</h4></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/press-release-longlist-nif-book-prize-2024" target="_blank" rel="noopener"><span class="d">September 2024</span><div><h4>Longlist — Book Prize 2024</h4></div></a></li>
+      <li><a href="https://www.newindiafoundation.org/press-release-translation-fellowships-1" target="_blank" rel="noopener"><span class="d">2024</span><div><h4>Translation Fellowships announced</h4></div></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">For journalists</p>
+        <h2>Press kit</h2>
+        <p>Logos, winner photographs, book jackets, jury citations and a standing description of the Foundation, in one place. For interviews with fellows, jurors or trustees, or for embargoed access to longlist and shortlist announcements, write to the press desk.</p>
+        <p><a class="btn gh" href="mailto:press@newindiafoundation.org">press@newindiafoundation.org</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">Watch</p>
+        <h2>Video</h2>
+        <ul class="flist" style="border-top:1px solid var(--rule)">
+          <li><b><a href="https://www.newindiafoundation.org/shortlistvideos2025" target="_blank" rel="noopener">Book Prize 2025 shortlist</a></b><span>The shortlisted authors on their books.</span></li>
+          <li><b><a href="https://www.newindiafoundation.org/shortlistvideos2024" target="_blank" rel="noopener">Book Prize 2024 shortlist</a></b></li>
+          <li><b><a href="https://www.newindiafoundation.org/fellows-speak" target="_blank" rel="noopener">Fellows Speak</a></b><span>Fellows on the books they wrote under the fellowship.</span></li>
+          <li><b><a href="https://www.newindiafoundation.org/nif-conversations" target="_blank" rel="noopener">NIF Conversations</a></b></li>
+          <li><b><a href="https://www.newindiafoundation.org/language-and-literature" target="_blank" rel="noopener">Language and Literature</a></b></li>
+          <li><b><a href="https://www.newindiafoundation.org/the-dawn-of-life" target="_blank" rel="noopener">The Dawn of Life</a></b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= APPLY ================= -->
+<main id="apply" class="page">
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow pale">Apply</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem);max-width:18ch">Everything you need to apply, in one place.</h1>
+    <p class="lede" style="color:rgba(255,255,255,.78);max-width:56ch">Three ways to be part of the Foundation's work: write a book under fellowship, translate one, or put a published book forward for the NIF Book Prize.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="progs">
+      <div class="prog">
+        <span class="badge" style="background:var(--indigo)">Opens 1 August 2026</span>
+        <h3>NIF Book Fellowship</h3>
+        <div class="amt">₹18,00,000</div>
+        <div class="amt-n">Twelve months · awarded annually</div>
+        <p>For scholars and writers producing a non-fiction book on any aspect of India after 1947. Open to Indian nationals, including those living abroad.</p>
+        <ul class="dates">
+          <li><b>1 August</b><span>Applications open</span></li>
+          <li><b>30 November</b><span>Applications close</span></li>
+          <li><b>March</b><span>Shortlist announced</span></li>
+          <li><b>May</b><span>Interviews</span></li>
+          <li><b>July</b><span>Fellows announced</span></li>
+          <li><b>August</b><span>Fellowship begins</span></li>
+        </ul>
+        <p>
+          <a class="btn" href="mailto:fellowships@newindiafoundation.org?subject=NIF%20Book%20Fellowship%20application">Start an application</a><br>
+          <a class="lnk" style="display:inline-block;margin-top:18px" href="#fellowships" data-go="fellowships">Read the full guidance</a>
+        </p>
+      </div>
+      <div class="prog">
+        <span class="badge" style="background:var(--indigo)">Opens 1 August 2026</span>
+        <h3>NIF Translation Fellowship</h3>
+        <div class="amt">₹6,00,000</div>
+        <div class="amt-n">Six months · awarded annually</div>
+        <p>To translate a significant non-fiction work into English from Assamese, Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Tamil or Urdu.</p>
+        <ul class="dates">
+          <li><b>1 August</b><span>Applications open</span></li>
+          <li><b>31 December</b><span>Applications close</span></li>
+          <li><b>March</b><span>Longlist announced</span></li>
+          <li><b>April</b><span>Shortlist announced</span></li>
+          <li><b>June</b><span>Interviews</span></li>
+          <li><b>July</b><span>Fellows announced</span></li>
+        </ul>
+        <p>
+          <a class="btn" href="mailto:fellowships@newindiafoundation.org?subject=NIF%20Translation%20Fellowship%20application">Start an application</a><br>
+          <a class="lnk" style="display:inline-block;margin-top:18px" href="#fellowships" data-go="fellowships">Read the full guidance</a>
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:44px;border:1px solid var(--rule);padding:44px">
+      <span class="badge">Now open · closes 31 January 2026</span>
+      <h3>Nominate a book for the NIF Book Prize</h3>
+      <p style="max-width:62ch">₹15,00,000 for the best non-fiction book on modern or contemporary India published in the preceding year. Publishers and literary agents may nominate from November; authors may submit their own books from January. There is no entry fee.</p>
+      <p><a class="btn md" href="mailto:submissions@newindiafoundation.org?subject=NIF%20Book%20Prize%20nomination">Nominate a book</a>
+      <a class="lnk" style="margin-left:18px" href="#prize" data-go="prize">Eligibility and past winners</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="hd"><p class="eyebrow">Before you apply</p><h2>What we ask for</h2></div>
+    <div class="three">
+      <div><h4>A proposal</h4><p class="small">Two to three thousand words setting out the question the book answers, the sources it will rest on, and why it matters now.</p></div>
+      <div><h4>A sample chapter</h4><p class="small">Or, for translations, ten pages of the translated text alongside the corresponding source pages.</p></div>
+      <div><h4>A working schedule</h4><p class="small">A month-by-month plan showing how the manuscript will be finished inside the term of the fellowship.</p></div>
+    </div>
+    <p class="small" style="margin-top:26px">Questions about eligibility or the process: <a class="lnk" href="mailto:fellowships@newindiafoundation.org">fellowships@newindiafoundation.org</a></p>
+  </div>
+</section>
+</main>
+
+<!-- ================= BOOK DETAIL (rendered) ================= -->
+<main id="book" class="page">
+  <div id="bookBody"></div>
+</main>
+<div class="sub">
+  <div class="wrap narrow">
+    <p class="eyebrow">Stay connected</p>
+    <h2>Get the calls, longlists and lectures</h2>
+    <p>Updates on the Fellowships, the NIF Book Prize and the Girish Karnad Memorial Lecture. Roughly six emails a year.</p>
+    <form onsubmit="event.preventDefault();this.querySelector('.msg').hidden=false;">
+      <input type="text" placeholder="First name" aria-label="First name" required>
+      <input type="text" placeholder="Last name" aria-label="Last name">
+      <input type="email" placeholder="Email address" aria-label="Email address" required>
+      <button class="btn" type="submit">Subscribe</button>
+      <p class="msg small" hidden style="width:100%;margin-top:10px;color:var(--indigo)">Thank you — please check your inbox to confirm.</p>
+    </form>
+    <p class="small" style="margin-top:12px">We respect your privacy. Past issues are archived on <a href="https://newindiafoundation.scrollstack.com" target="_blank" rel="noopener">ScrollStack</a>.</p>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>New India Foundation</h4>
+        <p>The Managing Trustee<br>New India Foundation<br>C/o Neev Schools<br>Yemalur–Kempapura Main Road<br>Yemalur, Bengaluru 560037</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@newindiafoundation.org">General — info@</a></li>
+          <li><a href="mailto:submissions@newindiafoundation.org">Nominations — submissions@</a></li>
+          <li><a href="mailto:fellowships@newindiafoundation.org">Fellowships — fellowships@</a></li>
+          <li><a href="mailto:press@newindiafoundation.org">Press — press@</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="#fellowships" data-go="fellowships">Book Fellowships</a></li>
+          <li><a href="#fellowships" data-go="fellowships">Translation Fellowships</a></li>
+          <li><a href="#prize" data-go="prize">Book Prize</a></li>
+          <li><a href="#library" data-go="library">The Library</a></li>
+          <li><a href="#about" data-go="about">Girish Karnad Lecture</a></li>
+          <li><a href="https://bhashavaad.in/" target="_blank" rel="noopener">Bhashavaad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://twitter.com/newindiafndtion" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://www.instagram.com/newindiafoundation/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/NewIndiaFoundation/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.youtube.com/c/newindiafoundation" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.linkedin.com/company/53100343" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://newindiafoundation.scrollstack.com" target="_blank" rel="noopener">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2026 New India Foundation. A registered charitable trust.</span>
+      <span>Bengaluru, India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CDN='https://images.squarespace-cdn.com/content/v1/610913e15985a80cd186a571/';
+
+const winners=[
+ {y:2025,a:'Aparajith Ramnath',t:'Engineering a Nation: The Life and Career of M. Visvesvaraya',theme:'biography',
+  img:CDN+'69c65939-9030-4052-a960-c7aac587610f/Aparajith_winner+creative+for+website-01.jpg',
+  d:'A biography of the engineer, administrator and Diwan of Mysore whose career maps the arrival of technical expertise as a form of Indian public authority.'},
+ {y:2024,a:'Ashok Gopal',t:'A Part Apart: The Life and Thought of B.R. Ambedkar',theme:'biography',
+  d:'A full-length intellectual biography of Ambedkar, reading his writing in Marathi alongside his English work to recover the shape of his thought.',
+  buy:'https://www.amazon.in/Part-Apart-Life-Thought-Ambedkar/dp/8195838510'},
+ {y:2023,a:'Akshaya Mukul',t:'Writer, Rebel, Soldier, Lover: The Many Lives of Agyeya',theme:'culture',
+  img:CDN+'d0095802-7e68-4217-91a9-e86af81c81bf/22+Winner.jpg',
+  d:'The life of Sachchidananda Hirananda Vatsyayan — poet, novelist, revolutionary and editor — and through him a history of twentieth-century Hindi letters.'},
+ {y:2022,a:'Shekhar Pathak, translated from the Hindi by Manisha Chaudhry',t:'The Chipko Movement: A People\u2019s History',theme:'environment',
+  img:CDN+'8ec3d4c9-f736-4718-8250-c596f921101d/22+Winner.jpg',
+  d:'The definitive account of the Himalayan forest movement, written by a historian who walked its villages for four decades.'},
+ {y:2021,a:'Dinyar Patel',t:'Naoroji: Pioneer of Indian Nationalism',theme:'biography',
+  img:CDN+'18ef458c-11bb-4534-b910-e1b11d9816bb/DINYAR.jpg',
+  d:'The first full biography of Dadabhai Naoroji, drawing on an archive of thirty thousand documents to recover the making of Indian economic nationalism.'},
+ {y:2020,a:'Amit Ahuja',t:'Mobilizing the Marginalized: Ethnic Parties Without Ethnic Movements',theme:'caste',joint:true,
+  img:CDN+'1629272153670-E027JV6Z0HGBT3GVPDS3/AMIT+AHUJA+%281%29.jpg',
+  d:'Why Dalit parties succeed where social movements have been weak, and fail where they have been strong. Joint winner.'},
+ {y:2020,a:'Jairam Ramesh',t:'A Chequered Brilliance: The Many Lives of V.K. Krishna Menon',theme:'biography',joint:true,
+  img:CDN+'1629272194605-BFST62NY8Q8M0GD52APM/JAIRAM+%281%29.jpg',
+  d:'A biography of Nehru\u2019s most brilliant and most damaging lieutenant, built from an enormous unpublished archive. Joint winner.'},
+ {y:2019,a:'Ornit Shani',t:'How India Became Democratic: Citizenship and the Making of the Universal Franchise',theme:'politics',
+  img:CDN+'1629272225269-T52W4RCBKDPI8FG4DDVP/ORNIT_.jpg',
+  d:'How the electoral roll was built before the Constitution was adopted, and how the bureaucratic labour of registration produced Indian democratic citizenship.'},
+ {y:2018,a:'Milan Vaishnav',t:'When Crime Pays: Money and Muscle in Indian Politics',theme:'politics',
+  img:CDN+'1629272255132-JI7DZER8MTH0N6DEFGA9/MILAN+%281%29.jpg',
+  d:'Why parties field candidates facing criminal charges, and why voters elect them. The first winner of the prize.'}
+];
+
+const fellowship=[
+ ['The Dawn of Life: MK Gandhi in South Africa','Prabhudas Gandhi, translated by Hemang Ashwinkumar','biography','8bad841a-8e73-4dab-9540-36d75b18714b/The+dawn+of+life+%282%29.jpg','https://www.amazon.in/Dawn-Life-Gandhi-South-Africa/dp/0143475878',true],
+ ['Believer\u2019s Dilemma: Vajpayee and the Hindu Right\u2019s Path to Power, 1977–2018','Abhishek Choudhary','politics','d0ce7068-2715-4dcc-a133-644c6526b0d0/Abhishek+Choudhary+%2B+Vajpayee.jpg',''],
+ ['Rama Bhima Soma: Cultural Investigations into Modern Karnataka','Srikar Raghavan','region','e5a05adb-abe2-43af-a196-85a081adb597/Rama+Bhima+Soma.jpg','https://www.amazon.in/dp/936045687X'],
+ ['The Many Lives of Syeda X: The Story of an Unknown Indian','Neha Dixit','gender','6bf96921-92d7-4f88-a8d4-0fe54136a5a2/Neha+Dixit.jpg','https://www.amazon.in/Many-Lives-Syeda-Story-Indian/dp/9353453542'],
+ ['The Day I Became a Runner: A Women\u2019s History of India through the Lens of Sport','Sohini Chattopadhyay','gender','638ba914-1591-4253-86fb-ac9093061c94/Sohini+Chattopadhyay.jpg','https://www.amazon.in/Day-Became-Runner-History-through/dp/9356994625'],
+ ['The Quest for Modern Assam: A History 1942–2000','Arupjyoti Saikia','region','3ad7ea7e-7d35-4962-8bf8-1447b9b72858/Book_Modern+Assam.jpg','https://www.amazon.in/Quest-Modern-Assam-Arupjyoti-Saikia/dp/0670095702'],
+ ['Vajpayee: The Ascent of the Hindu Right, 1924–1977','Abhishek Choudhary','politics','c203c235-06d0-409a-ac85-46545305175e/1.jpg','https://www.amazon.in/VAJPAYEE-Ascent-Hindu-Right-1924-1977/dp/9395624493'],
+ ['Caste Pride: Battles for Equality in Hindu India','Manoj Mitta','caste','447612ad-b257-4ea3-91a7-d3344d989500/2.jpg','https://www.amazon.in/Caste-Pride-Battles-Equality-Hindu/dp/9357762949'],
+ ['Tagore\u2019s University: A History of Visva-Bharati 1921–1961','Swati Ganguly','culture','c31d57ab-93bf-478f-9bdf-3358ac6e1d96/Tagore%27s%2Buniversity.jpeg','https://orientblackswan.com/details?id=9788178246406'],
+ ['Chromosome Woman, Nomad Scientist: E.K. Janaki Ammal, A Life 1897–1984','Savithri Preetha Nair','economy','02529d73-efc7-4114-ac27-742053133da7/Untitled+design+%284%29.jpg','https://www.amazon.in/Savithri-Preetha-Nair/e/B00C7BJ48Y'],
+ ['Not Just Cricket: A Reporter\u2019s Journey through Modern India','Pradeep Magazine','culture','1658949599987-U4YUEH5L0Z2JCDYUFIDF/Not+just+cricket.jpg','https://www.amazon.in/Not-Just-Cricket-Reporters-Journey/dp/9354892116'],
+ ['The Life and Times of George Fernandes','Rahul Ramagundham','biography','1658949148915-FWTCVMYEVHEN4ULZGN4A/The+Life+and+Times+of+George+Fernandes.jpg','https://www.amazon.in/gp/product/0670092886'],
+ ['Bibi\u2019s Room: Hyderabadi Women and Twentieth-Century Urdu Prose','Nazia Akhtar','gender','1658949254251-TGDXFT7PJ83GDID90G35/Bibi%E2%80%99s+Room.jpg','https://www.amazon.in/Bibis-Room-Hyderabadi-Women-Twentieth-Century/dp/9354420648'],
+ ['Citizenship in a Caste Polity: Religion, Language and Belonging in Goa','Jason Keith Fernandes','caste','1629272447632-F6ZRNNVO3KHZQBMT9AFX/Citizenship+in+a+Caste+Polity.jpg','https://www.amazon.in/Citizenship-Caste-Polity-Religion-Belonging/dp/9352879945'],
+ ['The Transformative Constitution: A Radical Biography in Nine Acts','Gautam Bhatia','politics','1629272464787-QDNPWFQCQ2FUQ5MUET2Z/The+Transformative+Constitution+A+Radical+Biography+in+Nine+Acts.jpg','https://www.amazon.in/dp/9353026849'],
+ ['Tawaifnama','Saba Dewan','gender','1629272487669-E6BI6GARY379DAXFECUT/tawaifnama.jpg','https://www.amazon.in/Tawaifnama-Saba-Dewan-ebook/dp/B07RKSSXNT'],
+ ['Growing Up Muslim in India: An Ordinary Man\u2019s Guide to Radicalism','Neyaz Farooquee','caste','1629272572613-C8CFRCMP6JZR4HRQFJJH/An+Ordinary+Man%27s+Guide+To+Radicalism.jpg','https://www.amazon.in/Ordinary-Mans-Guide-Radicalism-Growing/dp/9386850516'],
+ ['Mannequin: Working Women in India\u2019s Glamour Industry','Manjima Bhattacharjya','gender','1629272596609-MVMVWKGC64KVRYT0XUDD/Working+Women+in+India%27s+Glamour+Industry.jpg','https://www.amazon.in/Mannequin-Working-Indias-Glamour-Industry/dp/9385932225'],
+ ['Delhi\u2019s Meatscapes: Muslim Butchers in a Transforming Mega-City','Zarin Ahmad','region','1629272621940-JBH1JHL7QMLQ1E6ZZ2TF/Delhi%E2%80%99s+Meatscapes.jpg','https://www.amazon.in/gp/product/0199477809'],
+ ['Rethinking Revolutions: Soyabean, Choupals and the Changing Countryside in Central India','Richa Kumar','economy','1629272652030-EIFXI8L4UO4UK24L1297/Rethinking+Revolutions.jpg','https://www.amazon.in/Rethinking-Revolutions-Soyabean-Choupals-Countryside/dp/0199465339'],
+ ['The Web of Freedom: J.C. Kumarappa and Gandhi\u2019s Struggle for Economic Justice','Venu Madhav Govindu &amp; Deepak Malghan','economy','1629272684822-CGS3HI9BMBY7JHGLTPYR/The+Web+of+Freedom.jpg','https://www.amazon.in/gp/product/0199460817'],
+ ['Growing the Tree of Science: Homi Bhabha and the Tata Institute of Fundamental Research','Indira Chowdhury','economy','1629272718082-AC8VNIUYFCBLSIC32TA4/Growing+the+Tree+of+Science.jpg','https://www.amazon.in/gp/product/0199466904'],
+ ['Ahmedabad: A City in the World','Amrita Shah','region','1629272768163-WCR065R44VR1PJOIGHEY/Ahmedabad+A+City+in+the+World.jpg','https://www.amazon.in/Ahmedabad-City-World-Amrita-Shah/dp/9384898015'],
+ ['From Soup to Superstar: The Story of Sea Turtle Conservation Along the Indian Coast','Kartik Shanker','environment','1629272788608-Q3XMCTKWGF3VFQCY8T9Q/From+Soup+to+Superstar.jpg','https://www.amazon.in/gp/product/9351772322'],
+ ['Gita Press and the Making of Hindu India','Akshaya Mukul','culture','1629272812539-RCCRXF11E8DKFR3MH3I6/Gita+Press+and+the+Making+of+Hindu+India.jpg','https://www.amazon.in/gp/product/9351772306'],
+ ['India\u2019s New Capitalists: Caste, Business and Industry in a Modern Nation','Harish Damodaran','economy','1629274195225-YON0U98GUDYZ7HGU7NGI/india-s-new-capitalists-1.jpg','https://www.amazon.in/gp/product/0230205070'],
+ ['Christianity and Politics in Tribal India: Baptist Missionaries and Naga Nationalism','G. Kanato Chophy','region','1633681146457-6TGBVLCUREKBDW33WK5L/Christianity+and+politics+in+tribal+india.jpg','https://www.amazon.in/Christianity-Politics-Tribal-India-Missionaries/dp/1438485816'],
+ ['Competing Nationalisms: The Sacred and Political Life of Jagat Narain Lal','Rajshree Chandra','biography','1634722291275-N4F3NLNQX9D473WG2JJ1/competing+nationalism.jpg','https://www.amazon.in/Competing-Nationalisms-Sacred-Political-Narain/dp/0670095494'],
+ ['Our Moon Has Blood Clots: The Exodus of the Kashmiri Pandits','Rahul Pandita','region','1629273941466-H2JVMEUFDGCOHAESAVZO/Our+Moon+has+Blood+Clots.jpg','https://www.amazon.in/Our-Moon-Has-Blood-Clots/dp/818400513X'],
+ ['Politics as Performance: A Social History of the Telugu Cinema','S.V. Srinivas','culture','1629273961783-4ZQ05BZA7PZWFLWOACCL/Politics+as+Performance.jpg','https://www.amazon.in/gp/product/8178243725'],
+ ['Debating Patriarchy: The Hindu Code Bill Controversy in India, 1941–1956','Chitra Sinha','gender','1629273989972-68WWOH423V5JED0MHP0H/Debating+Patriarchy+-+The+Hindu+Code+Bill+Controversy+in+India+%281941-1956%29.jpg','https://www.amazon.in/Debating-Patriarchy-Hindu-Controversy-1941-1956/dp/0198078943'],
+ ['A Rogue and Peasant Slave: Adivasi Resistance 1800–2000','Shashank Kela','caste','1629274037453-IR30RLB71R7W1PMF1TH0/A+Rogue+and+Peasant+Slave+Adivasi+Resistance+1800%E2%80%932000.jpg','https://www.amazon.in/Rogue-Peasant-Slave-Resistance-1800-2000/dp/818905936X'],
+ ['In Freedom\u2019s Shade','Anis Kidwai, translated by Ayesha Kidwai','gender','1629274056339-KSOJKWBZDHKEGXHFDXOK/In+Freedom%27s+Shade.jpg','https://www.amazon.in/gp/product/014341609X',true],
+ ['Conservation at the Crossroads: Science, Society and the Future of India\u2019s Wildlife','Ghazala Shahabuddin','environment','1629274071500-DR6000S54F8R1146EG5L/Conservation+at+the+Crossroads.jpg','https://www.amazon.in/gp/product/8178242648'],
+ ['Stateless in South Asia: The Chakmas between Bangladesh and India','Deepak Singh','region','1629274126698-TKE5QPVY998MCJUC4B9E/Stateless+in+South+Asia.jpg','https://www.amazon.in/Stateless-South-Asia-Chakmas-Bangladesh/dp/8132102363'],
+ ['Gandhi\u2019s Conscience Keeper: C. Rajagopalachari and Indian Politics','Vasanthi Srinivasan','biography','1629274140983-6FYPBW0UQL1X4R52O5KJ/Gandhi%27s+Conscience+Keep.jpg','https://www.amazon.in/Gandhis-Conscience-Keeper-Rajagopalachari-Politics/dp/B0072GH2AG'],
+ ['The Long Revolution: The Birth and Growth of India\u2019s IT Industry','Dinesh C. Sharma','economy','1629274162719-QQLS30SOTE2QJUNREJAU/The+Long+Revolution.jpg','https://www.amazon.in/gp/product/8172237685']
+];
+
+// NIF's own account of each book. Keyed by slug.
+const ABOUT={
+'engineering-a-nation':'M. Visvesvaraya is remembered in the way that founding figures usually are — as a name on dams, reservoirs, colleges and a public holiday. This biography puts the man back inside his century. Trained as an engineer in the Bombay Presidency, he built irrigation works across western India, served as Diwan of Mysore, and spent his long later life arguing that India could not become a modern country without deliberately manufacturing its own technical class. Ramnath follows that argument through Visvesvaraya\u2019s career and shows how engineering became, in his hands, a claim to public authority — and how the state he helped build absorbed the claim.',
+'a-part-apart':'Most accounts of B.R. Ambedkar read only his English writing. Ashok Gopal reads the Marathi too — the journalism, the speeches, the pamphlets addressed to an audience that shared his language and his exclusion — and the Ambedkar who emerges is more restless and more difficult than the constitutional draftsman of the textbooks. Across nearly a thousand pages the book traces a mind working out, over four decades, what emancipation would actually require: not only law, but religion, economics, and a refusal of the terms on which caste society offered him inclusion.',
+'writer-rebel-soldier-lover':'Sachchidananda Hirananda Vatsyayan, who wrote as Agyeya, was a bomb-maker for the Hindustan Socialist Republican Association before he was a poet, and served in the British Indian Army before he became modern Hindi literature\u2019s most formidable editor. Akshaya Mukul reconstructs all of these lives from an enormous personal archive, and in doing so writes a history of twentieth-century Hindi letters — its quarrels, its patronage, its politics — through the one figure who was present at almost every turn of it.',
+'the-chipko-movement':'Chipko is one of the few Indian social movements the world has heard of, and one of the most thoroughly mythologised. Shekhar Pathak walked the Himalayan villages where it happened for four decades before writing this book, and the history he produces is denser and more argumentative than the parable. It restores the local politics, the labour disputes and the long prior tradition of forest resistance that made the movement possible, and it insists that the people who hugged the trees had reasons of their own.',
+'naoroji':'Dadabhai Naoroji gave Indian nationalism its first economic argument — the drain of wealth — and became the first Indian elected to the British House of Commons. Dinyar Patel worked through an archive of some thirty thousand documents to produce the first full biography, and it reframes Naoroji as a political strategist rather than a venerable ancestor: a man who spent half a century learning how to make imperial institutions work against themselves.',
+'mobilizing-the-marginalized':'Why do Dalit parties do well in some Indian states and badly in others? Amit Ahuja\u2019s answer inverts the usual expectation. Where Dalit social movements were strongest, ethnic parties have been weakest — because movements changed the terms of politics for everyone, leaving less for a party to claim. Built on fieldwork and survey data across four states, the book is a study of what social mobilisation does to electoral mobilisation, and vice versa.',
+'a-chequered-brilliance':'V.K. Krishna Menon was Nehru\u2019s closest confidant, India\u2019s most effective advocate at the United Nations, and the Defence Minister who presided over the catastrophe of 1962. Jairam Ramesh had access to an enormous unpublished archive, and uses it to produce a portrait that neither rescues Menon nor settles for the caricature — a study of brilliance, abrasiveness and political self-destruction at the centre of the Nehru years.',
+'how-india-became-democratic':'Before India had a Constitution it had an electoral roll. Ornit Shani tells the story of the two years in which officials across a partitioned, displaced, barely governed country set about registering every adult as a voter — arguing about refugees, about women recorded only as somebody\u2019s wife, about who counted as belonging. Her claim is that universal franchise was not conferred by the Constitution but produced by this bureaucratic labour, and that Indians learned to be citizens by insisting on being counted.',
+'when-crime-pays':'A third of India\u2019s legislators face criminal charges, and voters know it. Milan Vaishnav\u2019s book asks why they are elected anyway, and finds the answer in the cost of elections and the weakness of the state: parties need candidates who can self-finance, and voters in places where the state does not deliver may prefer a candidate who can get things done by other means. The first winner of the NIF Book Prize.',
+'the-dawn-of-life':'Prabhudas Gandhi grew up in Gandhi\u2019s South African household, and wrote this memoir of those years in Gujarati as an old man. It is the domestic view of a period usually narrated politically — Phoenix Settlement and Tolstoy Farm as places where children were raised, meals were rationed and experiments in living were conducted on the family before they were conducted on a nation. Hemang Ashwinkumar\u2019s translation brings it into English for the first time.',
+'believers-dilemma':'The second volume of Abhishek Choudhary\u2019s biography covers Atal Bihari Vajpayee from the Janata experiment of 1977 to his final years, taking in the founding of the BJP, the Ayodhya movement, Pokhran, Kargil, Gujarat 2002 and six years as Prime Minister. Its subject is the tension the title names: a man who held the Hindu right\u2019s affection while repeatedly declining to be its instrument, and the cost of that position to both him and it.',
+'rama-bhima-soma':'A young writer travels through Karnataka looking for the state\u2019s intellectual undercurrents — Dalit and farmers\u2019 movements, Navya and Bandaya writing, Sufi and Lingayat traditions, Kannada theatre, the long argument about language. Part reportage, part cultural history, the book makes a case for Karnataka as a place where some of modern India\u2019s most productive arguments have been staged, and largely ignored from outside.',
+'the-many-lives-of-syeda-x':'Neha Dixit followed one woman for more than a decade. Syeda X fled Banaras after the riots of the early 1990s and has since done some fifty different kinds of piece-work in west Delhi — shelling almonds, stitching footballs, rolling incense, assembling toys. The book is an account of informal labour and of a Muslim working life in north India, built from the accumulated detail that only that kind of patience produces.',
+'the-day-i-became-a-runner':'Sohini Chattopadhyay tells the history of independent India through nine women athletes, from the sprinters of the 1950s to the present. Running is the frame, but the subject is the female body in public — what it has been permitted to do, who objected, what a woman had to trade for the right to be seen exerting herself in a stadium. Sport here is a way of writing women back into the national record.',
+'the-quest-for-modern-assam':'Arupjyoti Saikia\u2019s history covers Assam from the Second World War to the end of the twentieth century — Partition and its refugees, the oil economy, the language movements, the Assam Agitation, insurgency. It is a scholarly attempt to give a region usually treated as a problem in national security a history of its own politics, economy and self-understanding.',
+'vajpayee':'The first volume of Abhishek Choudhary\u2019s biography takes Atal Bihari Vajpayee from his birth in Gwalior to the Emergency and the Janata moment. Drawn from Hindi sources, RSS material and Vajpayee\u2019s own poetry and journalism, it is also a history of the Hindu right in its long years of marginality, and of how a movement without power prepared for it.',
+'caste-pride':'Manoj Mitta reads the legal record — statutes, judgments, commissions of inquiry, colonial and post-colonial — to show how Indian law has handled caste over two centuries. The result is a history of the gap between formal equality and the operation of the courts, told through the specific cases in which the gap became visible.',
+'tagores-university':'Visva-Bharati was Rabindranath Tagore\u2019s attempt to build an institution around a theory of education: no walls, no examinations as ends in themselves, learning through art and craft and the natural year. Swati Ganguly traces the first four decades — the funding crises, the personalities, the compromises with the state after Tagore\u2019s death — and asks what happened to the idea once it had to be administered.',
+'chromosome-woman-nomad-scientist':'E.K. Janaki Ammal was a cytogeneticist who worked on sugarcane and on the chromosome atlas of cultivated plants, held posts in India and Britain, and late in life joined the campaign to save the Silent Valley. Savithri Preetha Nair\u2019s biography recovers a scientific career conducted almost entirely outside the institutional advantages her male contemporaries took for granted.',
+'not-just-cricket':'Pradeep Magazine covered Indian cricket through the years in which it changed from a game into an industry, and was among the first journalists to report on match-fixing. This is a reporter\u2019s memoir, but its subject is larger than sport: money, television, celebrity and the arrival of a new commercial India, watched from the press box.',
+'the-life-and-times-of-george-fernandes':'Trade unionist, socialist, underground fugitive during the Emergency, and eventually Defence Minister in a government led by the party he had spent his life opposing. Rahul Ramagundam\u2019s biography follows George Fernandes across that arc and uses it to tell the history of the Indian socialist tradition — its energy, its splits, and its long decline into accommodation.',
+'bibis-room':'Three Hyderabadi women — Zeenath Sajida, Najma Nikhat and Jeelani Bano — wrote Urdu prose across the twentieth century, through the end of the Nizam\u2019s rule, the Police Action and its aftermath. Nazia Akhtar reads and translates their work to recover a literary world that has largely dropped out of both Urdu and Indian literary history.',
+'citizenship-in-a-caste-polity':'Goa\u2019s Catholics are internally divided by caste, and those divisions shape how the community argues about language, religion and belonging within the Indian union. Jason Keith Fernandes\u2019s ethnography examines the politics of Konkani and Marathi, the place of the Church, and what citizenship has come to mean in a state that joined India late and on its own terms.',
+'the-transformative-constitution':'Gautam Bhatia argues that the Indian Constitution should be read not as a continuation of colonial law but as a break with it — a document intended to transform relationships of subordination between citizens as well as between citizen and state. He makes the case through nine provisions and the cases decided under them, reconstructing arguments the courts declined to make.',
+'tawaifnama':'Saba Dewan spent years with the descendants of a courtesan family from the Bhabua region and Banaras, and writes their history across four generations. The book recovers the tawaif as an artist and a property-holder before reform movements and respectability politics reduced her to a figure of disrepute, and it lets the family tell the story in its own idiom.',
+'growing-up-muslim-in-india':'Neyaz Farooquee grew up in Jamia Nagar in Delhi, and was a student there when the Batla House encounter took place in 2008. His memoir describes what it is to be a young Muslim in a city that has decided in advance what you might be — the small administrative humiliations, the neighbourhood\u2019s own arguments, and the long adjustment of expectations that follows.',
+'mannequin':'Manjima Bhattacharjya interviews the women who worked as models in India\u2019s fashion industry from the 1990s onward, and uses their accounts to think about glamour as labour. The book asks what feminism has to say about work that is well paid, physically demanding, sexualised and chosen — and finds the existing answers inadequate.',
+'delhis-meatscapes':'The Qureshi butchers of Delhi are a Muslim occupational community working in a trade that is politically charged and commercially significant. Zarin Ahmad\u2019s ethnography follows them through the relocation of the city\u2019s abattoirs and the changing regulation of meat, and reads the trade as a way into questions of urban space, community and stigma.',
+'rethinking-revolutions':'Soyabean transformed the agriculture of the Malwa plateau, and the transformation is usually told as a success. Richa Kumar looks at what actually happened in the villages — the credit, the markets, the information kiosks, the risk — and produces a sceptical account of how agricultural revolutions are narrated and who bears their costs.',
+'the-web-of-freedom':'J.C. Kumarappa was Gandhi\u2019s economist, an accountant trained in New York who became the theorist of decentralised, village-scale production. Venu Madhav Govindu and Deepak Malghan reconstruct his life and thought and argue that his economics of permanence — written decades before the phrase existed — anticipated much of what is now called ecological economics.',
+'growing-the-tree-of-science':'The Tata Institute of Fundamental Research was built by Homi Bhabha as a scientific institution and as an aesthetic and administrative project. Indira Chowdhury draws on the institute\u2019s archives and on oral histories with its early scientists to describe how a research culture is actually made, and what was lost when Bhabha died.',
+'ahmedabad':'Amrita Shah moves through Ahmedabad — its mill history, its Gandhian inheritance, its segregated neighbourhoods after 2002, its new highways and river-front — to ask what has happened to an Indian city that has been held up in turn as a model of nationalism, of industry and of development.',
+'from-soup-to-superstar':'Sea turtles went from being eaten to being emblematic within a few decades. Kartik Shanker, a biologist who worked on Indian coasts for much of that period, writes the history of turtle conservation as a history of conservation itself — its science, its NGOs, its conflicts with fishing communities, and its habit of mistaking charismatic animals for ecosystems.',
+'gita-press-and-the-making-of-hindu-india':'The Gita Press of Gorakhpur has printed hundreds of millions of copies of Hindu religious texts, and its magazine <em>Kalyan</em> reached households across north India for decades. Akshaya Mukul\u2019s history of the press and of its guiding figure, Hanuman Prasad Poddar, shows how a publishing house helped assemble a modern Hindu sensibility — on caste, on women, on cow protection, on the nation — long before that sensibility became electoral.',
+'indias-new-capitalists':'Indian business was long the preserve of a handful of trading castes. Harish Damodaran, an agricultural journalist by training, documents the arrival of entrepreneurs from farming and artisanal backgrounds across the south and west, and shows how caste networks were reused rather than discarded as new business communities formed. One of the first books written under the Fellowship.',
+'christianity-and-politics-in-tribal-india':'G. Kanato Chophy examines the relationship between Baptist missionary Christianity and Naga nationalism — how a religion introduced from outside became the vehicle for an assertion of distinct nationhood, and what that has meant for Naga society, its churches and its politics.',
+'competing-nationalisms':'Jagat Narain Lal was a Congress politician, a Hindu Mahasabha member and a constituent assembly delegate, and held those commitments together in ways that later became impossible. Rajshree Chandra uses his papers and diaries to examine how religious and secular nationalism coexisted inside a single life during the decades in which India was deciding what it would be.',
+'our-moon-has-blood-clots':'Rahul Pandita was fourteen when his family left Srinagar in 1990, among the Kashmiri Pandits who fled the valley. His memoir is an account of that departure and of the decades of displacement that followed — a book about a house you cannot return to, written in deliberately unconsoling prose.',
+'politics-as-performance':'Telugu cinema and Telugu politics have been continuous with one another for most of the region\u2019s modern history. S.V. Srinivas traces the traffic between them — the fan associations, the mythological film, the star as political entrepreneur — and argues that the cinema hall was a genuine site of political formation rather than a distraction from it.',
+'debating-patriarchy':'The Hindu Code Bill was the most divisive legislative project of India\u2019s first decade, proposing to reform marriage, divorce, inheritance and adoption. Chitra Sinha reconstructs the public argument it provoked — in the Constituent Assembly, in the press, in women\u2019s organisations — and shows how much of the settlement was determined outside Parliament.',
+'a-rogue-and-peasant-slave':'Shashank Kela writes two centuries of Adivasi resistance in central India, moving between the long historical record and the specific case of the Bhil country of western Madhya Pradesh, where he worked for many years. The book connects colonial-era revolts to contemporary struggles over forest land and displacement.',
+'in-freedoms-shade':'Anis Kidwai\u2019s husband was killed in the violence of 1947. She went to Delhi and worked in the refugee camps and recovery operations for the next several years, and wrote this account in Urdu. Translated by her daughter Ayesha Kidwai, it is one of the most direct records of Partition\u2019s aftermath in the capital, written by someone doing the work rather than observing it.',
+'conservation-at-the-crossroads':'Ghazala Shahabuddin examines Indian wildlife conservation as a set of choices — about which species matter, about whether people can remain inside protected areas, about what counts as evidence. Drawing on ecological research and on the history of Indian conservation policy, she argues for approaches that treat forests as inhabited landscapes.',
+'stateless-in-south-asia':'The Chakmas left the Chittagong Hill Tracts and settled in Arunachal Pradesh, where they have spent decades in a legal limbo between two states. Deepak Singh follows the case and its people, and uses it to examine how citizenship is actually decided at the edges of the Indian union.',
+'gandhis-conscience-keeper':'C. Rajagopalachari was Gandhi\u2019s ally and interlocutor, independent India\u2019s last Governor-General, a Congress Chief Minister and finally the founder of a party of the free-market right. Vasanthi Srinivasan reads his political thought seriously — its conservatism, its constitutionalism, its scepticism about the planning state — as a coherent position rather than a series of defections.',
+'the-long-revolution':'Dinesh C. Sharma traces the Indian software industry back before liberalisation, to the state-funded computing efforts of the 1960s and 1970s, the engineers trained in them, and the policy decisions that shaped what came after. The book argues that the 1990s boom had a long and largely public prehistory.'
+};
+function slugify(s){return s.split(':')[0].toLowerCase().replace(/[\u2019']/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+
+const lib=[];
+winners.forEach(w=>lib.push({t:w.t,a:w.a,theme:w.theme,img:w.img||'',buy:w.buy||'',route:'prize',yr:w.y,
+  trans:/translated/i.test(w.a)}));
+fellowship.forEach(f=>lib.push({t:f[0],a:f[1],theme:f[2],img:f[3]?CDN+f[3]:'',buy:f[4]||'',route:'fellowship',yr:null,trans:!!f[5]}));
+lib.forEach(b=>{b.slug=slugify(b.t)});
+
+function esc(s){return String(s).replace(/&(?!amp;|lt;|gt;|#)/g,'&amp;').replace(/<(?!\/?em>)/g,'&lt;')}
+function card(b){
+  return `<a class="bk" href="#book/${b.slug}" data-book="${b.slug}">
+    <div class="ct">${b.img?`<img src="${b.img}" alt="Cover of ${esc(b.t)} by ${esc(b.a)}" loading="lazy">`:`<div class="ph">${esc(b.t)}</div>`}</div>
+    <span class="tag ${b.route==='prize'?'p':'f'}">${b.route==='prize'?'Prize '+b.yr:'Fellowship'}</span>
+    <h4>${esc(b.t)}</h4><div class="au">${b.a}</div></a>`;
+}
+
+// ---- individual book page ----
+function renderBook(slug){
+  const b=lib.find(x=>x.slug===slug); if(!b)return false;
+  const about=ABOUT[slug];
+  const others=lib.filter(x=>x.theme===b.theme&&x.slug!==slug).slice(0,6);
+  document.getElementById('bookBody').innerHTML=`
+  <section>
+    <div class="wrap">
+      <p style="margin-bottom:30px"><a class="lnk" href="#library" data-go="library">← All NIF books</a></p>
+      <div class="bookhead">
+        <div>
+          <div class="ct bigcov">${b.img?`<img src="${b.img}" alt="Cover of ${esc(b.t)} by ${esc(b.a)}">`:`<div class="ph">${esc(b.t)}</div>`}</div>
+          ${b.buy?`<p style="margin-top:20px"><a class="btn" href="${b.buy}" target="_blank" rel="noopener">Buy the book</a></p>`:''}
+        </div>
+        <div>
+          <span class="tag ${b.route==='prize'?'p':'f'}">${b.route==='prize'?'NIF Book Prize '+b.yr:'Written under an NIF Book Fellowship'}</span>
+          <h1 style="font-size:clamp(1.9rem,3.8vw,3rem);margin-top:10px">${esc(b.t)}</h1>
+          <p class="byline">${b.a}</p>
+          ${about?`<div class="bookabout">${about}</div>`:`<div class="empty"><b>About this book</b>A description is being prepared. In the meantime the publisher\u2019s page carries the full synopsis.</div>`}
+          <h3 style="margin-top:44px">In the press</h3>
+          <div class="empty"><b>Reviews</b>Reviews and coverage of this book will be collected here. If you have written about it and would like it listed, write to <a class="lnk" href="mailto:press@newindiafoundation.org">press@newindiafoundation.org</a>.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  ${others.length?`<section class="band-k">
+    <div class="wrap">
+      <p class="eyebrow">Related</p>
+      <h2 style="margin-bottom:34px">More on this subject</h2>
+      <div class="books">${others.map(card).join('')}</div>
+    </div>
+  </section>`:''}`;
+  document.title=b.t+' — New India Foundation';
+  return true;
+}
+
+// home strip: 12 most recent
+document.getElementById('homeBooks').innerHTML=lib.slice(0,6).concat(lib.slice(9,15)).map(card).join('');
+
+// library render + filters
+const state={route:'all',theme:'all'};
+function renderLib(){
+  const out=lib.filter(b=>{
+    const r=state.route==='all'||(state.route==='translation'?b.trans:b.route===state.route);
+    const t=state.theme==='all'||b.theme===state.theme;
+    return r&&t;
+  });
+  document.getElementById('lib').innerHTML=out.length?out.map(card).join(''):'<p>No books match those filters yet. Try widening the subject.</p>';
+  document.getElementById('count').textContent=`Showing ${out.length} of ${lib.length} books`;
+}
+document.querySelectorAll('.filters').forEach(g=>{
+  g.addEventListener('click',e=>{
+    const b=e.target.closest('.chip'); if(!b)return;
+    g.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));
+    b.classList.add('on'); state[g.dataset.f]=b.dataset.v; renderLib();
+  });
+});
+renderLib();
+
+// winners list
+document.getElementById('winners').innerHTML=winners.map(w=>`
+ <div class="win">
+  <div class="yr">${w.y}</div>
+  <div>
+    <div class="au">${w.a}</div>
+    <h3>${esc(w.t)}</h3>
+    <p style="margin:0">${w.d}</p>
+    ${w.buy?`<p style="margin:14px 0 0"><a class="lnk" href="${w.buy}" target="_blank" rel="noopener">Find the book</a></p>`:''}
+  </div>
+ </div>`).join('');
+
+// spine shelf
+const shelfSkins=['w1','w3','w2','w4','w1','w3','w2','w4','w1'];
+document.getElementById('shelf').innerHTML=winners.slice().reverse().map((w,i)=>{
+  const cur=w.y===2025;
+  const sur=w.a.split(',')[0].split(' ').slice(-1)[0];
+  return `<button class="spine ${cur?'cur':shelfSkins[i%9]}" data-y="${w.y}" title="${esc(w.t)}">
+    <span class="txt">${sur} · ${esc(w.t.split(':')[0])}</span><span class="yr">${w.y}</span></button>`;
+}).join('');
+document.getElementById('shelf').addEventListener('click',e=>{
+  const s=e.target.closest('.spine'); if(!s)return; go('prize');
+});
+
+// routing
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('on',p.id===id));
+  document.querySelectorAll('nav.main a').forEach(a=>a.classList.toggle('on',a.dataset.go===id));
+  document.getElementById('nav').classList.remove('open');
+  window.scrollTo({top:0,behavior:'instant'});
+  if(id!=='book')document.title='New India Foundation — Fellowships and the NIF Book Prize';
+  if(location.hash!=='#'+id&&id!=='book') history.replaceState(null,'','#'+id);
+}
+function route(){
+  const h=location.hash.slice(1);
+  if(h.startsWith('book/')){
+    if(renderBook(h.slice(5))){go('book');return;}
+    go('library');return;
+  }
+  const el=document.getElementById(h);
+  if(el&&el.classList.contains('page'))go(h); else go('home');
+}
+document.addEventListener('click',e=>{
+  const bk=e.target.closest('[data-book]');
+  if(bk){e.preventDefault();location.hash='book/'+bk.dataset.book;return;}
+  const a=e.target.closest('[data-go]'); if(!a)return;
+  e.preventDefault(); go(a.dataset.go);
+});
+window.addEventListener('hashchange',route);
+if(location.hash)route();
+
+const burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{
+  const n=document.getElementById('nav'); const o=n.classList.toggle('open');
+  burger.setAttribute('aria-expanded',o);
+});
+</script>
+</body>
+</html>

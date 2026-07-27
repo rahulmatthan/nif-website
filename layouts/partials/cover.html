@@ -1,0 +1,19 @@
+{{- /* Responsive, lazy, WebP cover image with data-driven alt text. Placeholder when no file.
+       Params: book (map), eager (bool), sizes (string). */ -}}
+{{- $book := .book -}}
+{{- $eager := .eager | default false -}}
+{{- $sizes := .sizes | default "(max-width:900px) 45vw, 200px" -}}
+{{- $class := .class | default "" -}}
+{{- $res := resources.Get (printf "covers/%s.jpg" $book.slug) -}}
+{{- $alt := printf "Cover of %s by %s" $book.title $book.author -}}
+{{- if $res -}}
+  {{- $small := $res.Process "resize 400x webp q82" -}}
+  {{- $large := $res.Process "resize 800x webp q82" -}}
+  <img{{ with $class }} class="{{ . }}"{{ end }} src="{{ $small.RelPermalink }}"
+       srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w"
+       sizes="{{ $sizes }}"
+       width="{{ $large.Width }}" height="{{ $large.Height }}"
+       alt="{{ $alt }}"{{ if not $eager }} loading="lazy" decoding="async"{{ end }}>
+{{- else -}}
+  <div class="ph{{ with $class }} {{ . }}{{ end }}">{{ $book.title }}</div>
+{{- end -}}

@@ -1,0 +1,14 @@
+{{- /* State-aware apply/nominate button. Driven by status.yaml via appstatus.
+       Params: prog (programme map), openLabel, openHref, verb ("applications"|"nominations"), class */ -}}
+{{- $s := partial "appstatus.html" .prog -}}
+{{- $openLabel := .openLabel | default "Start an application" -}}
+{{- $openHref := .openHref | default ("/apply/" | relLangURL) -}}
+{{- $verb := .verb | default "applications" -}}
+{{- $class := .class | default "" -}}
+{{- if eq $s.state "open" -}}
+  <a class="btn {{ $class }}" href="{{ $openHref }}">{{ $openLabel }}</a>
+{{- else if eq $s.state "soon" -}}
+  <a class="btn {{ $class }}" aria-disabled="true" href="{{ $openHref }}">{{ humanize $verb }} open {{ $s.opensDate }}</a>
+{{- else -}}
+  <a class="btn {{ $class }}" aria-disabled="true" href="{{ $openHref }}">{{ humanize $verb }} closed · open {{ $s.nextOpensDate }}</a>
+{{- end -}}

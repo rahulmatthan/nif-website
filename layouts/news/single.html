@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{- $n := site.Data.news -}}
+<section>
+  <div class="wrap">
+    <p class="eyebrow">News</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">Announcements</h1>
+    <ul class="news" style="margin-top:44px">
+      {{- range $n.items }}
+      <li><a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
+        <span class="d">{{ .date }}</span>
+        <div><h4>{{ .title | safeHTML }}</h4>{{ with .blurb }}<p class="small" style="margin:6px 0 0">{{ . | safeHTML }}</p>{{ end }}</div>
+      </a></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">For journalists</p>
+        <h2>Press kit</h2>
+        <p>Logos, winner photographs, book jackets, jury citations and a standing description of the Foundation, in one place. For interviews with fellows, jurors or trustees, or for embargoed access to longlist and shortlist announcements, write to the press desk.</p>
+        <p><a class="btn gh" href="mailto:{{ site.Params.contact.press }}">{{ site.Params.contact.press }}</a></p>
+      </div>
+      <div>
+        <p class="eyebrow">Watch</p>
+        <h2>Video</h2>
+        <ul class="flist" style="border-top:1px solid var(--rule)">
+          {{- range $n.videos }}
+          <li><b><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></b>{{ with .note }}<span>{{ . }}</span>{{ end }}</li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

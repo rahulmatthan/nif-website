@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">About</p>
+    <h1 style="font-size:clamp(2.2rem,4.6vw,3.4rem)">The New India Foundation</h1>
+    <p class="lede">The New India Foundation, based in Bengaluru, matches public-spirited philanthropy with relevant scholarship.</p>
+    <p>In the seven-and-a-half decades since Independence, there has been a large body of work produced by Indian historians and social scientists. Taken singly, many of these studies are impressive; viewed cumulatively, they add up to much less than what one might expect.</p>
+    <p>The chief reason for this is the determining influence on scholarly practice of one single date: 15 August 1947. Historians do not look beyond the attainment of Independence, whereas other social scientists do not tend to look back at all.</p>
+    <p>Given India's size, its importance, and its interest, and given that this is our country, the lack of good research on its modern history is unfortunate.</p>
+    <p><strong>It is this lack that the New India Foundation seeks to address, by sponsoring high-quality original scholarship on different aspects of independent India.</strong> Its activities include the granting of NIF Book Fellowships for highly researched original work, Translation Fellowships for bringing historical Indian-language works into English, the NIF Book Prize, and the Girish Karnad Memorial Lecture.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="hd">
+      <p class="eyebrow">Governance</p>
+      <h2>Governing Board</h2>
+      <p class="small">The Board also constitutes the jury for the Book Prize and the Fellowships, sitting alongside external experts where a project requires specialist knowledge.</p>
+    </div>
+    <div class="people">
+      {{- range site.Data.board }}
+      <div class="person">
+        {{- $img := resources.Get (printf "people/%s.jpg" (.name | urlize)) -}}
+        {{- if $img }}{{ $p := $img.Process "resize 200x webp q82" }}<img src="{{ $p.RelPermalink }}" width="88" height="88" alt="{{ .name }}" loading="lazy">{{ end }}
+        <h3>{{ .name }}</h3>
+        <div class="role">{{ .role }}</div>
+        <p>{{ .bio | safeHTML }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section class="band-k">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow">In memoriam</p>
+        <h2>The Girish Karnad Memorial NIF Lecture</h2>
+        <p>An annual public lecture delivered by a leading intellectual on themes around modern India, instituted in memory of Girish Karnad (1938–2019) — playwright, actor, film-maker and Jnanpith laureate, whose plays <em>Tughlaq</em>, <em>Hayavadana</em> and <em>Nagamandala</em> reshaped the Indian stage, and who lived and worked in Bengaluru for much of his life.</p>
+        <p class="small">Details of the next lecture will be announced here and to subscribers.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Partnership</p>
+        <h2>Bhashavaad</h2>
+        <p>NIF collaborates with the Ashoka Centre for Translation on Bhashavaad, an annual conference on translation in India. The conference has also produced a searchable database of translations into and between Indian languages, now running to more than thirty thousand entries.</p>
+        <p><a class="lnk" href="{{ site.Params.social.bhashavaad }}" target="_blank" rel="noopener">Visit bhashavaad.in</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

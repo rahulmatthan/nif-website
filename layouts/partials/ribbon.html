@@ -1,0 +1,26 @@
+{{- /* Status ribbon: what is currently open, with real dates, linking through. Driven by status.yaml. */ -}}
+{{- $s := site.Data.status -}}
+{{- $bf := partial "appstatus.html" $s.bookFellowship -}}
+{{- $bp := partial "appstatus.html" $s.bookPrize -}}
+<div class="ribbon">
+  <div class="wrap">
+    <a href="{{ "/apply/" | relLangURL }}">
+      <i class="dot q"></i>
+      {{- $d := $bf.data -}}
+      {{ $d.name }} {{ $d.cycle }} —
+      {{- if eq $bf.state "open" }} applications open now, close {{ $bf.closesDate }}
+      {{- else if eq $bf.state "soon" }} applications open {{ $bf.opensDate }}
+      {{- else }} applications open {{ $bf.nextOpensDate }}
+      {{- end -}}
+    </a>
+    <a href="{{ "/prize/" | relLangURL }}">
+      <i class="dot"></i>
+      {{- $d := $bp.data -}}
+      {{ $d.name }} {{ $d.cycle }} —
+      {{- if eq $bp.state "open" }} nominations open now, close {{ $bp.closesDate }}
+      {{- else if eq $bp.state "soon" }} nominations open {{ $bp.opensDate }}
+      {{- else }} nominations open {{ $bp.nextOpensDate }}
+      {{- end -}}
+    </a>
+  </div>
+</div>
